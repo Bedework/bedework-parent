@@ -1360,7 +1360,7 @@
           <version>${version.release.plugin}</version>
           <configuration>
             <autoVersionSubmodules>true</autoVersionSubmodules>
-            <releaseProfiles>release</releaseProfiles>
+            <releaseProfiles>bedework-rel,bedework-local</releaseProfiles>
           </configuration>
         </plugin>
 
@@ -1638,74 +1638,12 @@
         <bw-util-security.version>4.1.4</bw-util-security.version>
         <bw-util2.version>4.0.12</bw-util2.version>
 
-        <bw-webdav.version>4.0.14-SNAPSHOT</bw-webdav.version>
+        <bw-webdav.version>4.0.13</bw-webdav.version>
 
         <bw-xml.version>4.0.11</bw-xml.version>
 
       </properties>
     </profile>
-
-    <!--
-        The profile release must be active when a project is released.
-        The configuration in this POM will automatically call this
-        profile if using the maven-release-plugin.
-        If the maven-release-plugin is not used during the release,
-        this profile must be manually activated.
-     -->
-    <profile>
-      <id>release</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-source-plugin</artifactId>
-            <version>${version.source.plugin}</version>
-            <executions>
-              <execution>
-                <id>attach-sources</id>
-                <goals>
-                  <goal>jar-no-fork</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <version>${version.javadoc.plugin}</version>
-            <executions>
-              <execution>
-                <id>attach-javadocs</id>
-                <goals>
-                  <goal>jar</goal>
-                </goals>
-              </execution>
-            </executions>
-            <configuration>
-              <additionalJOption>-Xdoclint:none</additionalJOption>
-              <failOnError>false</failOnError>
-            </configuration>
-          </plugin>
-
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <version>${version.gpg.plugin}</version>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-
   </profiles>
 
   <!-- Some plugins are available in the jboss repository only -->
