@@ -108,7 +108,7 @@
 
     <!-- Repository Deployment URLs -->
     <bedework.releases.repo.id>ossrh</bedework.releases.repo.id>
-    <bedework.releases.repo.url>https://oss.sonatype.org/content/repositories/snapshots</bedework.releases.repo.url>
+    <bedework.releases.repo.url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</bedework.releases.repo.url>
     <bedework.snapshots.repo.id>ossrh</bedework.snapshots.repo.id>
     <bedework.snapshots.repo.url>https://oss.sonatype.org/content/repositories/snapshots/</bedework.snapshots.repo.url>
 
