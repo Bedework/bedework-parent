@@ -178,6 +178,7 @@
     <!-- test only -->
     <junit.version>4.13.1</junit.version>
 
+    <log4j.version>2.16.0</log4j.version>
     <!-- For elasticsearch dependencies -->
     <lucene.version>8.9.0</lucene.version>
 
@@ -979,6 +980,13 @@
         <groupId>javax.cache</groupId>
         <artifactId>cache-api</artifactId>
         <version>${javax.cache-api.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>${log4j.version}</version>
+        <scope>provided</scope>
       </dependency>
 
       <dependency>
