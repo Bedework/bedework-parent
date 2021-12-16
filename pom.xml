@@ -1,0 +1,1740 @@
+<!--
+  ~ JBoss, Home of Professional Open Source.
+  ~ Copyright 2018 Red Hat, Inc., and individual contributors
+  ~ as indicated by the @author tags.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.bedework</groupId>
+  <artifactId>bedework-parent</artifactId>
+  <version>4.0.0-SNAPSHOT</version>
+
+  <packaging>pom</packaging>
+
+  <name>Bedework Parent POM</name>
+  <description>Provides a base configuration for Bedework project builds</description>
+  <url>https://www.bedework.org</url>
+
+  <issueManagement>
+    <system>github</system>
+    <url>https://github.com/Bedework/bedework/issues</url>
+  </issueManagement>
+
+  <scm>
+    <connection>scm:git:git@github.com:Bedework/bedework-parent.git</connection>
+    <developerConnection>scm:git:git@github.com:Bedework/bedework-parent.git</developerConnection>
+    <url>https://github.com/Bedework/bedework-parent</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <developers>
+    <developer>
+      <name>Mike Douglass</name>
+      <organization>
+        Bedework Commercial Services
+      </organization>
+      <organizationUrl>https://bedework.com/</organizationUrl>
+    </developer>
+    <developer>
+      <name>Arlen Johnson</name>
+      <organization>
+        Spherical Cow Group
+      </organization>
+      <organizationUrl>http://sphericalcowgroup.com/</organizationUrl>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>Apache License Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+    </license>
+  </licenses>
+
+  <organization>
+    <name>Bedework</name>
+    <url>https://github.com/Bedework</url>
+  </organization>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+    <!-- maven-compiler-plugin -->
+    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.testTarget>${maven.compiler.target}</maven.compiler.testTarget>
+    <maven.compiler.testSource>${maven.compiler.source}</maven.compiler.testSource>
+
+    <!-- Maven Plugin Versions -->
+    <version.assembly.plugin>3.3.0</version.assembly.plugin>
+    <version.buildnumber.plugin>1.4</version.buildnumber.plugin>
+    <version.clean.plugin>3.1.0</version.clean.plugin>
+    <version.compiler.plugin>3.8.1</version.compiler.plugin>
+    <version.dependency.plugin>3.1.1</version.dependency.plugin>
+    <version.deploy.plugin>2.8.2</version.deploy.plugin>
+    <version.ear.plugin>3.0.1</version.ear.plugin>
+    <version.enforcer.plugin>3.0.0-M3</version.enforcer.plugin>
+    <version.exec.plugin>3.0.0</version.exec.plugin>
+    <version.gpg.plugin>1.5</version.gpg.plugin>
+    <version.install.plugin>2.5.2</version.install.plugin>
+    <version.jar.plugin>3.1.2</version.jar.plugin>
+    <version.javadoc.plugin>3.1.1</version.javadoc.plugin>
+    <version.license.plugin>1.20</version.license.plugin>
+    <version.plugin.plugin>3.6.0</version.plugin.plugin>
+    <version.release.plugin>2.5.3</version.release.plugin>
+    <version.resources.plugin>3.2.0</version.resources.plugin>
+    <version.source.plugin>3.1.0</version.source.plugin>
+    <version.surefire.plugin>2.22.2</version.surefire.plugin>
+    <version.versions.plugin>2.8.1</version.versions.plugin>
+    <version.war.plugin>3.2.3</version.war.plugin>
+
+    <bw-util-deploy.version>4.1.1-SNAPSHOT</bw-util-deploy.version>
+
+    <!-- Repository Deployment URLs -->
+    <bedework.releases.repo.id>ossrh</bedework.releases.repo.id>
+    <bedework.releases.repo.url>https://oss.sonatype.org/content/repositories/snapshots</bedework.releases.repo.url>
+    <bedework.snapshots.repo.id>ossrh</bedework.snapshots.repo.id>
+    <bedework.snapshots.repo.url>https://oss.sonatype.org/content/repositories/snapshots/</bedework.snapshots.repo.url>
+
+    <!--
+        Options to override the compiler arguments directly on the compiler argument line to separate between what
+        the IDE understands as the source level and what the Maven compiler actually use.
+    -->
+    <maven.compiler.argument.target>${maven.compiler.target}</maven.compiler.argument.target>
+    <maven.compiler.argument.source>${maven.compiler.source}</maven.compiler.argument.source>
+    <maven.compiler.argument.testTarget>${maven.compiler.testTarget}</maven.compiler.argument.testTarget>
+    <maven.compiler.argument.testSource>${maven.compiler.testSource}</maven.compiler.argument.testSource>
+
+    <!-- maven-enforcer-plugin -->
+    <maven.min.version>3.2.5</maven.min.version>
+    <jdk.min.version>${maven.compiler.argument.source}</jdk.min.version>
+    <insecure.repositories>ERROR</insecure.repositories>
+
+    <!-- maven-idea-plugin -->
+    <downloadSources>true</downloadSources>
+
+    <!-- exposed additional params for javadoc, such as Xlint -->
+    <javadoc.additional.params />
+
+    <!-- iCal4j versions
+         We have our own version of ical4j which is
+         trying to track the real project.
+    -->
+
+    <ical4j.groupId>org.bedework.ical4j</ical4j.groupId>
+    <ical4j.artifactId>ical4j</ical4j.artifactId>
+    <ical4j.version>3.0.16</ical4j.version>
+
+    <ical4j-vcard.version>1.0.8</ical4j-vcard.version>
+
+    <!-- Library versions
+         Third party libraries we depend on.
+    -->
+
+    <apache.struts.version>1.3.10</apache.struts.version>
+
+    <commons-beanutils.version>1.7.0</commons-beanutils.version>
+    <commons-codec.version>1.15</commons-codec.version>
+    <commons-collections.version>3.2</commons-collections.version>
+    <commons-collections4.version>4.1</commons-collections4.version>
+    <commons.csv.version>1.2</commons.csv.version>
+    <commons-digester-version>1.8</commons-digester-version>
+    <commons-io.version>2.8.0</commons-io.version>
+    <commons-lang.version>2.6</commons-lang.version>
+    <commons-lang3.version>3.8.1</commons-lang3.version>
+    <commons-logging.version>1.2</commons-logging.version>
+    <commons.text.version>1.7</commons.text.version>
+
+    <elasticsearch.version>7.14.1</elasticsearch.version>
+
+    <freemarker.version>2.3.23</freemarker.version>
+
+    <http-client.version>4.5.13</http-client.version>
+    <http-core.version>4.4.14</http-core.version>
+    <h2.version>1.4.190</h2.version>
+
+    <imgscalr.version>4.2</imgscalr.version>
+
+    <jackson.version>2.11.0</jackson.version>
+    <jasypt.version>1.9.2</jasypt.version>
+    <javax.cache-api.version>1.0.0</javax.cache-api.version>
+    <jolokia.version>1.6.2</jolokia.version>
+    <!-- test only -->
+    <junit.version>4.13.1</junit.version>
+
+    <!-- For elasticsearch dependencies -->
+    <lucene.version>8.9.0</lucene.version>
+
+    <slf4j.version>1.7.25</slf4j.version>
+    <spring-framework.version>5.2.4.RELEASE</spring-framework.version>
+    <spring-ldap.version>2.3.3.RELEASE</spring-ldap.version>
+    <spring-security.version>5.3.4.RELEASE</spring-security.version>
+    <spring-webflow.version>2.5.1.RELEASE</spring-webflow.version>
+    <spring-webmvc-portlet.version>4.3.28.RELEASE</spring-webmvc-portlet.version>
+    <spring-ws.version>3.0.9.RELEASE</spring-ws.version>
+    <spring-ws-soap.version>2.0.0.RELEASE</spring-ws-soap.version>
+    <sun.mail.version>1.6.2</sun.mail.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- Bedework: Logging -->
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-logging</artifactId>
+        <version>${bw-util-logging.version}</version>
+      </dependency>
+
+      <!-- ================= bw-access ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-access</artifactId>
+        <version>${bw-access.version}</version>
+      </dependency>
+
+      <!-- ================= bw-caldav ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-caldav-server</artifactId>
+        <version>${bw-caldav.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-caldav-util</artifactId>
+        <version>${bw-caldav.version}</version>
+      </dependency>
+
+      <!-- ============= bw-calendar-client ============= -->
+
+      <dependency>
+        <groupId>org.bedework.bwwebcl</groupId>
+        <artifactId>bw-calendar-client-admin</artifactId>
+        <version>${bw-calendar-client.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwwebcl</groupId>
+        <artifactId>bw-calendar-client-appcommon</artifactId>
+        <version>${bw-calendar-client.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwwebcl</groupId>
+        <artifactId>bw-calendar-client-rw</artifactId>
+        <version>${bw-calendar-client.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwwebcl</groupId>
+        <artifactId>bw-calendar-client-strutsmodule</artifactId>
+        <version>${bw-calendar-client.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwwebcl</groupId>
+        <artifactId>bw-calendar-client-util</artifactId>
+        <version>${bw-calendar-client.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwwebcl</groupId>
+        <artifactId>bw-calendar-client-web-admin</artifactId>
+        <version>${bw-calendar-client.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwwebcl</groupId>
+        <artifactId>bw-calendar-client-web-rw</artifactId>
+        <version>${bw-calendar-client.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwwebcl</groupId>
+        <artifactId>bw-calendar-client-webcommon</artifactId>
+        <version>${bw-calendar-client.version}</version>
+      </dependency>
+
+      <!-- ============= bw-calendar-common ============= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calendar-annotations</artifactId>
+        <version>${bw-calendar-common.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calendar-api</artifactId>
+        <version>${bw-calendar-common.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calendar-api-ro</artifactId>
+        <version>${bw-calendar-common.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calendar-config</artifactId>
+        <version>${bw-calendar-common.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calendar-convert</artifactId>
+        <version>${bw-calendar-common.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calendar-facade</artifactId>
+        <version>${bw-calendar-common.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calendar-mail</artifactId>
+        <version>${bw-calendar-common.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calendar-sysevents-common</artifactId>
+        <version>${bw-calendar-common.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calendar-sysevents-msgs</artifactId>
+        <version>${bw-calendar-common.version}</version>
+      </dependency>
+
+      <!-- ============= bw-calendar-engine ============= -->
+
+      <dependency>
+        <groupId>org.bedework.caleng</groupId>
+        <artifactId>bw-calendar-engine-api</artifactId>
+        <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.caleng</groupId>
+        <artifactId>bw-calendar-engine-caldav</artifactId>
+        <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.caleng</groupId>
+        <artifactId>bw-calendar-engine-chgnote</artifactId>
+        <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.caleng</groupId>
+        <artifactId>bw-calendar-engine-core</artifactId>
+        <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.caleng</groupId>
+        <artifactId>bw-calendar-engine-core-common</artifactId>
+        <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.caleng</groupId>
+        <artifactId>bw-calendar-engine-dumprestore</artifactId>
+        <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.caleng</groupId>
+        <artifactId>bw-calendar-engine-impl</artifactId>
+        <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.caleng</groupId>
+        <artifactId>bw-calendar-engine-indexer</artifactId>
+        <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.caleng</groupId>
+        <artifactId>bw-calendar-engine-inoutsched</artifactId>
+        <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.caleng</groupId>
+        <artifactId>bw-calendar-engine-interfaces</artifactId>
+        <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.caleng</groupId>
+        <artifactId>bw-calendar-engine-tools</artifactId>
+        <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <!-- ================= bw-carddav ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-carddav-common</artifactId>
+        <version>${bw-carddav.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-carddav-server</artifactId>
+        <version>${bw-carddav.version}</version>
+      </dependency>
+
+      <!-- ================= bw-category ================= -->
+
+      <dependency>
+        <groupId>org.bedework.bw-cat</groupId>
+        <artifactId>bw-category-common</artifactId>
+        <version>${bw-category.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-cat</groupId>
+        <artifactId>bw-category-ical</artifactId>
+        <version>${bw-category.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-cat</groupId>
+        <artifactId>bw-category-impl</artifactId>
+        <version>${bw-category.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-cat</groupId>
+        <artifactId>bw-category-service</artifactId>
+        <version>${bw-category.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-cat</groupId>
+        <artifactId>bw-category-web</artifactId>
+        <version>${bw-category.version}</version>
+      </dependency>
+
+      <!-- ============ bw-event-registration ============ -->
+
+      <dependency>
+        <groupId>org.bedework.evreg</groupId>
+        <artifactId>bw-event-registration-common</artifactId>
+        <version>${bw-eventreg.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.evreg</groupId>
+        <artifactId>bw-event-registration-service</artifactId>
+        <version>${bw-eventreg.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.evreg</groupId>
+        <artifactId>bw-event-registration-web</artifactId>
+        <version>${bw-eventreg.version}</version>
+      </dependency>
+
+      <!-- ================= bw-jsforj ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-jsforj</artifactId>
+        <version>${bw-jsforj.version}</version>
+      </dependency>
+
+      <!-- ================= bw-notifier ================= -->
+
+      <dependency>
+        <groupId>org.bedework.notifier</groupId>
+        <artifactId>bw-note-bwconnector</artifactId>
+        <version>${bw-notifier.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.notifier</groupId>
+        <artifactId>bw-note-common</artifactId>
+        <version>${bw-notifier.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.notifier</groupId>
+        <artifactId>bw-note-db</artifactId>
+        <version>${bw-notifier.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.notifier</groupId>
+        <artifactId>bw-note-outbound</artifactId>
+        <version>${bw-notifier.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.notifier</groupId>
+        <artifactId>bw-note-shared</artifactId>
+        <version>${bw-notifier.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.notifier</groupId>
+        <artifactId>bw-note-servlet</artifactId>
+        <version>${bw-notifier.version}</version>
+      </dependency>
+
+      <!-- ============ bw-self-registration ============ -->
+
+      <dependency>
+        <groupId>org.bedework.selfreg</groupId>
+        <artifactId>bw-self-registration-common</artifactId>
+        <version>${bw-selfreg.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.selfreg</groupId>
+        <artifactId>bw-self-registration-web</artifactId>
+        <version>${bw-selfreg.version}</version>
+      </dependency>
+
+      <!-- ================= bw-synch ================= -->
+
+      <dependency>
+        <groupId>org.bedework.bw-synch</groupId>
+        <artifactId>bw-synch-shared</artifactId>
+        <version>${bw-synch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-synch</groupId>
+        <artifactId>bw-synch-common</artifactId>
+        <version>${bw-synch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-synch</groupId>
+        <artifactId>bw-synch-web</artifactId>
+        <version>${bw-synch.version}</version>
+      </dependency>
+
+      <!-- ============ bw-timezone-server =========== -->
+
+      <dependency>
+        <groupId>org.bedework.bw-tzsvr</groupId>
+        <artifactId>bw-timezone-server-common</artifactId>
+        <version>${bw-timezone-server.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-tzsvr</groupId>
+        <artifactId>bw-timezone-server-tzconvert</artifactId>
+        <version>${bw-timezone-server.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-tzsvr</groupId>
+        <artifactId>bw-timezone-server-web</artifactId>
+        <version>${bw-timezone-server.version}</version>
+      </dependency>
+
+      <!-- ================= bw-util ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-caching</artifactId>
+        <version>${bw-util.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-directory</artifactId>
+        <version>${bw-util.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-jms</artifactId>
+        <version>${bw-util.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-json</artifactId>
+        <version>${bw-util.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-misc</artifactId>
+        <version>${bw-util.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-xml</artifactId>
+        <version>${bw-util.version}</version>
+      </dependency>
+
+      <!-- ================ bw-util-conf ================ -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-config</artifactId>
+        <version>${bw-util-conf.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-jmx</artifactId>
+        <version>${bw-util-conf.version}</version>
+      </dependency>
+
+      <!-- ================ bw-util-deploy ================ -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-deployment</artifactId>
+        <version>${bw-util-deploy.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-maven-deploy-wfmodule</artifactId>
+        <version>${bw-util-deploy.version}</version>
+      </dependency>
+
+      <!-- ================ bw-util-hibernate ================ -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-hibernate</artifactId>
+        <version>${bw-util-hibernate.version}</version>
+      </dependency>
+
+      <!-- ================ bw-util-index ================ -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-elasticsearch</artifactId>
+        <version>${bw-util-index.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-indexing</artifactId>
+        <version>${bw-util-index.version}</version>
+      </dependency>
+
+      <!-- ================ bw-util-network ================ -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-config-http</artifactId>
+        <version>${bw-util-network.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-dav</artifactId>
+        <version>${bw-util-network.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-http</artifactId>
+        <version>${bw-util-network.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-servlet</artifactId>
+        <version>${bw-util-network.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-servlet-filters</artifactId>
+        <version>${bw-util-network.version}</version>
+      </dependency>
+
+      <!-- ================ bw-util-security ================ -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-security</artifactId>
+        <version>${bw-util-security.version}</version>
+      </dependency>
+
+      <!-- ================= bw-util-tz ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-tz</artifactId>
+        <version>${bw-util-tz.version}</version>
+      </dependency>
+
+      <!-- ================= bw-util2 ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util2-calendar</artifactId>
+        <version>${bw-util2.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util2-vcard</artifactId>
+        <version>${bw-util2.version}</version>
+      </dependency>
+
+      <!-- ================= bw-webdav ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-webdav</artifactId>
+        <version>${bw-webdav.version}</version>
+      </dependency>
+
+      <!-- Bedework: XML -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-xml-appleServer</artifactId>
+        <version>${bw-xml.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-xml-caldav</artifactId>
+        <version>${bw-xml.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-xml-calws-soap</artifactId>
+        <version>${bw-xml.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-xml-icalendar</artifactId>
+        <version>${bw-xml.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-xml-synchws</artifactId>
+        <version>${bw-xml.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-xml-tzsvr</artifactId>
+        <version>${bw-xml.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>${ical4j.groupId}</groupId>
+        <artifactId>${ical4j.artifactId}</artifactId>
+        <version>${ical4j.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>*</groupId>
+            <artifactId>*</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-ical4j-vcard</artifactId>
+        <version>${ical4j-vcard.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-beanutils</groupId>
+        <artifactId>commons-beanutils</artifactId>
+        <version>${commons-beanutils.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>${commons-codec.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-collections</groupId>
+        <artifactId>commons-collections</artifactId>
+        <version>${commons-collections.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>${commons-collections4.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-csv</artifactId>
+        <version>${commons.csv.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-digester</groupId>
+        <artifactId>commons-digester</artifactId>
+        <version>${commons-digester-version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>${commons-io.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-lang</groupId>
+        <artifactId>commons-lang</artifactId>
+        <version>${commons-lang.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commons-lang3.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>${commons-logging.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-text</artifactId>
+        <version>${commons.text.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.elasticsearch</groupId>
+        <artifactId>elasticsearch</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.elasticsearch</groupId>
+        <artifactId>elasticsearch-core</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.elasticsearch</groupId>
+        <artifactId>elasticsearch-secure-sm</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.elasticsearch</groupId>
+        <artifactId>elasticsearch-x-content</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.elasticsearch</groupId>
+        <artifactId>elasticsearch-geo</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.elasticsearch</groupId>
+        <artifactId>elasticsearch-cli</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.elasticsearch.client</groupId>
+        <artifactId>elasticsearch-rest-client</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.elasticsearch.client</groupId>
+        <artifactId>elasticsearch-rest-high-level-client</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.elasticsearch.plugin</groupId>
+        <artifactId>parent-join-client</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.elasticsearch.plugin</groupId>
+        <artifactId>aggs-matrix-stats-client</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.elasticsearch.plugin</groupId>
+        <artifactId>rank-eval-client</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.elasticsearch.plugin</groupId>
+        <artifactId>lang-mustache-client</artifactId>
+        <version>${elasticsearch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.freemarker</groupId>
+        <artifactId>freemarker</artifactId>
+        <version>${freemarker.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>${http-client.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpcore</artifactId>
+        <version>${http-core.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <version>${h2.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.imgscalr</groupId>
+        <artifactId>imgscalr-lib</artifactId>
+        <version>${imgscalr.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jolokia</groupId>
+        <artifactId>jolokia-core</artifactId>
+        <version>${jolokia.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.fasterxml.jackson.dataformat</groupId>
+        <artifactId>jackson-dataformat-yaml</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jasypt</groupId>
+        <artifactId>jasypt</artifactId>
+        <version>${jasypt.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.cache</groupId>
+        <artifactId>cache-api</artifactId>
+        <version>${javax.cache-api.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.sun.mail</groupId>
+        <artifactId>javax.mail</artifactId>
+        <version>${sun.mail.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+        <scope>compile</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-aop</artifactId>
+        <version>${spring-framework.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-asm</artifactId>
+        <version>${spring-framework.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+        <version>${spring-framework.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-core</artifactId>
+        <version>${spring-framework.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>${spring-framework.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context-support</artifactId>
+        <version>${spring-framework.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-expression</artifactId>
+        <version>${spring-framework.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jcl</artifactId>
+        <version>${spring-framework.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
+        <version>${spring-framework.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-oxm</artifactId>
+        <version>${spring-framework.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-tx</artifactId>
+        <version>${spring-framework.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+        <version>${spring-framework.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>${spring-framework.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc-portlet</artifactId>
+        <version>${spring-webmvc-portlet.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.ldap</groupId>
+        <artifactId>spring-ldap-core</artifactId>
+        <version>${spring-ldap.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-acl</artifactId>
+        <version>${spring-security.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-core</artifactId>
+        <version>${spring-security.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-config</artifactId>
+        <version>${spring-security.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-web</artifactId>
+        <version>${spring-security.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-ldap</artifactId>
+        <version>${spring-security.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.security</groupId>
+        <artifactId>spring-security-taglibs</artifactId>
+        <version>${spring-security.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.webflow</groupId>
+        <artifactId>spring-binding</artifactId>
+        <version>${spring-webflow.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.webflow</groupId>
+        <artifactId>spring-webflow</artifactId>
+        <version>${spring-webflow.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.ws</groupId>
+        <artifactId>spring-ws-core</artifactId>
+        <version>${spring-ws.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.ws</groupId>
+        <artifactId>spring-ws-security</artifactId>
+        <version>${spring-ws.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.ws</groupId>
+        <artifactId>spring-xml</artifactId>
+        <version>${spring-ws.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.struts</groupId>
+        <artifactId>struts-core</artifactId>
+        <version>${apache.struts.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.struts</groupId>
+        <artifactId>struts-taglib</artifactId>
+        <version>${apache.struts.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <!-- All plugins ordered by shortname (antrun, assembly ...) -->
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>${version.assembly.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>buildnumber-maven-plugin</artifactId>
+          <version>${version.buildnumber.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>${version.clean.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${version.compiler.plugin}</version>
+          <configuration>
+            <showDeprecation>true</showDeprecation>
+            <showWarnings>true</showWarnings>
+            <source>${maven.compiler.argument.source}</source>
+            <target>${maven.compiler.argument.target}</target>
+            <testSource>${maven.compiler.argument.testSource}</testSource>
+            <testTarget>${maven.compiler.argument.testTarget}</testTarget>
+            <compilerArgs>
+              <arg>-Xlint:unchecked</arg>
+            </compilerArgs>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>${version.dependency.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>${version.deploy.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-ear-plugin</artifactId>
+          <version>${version.ear.plugin}</version>
+
+          <configuration>
+            <archive>
+              <index>true</index>
+              <manifest>
+                <addDefaultSpecificationEntries>
+                  true
+                </addDefaultSpecificationEntries>
+                <addDefaultImplementationEntries>
+                  true
+                </addDefaultImplementationEntries>
+              </manifest>
+              <manifestEntries>
+                <Implementation-URL>${project.url}</Implementation-URL>
+                <Java-Version>${java.version}</Java-Version>
+                <Java-Vendor>${java.vendor}</Java-Vendor>
+                <Os-Name>${os.name}</Os-Name>
+                <Os-Arch>${os.arch}</Os-Arch>
+                <Os-Version>${os.version}</Os-Version>
+                <Scm-Url>${project.scm.url}</Scm-Url>
+                <Scm-Connection>${project.scm.connection}</Scm-Connection>
+                <Scm-Revision>${buildNumber}</Scm-Revision>
+              </manifestEntries>
+            </archive>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-enforcer-plugin</artifactId>
+          <version>${version.enforcer.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>${version.exec.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-gpg-plugin</artifactId>
+          <version>${version.gpg.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-help-plugin</artifactId>
+          <version>${version.help.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>${version.install.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>${version.jar.plugin}</version>
+          <configuration>
+            <archive>
+              <index>true</index>
+              <manifest>
+                <addDefaultSpecificationEntries>
+                  true
+                </addDefaultSpecificationEntries>
+                <addDefaultImplementationEntries>
+                  true
+                </addDefaultImplementationEntries>
+              </manifest>
+              <manifestEntries>
+                <Implementation-URL>${project.url}</Implementation-URL>
+                <Java-Version>${java.version}</Java-Version>
+                <Java-Vendor>${java.vendor}</Java-Vendor>
+                <Os-Name>${os.name}</Os-Name>
+                <Os-Arch>${os.arch}</Os-Arch>
+                <Os-Version>${os.version}</Os-Version>
+                <Scm-Url>${project.scm.url}</Scm-Url>
+                <Scm-Connection>${project.scm.connection}</Scm-Connection>
+                <Scm-Revision>${buildNumber}</Scm-Revision>
+              </manifestEntries>
+            </archive>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>${version.javadoc.plugin}</version>
+          <configuration>
+            <header><![CDATA[<b>${project.name} ${project.version}</b>]]></header>
+            <footer><![CDATA[<b>${project.name} ${project.version}</b>]]></footer>
+            <archive>
+              <index>true</index>
+              <manifest>
+                <addDefaultSpecificationEntries>
+                  true
+                </addDefaultSpecificationEntries>
+                <addDefaultImplementationEntries>
+                  true
+                </addDefaultImplementationEntries>
+              </manifest>
+              <manifestEntries>
+                <Implementation-URL>${project.url}</Implementation-URL>
+                <Java-Version>${java.version}</Java-Version>
+                <Java-Vendor>${java.vendor}</Java-Vendor>
+                <Os-Name>${os.name}</Os-Name>
+                <Os-Arch>${os.arch}</Os-Arch>
+                <Os-Version>${os.version}</Os-Version>
+                <Scm-Url>${project.scm.url}</Scm-Url>
+                <Scm-Connection>${project.scm.connection}</Scm-Connection>
+                <Scm-Revision>${buildNumber}</Scm-Revision>
+              </manifestEntries>
+            </archive>
+
+            <additionalOptions>${javadoc.additional.params}</additionalOptions>
+            <additionalJOption>-Xdoclint:none</additionalJOption>
+            <failOnError>false</failOnError>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>license-maven-plugin</artifactId>
+          <version>${version.license.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-plugin-plugin</artifactId>
+          <version>${version.plugin.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>${version.release.plugin}</version>
+          <configuration>
+            <autoVersionSubmodules>true</autoVersionSubmodules>
+            <releaseProfiles>release</releaseProfiles>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>${version.resources.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>${version.source.plugin}</version>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <phase>verify</phase>
+              <goals>
+                <goal>jar</goal>
+                <goal>test-jar</goal>
+              </goals>
+              <configuration>
+                <archive>
+                  <index>true</index>
+                  <manifest>
+                    <addDefaultSpecificationEntries>
+                      true
+                    </addDefaultSpecificationEntries>
+                    <addDefaultImplementationEntries>
+                      true
+                    </addDefaultImplementationEntries>
+                  </manifest>
+                  <manifestEntries>
+                    <Implementation-URL>${project.url}</Implementation-URL>
+                    <Java-Version>${java.version}</Java-Version>
+                    <Java-Vendor>${java.vendor}</Java-Vendor>
+                    <Os-Name>${os.name}</Os-Name>
+                    <Os-Arch>${os.arch}</Os-Arch>
+                    <Os-Version>${os.version}</Os-Version>
+                    <Scm-Url>${project.scm.url}</Scm-Url>
+                    <Scm-Connection>${project.scm.connection}</Scm-Connection>
+                    <Scm-Revision>${buildNumber}</Scm-Revision>
+                  </manifestEntries>
+                </archive>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${version.surefire.plugin}</version>
+          <configuration>
+            <trimStackTrace>false</trimStackTrace>
+            <systemPropertyVariables>
+              <java.io.tmpdir>${project.build.directory}</java.io.tmpdir>
+            </systemPropertyVariables>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>versions-maven-plugin</artifactId>
+          <version>${version.versions.plugin}</version>
+          <configuration>
+            <generateBackupPoms>false</generateBackupPoms>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>${version.war.plugin}</version>
+          <configuration>
+            <archive>
+              <index>true</index>
+              <manifest>
+                <addDefaultSpecificationEntries>
+                  true
+                </addDefaultSpecificationEntries>
+                <addDefaultImplementationEntries>
+                  true
+                </addDefaultImplementationEntries>
+              </manifest>
+              <manifestEntries>
+                <Implementation-URL>${project.url}</Implementation-URL>
+                <Java-Version>${java.version}</Java-Version>
+                <Java-Vendor>${java.vendor}</Java-Vendor>
+                <Os-Name>${os.name}</Os-Name>
+                <Os-Arch>${os.arch}</Os-Arch>
+                <Os-Version>${os.version}</Os-Version>
+                <Scm-Url>${project.scm.url}</Scm-Url>
+                <Scm-Connection>${project.scm.connection}</Scm-Connection>
+                <Scm-Revision>${buildNumber}</Scm-Revision>
+              </manifestEntries>
+            </archive>
+            <failOnMissingWebXml>false</failOnMissingWebXml>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
+
+      <!-- Check for the minimum version of Java and Maven.  Runs during the validate phase. -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <version>${version.enforcer.plugin}</version>
+        <executions>
+          <execution>
+            <id>enforce-java-version</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <bannedRepositories>
+                  <message>To build this project, don't use maven repositories over HTTP. Please use HTTPS in your settings.xml or run the build with property insecure.repositories=WARN</message>
+                  <level>${insecure.repositories}</level>
+                  <bannedRepositories>
+                    <bannedRepository>http://*</bannedRepository>
+                  </bannedRepositories>
+                  <bannedPluginRepositories>
+                    <bannedPluginRepository>http://*</bannedPluginRepository>
+                  </bannedPluginRepositories>
+                </bannedRepositories>
+                <requireJavaVersion>
+                  <message>To build this project JDK ${jdk.min.version} (or greater) is required. Please install it.</message>
+                  <version>${jdk.min.version}</version>
+                </requireJavaVersion>
+              </rules>
+            </configuration>
+          </execution>
+          <execution>
+            <id>enforce-maven-version</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireMavenVersion>
+                  <message>To build this project Maven ${maven.min.version} (or greater) is required. Please install it.</message>
+                  <version>${maven.min.version}</version>
+                </requireMavenVersion>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Set properties containing the scm revision -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>buildnumber-maven-plugin</artifactId>
+        <version>${version.buildnumber.plugin}</version>
+        <executions>
+          <execution>
+            <id>get-scm-revision</id>
+            <phase>initialize</phase>
+            <goals>
+              <goal>create</goal>
+            </goals>
+            <configuration>
+              <doCheck>false</doCheck>
+              <doUpdate>false</doUpdate>
+              <revisionOnScmFailure>UNKNOWN</revisionOnScmFailure>
+              <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Attach source jar to all builds.  Runs during the package phase.-->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>${version.source.plugin}</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+  <profiles>
+
+
+    <!-- The bedework-dev profile sets all the bw
+         versions to SNAPSHOT versions
+         -->
+    <profile>
+      <id>bedework-dev</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <properties>
+        <bw-access.version>4.0.11-SNAPSHOT</bw-access.version>
+
+        <bw-caldav.version>4.0.19-SNAPSHOT</bw-caldav.version>
+        <bw-calendar-client.version>3.14.0-SNAPSHOT</bw-calendar-client.version>
+        <bw-calendar-common.version>4.0.0-SNAPSHOT</bw-calendar-common.version>
+        <bw-calendar-engine.version>3.14.0-SNAPSHOT</bw-calendar-engine.version>
+        <bw-carddav.version>4.0.11-SNAPSHOT</bw-carddav.version>
+        <bw-category.version>4.0.0-SNAPSHOT</bw-category.version>
+
+        <bw-eventreg.version>4.0.10-SNAPSHOT</bw-eventreg.version>
+
+        <bw-jsforj.version>1.0.3-SNAPSHOT</bw-jsforj.version>
+
+        <bw-notifier.version>4.0.12-SNAPSHOT</bw-notifier.version>
+
+        <bw-selfreg.version>4.0.12-SNAPSHOT</bw-selfreg.version>
+        <bw-synch.version>4.0.15-SNAPSHOT</bw-synch.version>
+
+        <bw-timezone-server.version>4.0.14-SNAPSHOT</bw-timezone-server.version>
+
+        <bw-util-logging.version>5.0.1-SNAPSHOT</bw-util-logging.version>
+        <bw-util.version>4.0.32-SNAPSHOT</bw-util.version>
+        <bw-util-conf.version>4.1.5-SNAPSHOT</bw-util-conf.version>
+        <bw-util-hibernate.version>4.0.30-SNAPSHOT</bw-util-hibernate.version>
+        <bw-util-index.version>4.1.5-SNAPSHOT</bw-util-index.version>
+        <bw-util-network.version>4.1.5-SNAPSHOT</bw-util-network.version>
+        <bw-util-tz.version>4.1.5-SNAPSHOT</bw-util-tz.version>
+        <bw-util-security.version>4.1.5-SNAPSHOT</bw-util-security.version>
+        <bw-util2.version>4.0.13-SNAPSHOT</bw-util2.version>
+
+        <bw-webdav.version>4.0.14-SNAPSHOT</bw-webdav.version>
+
+        <bw-xml.version>4.0.12-SNAPSHOT</bw-xml.version>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>bedework-rel</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <properties>
+        <bw-access.version>4.0.10</bw-access.version>
+
+        <bw-caldav.version>4.0.18</bw-caldav.version>
+        <bw-calendar-client.version>3.13.0</bw-calendar-client.version>
+        <bw-calendar-common.version>4.0.0</bw-calendar-common.version>
+        <bw-calendar-engine.version>3.13.0</bw-calendar-engine.version>
+        <bw-carddav.version>4.0.10</bw-carddav.version>
+        <bw-category.version>4.0.0</bw-category.version>
+
+        <bw-eventreg.version>4.0.9</bw-eventreg.version>
+
+        <bw-jsforj.version>1.0.2</bw-jsforj.version>
+
+        <bw-notifier.version>4.0.11</bw-notifier.version>
+
+        <bw-selfreg.version>4.0.11</bw-selfreg.version>
+        <bw-synch.version>4.0.14</bw-synch.version>
+
+        <bw-timezone-server.version>4.0.13</bw-timezone-server.version>
+
+        <bw-util-logging.version>5.0.0</bw-util-logging.version>
+        <bw-util.version>4.0.31</bw-util.version>
+        <bw-util-conf.version>4.1.4</bw-util-conf.version>
+        <bw-util-hibernate.version>4.0.29</bw-util-hibernate.version>
+        <bw-util-index.version>4.1.4</bw-util-index.version>
+        <bw-util-network.version>4.1.4</bw-util-network.version>
+        <bw-util-tz.version>4.1.4</bw-util-tz.version>
+        <bw-util-security.version>4.1.4</bw-util-security.version>
+        <bw-util2.version>4.0.12</bw-util2.version>
+
+        <bw-webdav.version>4.0.14-SNAPSHOT</bw-webdav.version>
+
+        <bw-xml.version>4.0.11</bw-xml.version>
+
+      </properties>
+    </profile>
+
+    <!--
+        The profile release must be active when a project is released.
+        The configuration in this POM will automatically call this
+        profile if using the maven-release-plugin.
+        If the maven-release-plugin is not used during the release,
+        this profile must be manually activated.
+     -->
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>${version.source.plugin}</version>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <goals>
+                  <goal>jar-no-fork</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>${version.javadoc.plugin}</version>
+            <executions>
+              <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <additionalJOption>-Xdoclint:none</additionalJOption>
+              <failOnError>false</failOnError>
+            </configuration>
+          </plugin>
+
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>${version.gpg.plugin}</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+
+  </profiles>
+
+  <!-- Some plugins are available in the jboss repository only -->
+  <pluginRepositories>
+    <pluginRepository>
+      <id>jboss-public-repository</id>
+      <name>JBoss Public Maven Repository</name>
+      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+      <layout>default</layout>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <distributionManagement>
+    <repository>
+      <id>${bedework.releases.repo.id}</id>
+      <name>Bedework Releases Repository</name>
+      <url>${bedework.releases.repo.url}</url>
+    </repository>
+    <snapshotRepository>
+      <id>${bedework.snapshots.repo.id}</id>
+      <name>Bedework Snapshots Repository</name>
+      <url>${bedework.snapshots.repo.url}</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+</project>
