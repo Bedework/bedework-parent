@@ -180,7 +180,7 @@
 
     <imgscalr.version>4.2</imgscalr.version>
 
-    <jackson.version>2.11.0</jackson.version>
+    <jackson.version>2.13.0</jackson.version>
     <jasypt.version>1.9.2</jasypt.version>
     <javax.cache-api.version>1.0.0</javax.cache-api.version>
     <java.jaxb.api.version>2.3.1</java.jaxb.api.version>
@@ -194,6 +194,8 @@
     <log4j.version>2.16.0</log4j.version>
     <!-- For elasticsearch dependencies -->
     <lucene.version>8.9.0</lucene.version>
+
+    <mockito.version>4.1.0</mockito.version>
 
     <servlet-api.version>4.0.0</servlet-api.version>
     <slf4j.version>1.7.25</slf4j.version>
@@ -974,6 +976,12 @@
 
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
         <version>${jackson.version}</version>
       </dependency>
@@ -1044,6 +1052,13 @@
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-core</artifactId>
         <version>${log4j.version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>${mockito.version}</version>
         <scope>test</scope>
       </dependency>
 
@@ -1704,11 +1719,11 @@
         <bw-util-hibernate.version>4.0.30-SNAPSHOT</bw-util-hibernate.version>
         <bw-util-index.version>4.1.5-SNAPSHOT</bw-util-index.version>
         <bw-util-network.version>5.0.0-SNAPSHOT</bw-util-network.version>
-        <bw-util-tz.version>4.1.5-SNAPSHOT</bw-util-tz.version>
+        <bw-util-tz.version>5.0.0-SNAPSHOT</bw-util-tz.version>
         <bw-util-security.version>4.1.5-SNAPSHOT</bw-util-security.version>
         <bw-util2.version>4.0.13-SNAPSHOT</bw-util2.version>
 
-        <bw-webdav.version>4.0.14-SNAPSHOT</bw-webdav.version>
+        <bw-webdav.version>5.0.0-SNAPSHOT</bw-webdav.version>
 
         <bw-xml.version>5.0.0-SNAPSHOT</bw-xml.version>
       </properties>
