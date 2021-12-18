@@ -150,6 +150,7 @@
 
     <ical4j-vcard.version>1.0.8</ical4j-vcard.version>
 
+    <bedework.jdkim.version>0.6</bedework.jdkim.version>
     <!-- Library versions
          Third party libraries we depend on.
     -->
@@ -186,6 +187,7 @@
     <java.jaxb.api.version>2.3.1</java.jaxb.api.version>
     <java.jaxws.api.version>2.3.1</java.jaxws.api.version>
     <java.jws.api.version>1.1</java.jws.api.version>
+    <javax.xml.soap-api.version>1.4.0</javax.xml.soap-api.version>
     <jms.version>2.0</jms.version>
     <jolokia.version>1.6.2</jolokia.version>
     <!-- test only -->
@@ -790,6 +792,12 @@
 
       <dependency>
         <groupId>org.bedework</groupId>
+        <artifactId>apache-jdkim-library</artifactId>
+        <version>${bedework.jdkim.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
         <artifactId>bw-ical4j-vcard</artifactId>
         <version>${ical4j-vcard.version}</version>
       </dependency>
@@ -1020,6 +1028,12 @@
         <groupId>javax.jms</groupId>
         <artifactId>javax.jms-api</artifactId>
         <version>${jms.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.xml.soap</groupId>
+        <artifactId>javax.xml.soap-api</artifactId>
+        <version>${javax.xml.soap-api.version}</version>
       </dependency>
 
       <dependency>
@@ -1721,7 +1735,7 @@
         <bw-util-network.version>5.0.0-SNAPSHOT</bw-util-network.version>
         <bw-util-tz.version>5.0.0-SNAPSHOT</bw-util-tz.version>
         <bw-util-security.version>4.1.5-SNAPSHOT</bw-util-security.version>
-        <bw-util2.version>4.0.13-SNAPSHOT</bw-util2.version>
+        <bw-util2.version>5.0.0-SNAPSHOT</bw-util2.version>
 
         <bw-webdav.version>5.0.0-SNAPSHOT</bw-webdav.version>
 
