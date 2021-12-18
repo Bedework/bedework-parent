@@ -108,8 +108,6 @@
     <version.versions.plugin>2.8.1</version.versions.plugin>
     <version.war.plugin>3.2.3</version.war.plugin>
 
-    <bw-util-deploy.version>4.1.1-SNAPSHOT</bw-util-deploy.version>
-
     <!-- Repository Deployment URLs -->
     <bedework.releases.repo.id>ossrh</bedework.releases.repo.id>
     <bedework.releases.repo.url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</bedework.releases.repo.url>
@@ -129,7 +127,7 @@
     <maven.compiler.argument.testSource>${maven.compiler.testSource}</maven.compiler.argument.testSource>
 
     <!-- maven-enforcer-plugin -->
-    <maven.min.version>3.2.5</maven.min.version>
+    <maven.min.version>3.6.3</maven.min.version>
     <jdk.min.version>${maven.compiler.argument.source}</jdk.min.version>
     <insecure.repositories>ERROR</insecure.repositories>
 
@@ -197,6 +195,8 @@
     <!-- For elasticsearch dependencies -->
     <lucene.version>8.9.0</lucene.version>
 
+    <maven-plugin-annotations.version>3.6.0</maven-plugin-annotations.version>
+    <maven-plugin-api.version>3.6.3</maven-plugin-api.version>
     <mockito.version>4.1.0</mockito.version>
 
     <servlet-api.version>4.0.0</servlet-api.version>
@@ -1070,6 +1070,25 @@
       </dependency>
 
       <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-core</artifactId>
+        <version>${maven.min.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.maven.plugin-tools</groupId>
+        <artifactId>maven-plugin-annotations</artifactId>
+        <version>${maven-plugin-annotations.version}</version>
+        <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.maven</groupId>
+        <artifactId>maven-plugin-api</artifactId>
+        <version>${maven-plugin-api.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
         <version>${mockito.version}</version>
@@ -1482,6 +1501,19 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-plugin-plugin</artifactId>
           <version>${version.plugin.plugin}</version>
+          <executions>
+            <execution>
+              <id>default-descriptor</id>
+              <phase>process-classes</phase>
+            </execution>
+
+            <execution>
+              <id>help-goal</id>
+              <goals>
+                <goal>helpmojo</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
 
         <plugin>
@@ -1709,7 +1741,7 @@
       <properties>
         <bw-access.version>5.0.0-SNAPSHOT</bw-access.version>
 
-        <bw-caldav.version>4.0.19-SNAPSHOT</bw-caldav.version>
+        <bw-caldav.version>5.0.0-SNAPSHOT</bw-caldav.version>
         <bw-calendar-client.version>3.14.0-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.0-SNAPSHOT</bw-calendar-common.version>
         <bw-calendar-engine.version>3.14.0-SNAPSHOT</bw-calendar-engine.version>
@@ -1730,6 +1762,7 @@
         <bw-util-logging.version>5.1.0-SNAPSHOT</bw-util-logging.version>
         <bw-util.version>5.0.0-SNAPSHOT</bw-util.version>
         <bw-util-conf.version>5.0.0-SNAPSHOT</bw-util-conf.version>
+        <bw-util-deploy.version>5.0.0-SNAPSHOT</bw-util-deploy.version>
         <bw-util-hibernate.version>4.0.30-SNAPSHOT</bw-util-hibernate.version>
         <bw-util-index.version>4.1.5-SNAPSHOT</bw-util-index.version>
         <bw-util-network.version>5.0.0-SNAPSHOT</bw-util-network.version>
