@@ -164,7 +164,7 @@
     <commons.digester-version>1.8</commons.digester-version>
     <commons.io.version>2.8.0</commons.io.version>
     <commons.lang.version>2.6</commons.lang.version>
-    <commons.lang3.version>3.8.1</commons.lang3.version>
+    <commons.lang3.version>3.9</commons.lang3.version>
     <commons.logging.version>1.2</commons.logging.version>
     <commons.text.version>1.7</commons.text.version>
 
@@ -1041,6 +1041,13 @@
       </dependency>
 
       <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>${log4j.version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
         <groupId>com.sun.mail</groupId>
         <artifactId>javax.mail</artifactId>
         <version>${sun.mail.version}</version>
@@ -1671,7 +1678,7 @@
         <activeByDefault>false</activeByDefault>
       </activation>
       <properties>
-        <bw-access.version>4.0.11-SNAPSHOT</bw-access.version>
+        <bw-access.version>5.0.0-SNAPSHOT</bw-access.version>
 
         <bw-caldav.version>4.0.19-SNAPSHOT</bw-caldav.version>
         <bw-calendar-client.version>3.14.0-SNAPSHOT</bw-calendar-client.version>
@@ -1696,14 +1703,14 @@
         <bw-util-conf.version>5.0.0-SNAPSHOT</bw-util-conf.version>
         <bw-util-hibernate.version>4.0.30-SNAPSHOT</bw-util-hibernate.version>
         <bw-util-index.version>4.1.5-SNAPSHOT</bw-util-index.version>
-        <bw-util-network.version>4.1.5-SNAPSHOT</bw-util-network.version>
+        <bw-util-network.version>5.0.0-SNAPSHOT</bw-util-network.version>
         <bw-util-tz.version>4.1.5-SNAPSHOT</bw-util-tz.version>
         <bw-util-security.version>4.1.5-SNAPSHOT</bw-util-security.version>
         <bw-util2.version>4.0.13-SNAPSHOT</bw-util2.version>
 
         <bw-webdav.version>4.0.14-SNAPSHOT</bw-webdav.version>
 
-        <bw-xml.version>4.0.12-SNAPSHOT</bw-xml.version>
+        <bw-xml.version>5.0.0-SNAPSHOT</bw-xml.version>
       </properties>
     </profile>
 
