@@ -195,6 +195,7 @@
     <!-- For elasticsearch dependencies -->
     <lucene.version>8.9.0</lucene.version>
 
+    <servlet-api.version>4.0.0</servlet-api.version>
     <slf4j.version>1.7.25</slf4j.version>
     <spring-framework.version>5.2.4.RELEASE</spring-framework.version>
     <spring-ldap.version>2.3.3.RELEASE</spring-ldap.version>
@@ -1046,6 +1047,13 @@
       </dependency>
 
       <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>${servlet-api.version}</version>
+        <scope>provided</scope>
+      </dependency>
+
+      <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
         <version>${slf4j.version}</version>
@@ -1685,7 +1693,7 @@
 
         <bw-util-logging.version>5.1.0-SNAPSHOT</bw-util-logging.version>
         <bw-util.version>5.0.0-SNAPSHOT</bw-util.version>
-        <bw-util-conf.version>4.1.5-SNAPSHOT</bw-util-conf.version>
+        <bw-util-conf.version>5.0.0-SNAPSHOT</bw-util-conf.version>
         <bw-util-hibernate.version>4.0.30-SNAPSHOT</bw-util-hibernate.version>
         <bw-util-index.version>4.1.5-SNAPSHOT</bw-util-index.version>
         <bw-util-network.version>4.1.5-SNAPSHOT</bw-util-network.version>
