@@ -150,6 +150,7 @@
     <ical4j-vcard.version>1.0.8</ical4j-vcard.version>
 
     <bedework.jdkim.version>0.6</bedework.jdkim.version>
+
     <!-- Library versions
          Third party libraries we depend on.
     -->
@@ -1952,7 +1953,7 @@
         <bw-calendar-client.version>3.14.0-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.0-SNAPSHOT</bw-calendar-common.version>
         <bw-calendar-engine.version>3.14.0-SNAPSHOT</bw-calendar-engine.version>
-        <bw-carddav.version>4.0.11-SNAPSHOT</bw-carddav.version>
+        <bw-carddav.version>5.0.0-SNAPSHOT</bw-carddav.version>
         <bw-category.version>4.0.0-SNAPSHOT</bw-category.version>
         <bw-cliutil.version>5.0.0-SNAPSHOT</bw-cliutil.version>
 
