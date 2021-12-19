@@ -471,6 +471,20 @@
         <version>${bw-category.version}</version>
       </dependency>
 
+      <!-- ============ bw-cliutil ============ -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-cli</artifactId>
+        <version>${bw-cliutil.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-jolokia</artifactId>
+        <version>${bw-cliutil.version}</version>
+      </dependency>
+
       <!-- ============ bw-event-registration ============ -->
 
       <dependency>
@@ -497,6 +511,14 @@
         <groupId>org.bedework</groupId>
         <artifactId>bw-jsforj</artifactId>
         <version>${bw-jsforj.version}</version>
+      </dependency>
+
+      <!-- ============ bw-logs ============ -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-logs</artifactId>
+        <version>${bw-logs.version}</version>
       </dependency>
 
       <!-- ================= bw-notifier ================= -->
