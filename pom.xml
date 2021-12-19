@@ -1966,7 +1966,7 @@
         <bw-util-conf.version>5.0.0-SNAPSHOT</bw-util-conf.version>
         <bw-util-deploy.version>5.0.0-SNAPSHOT</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.0-SNAPSHOT</bw-util-hibernate.version>
-        <bw-util-index.version>4.1.5-SNAPSHOT</bw-util-index.version>
+        <bw-util-index.version>5.0.0-SNAPSHOT</bw-util-index.version>
         <bw-util-network.version>5.0.0-SNAPSHOT</bw-util-network.version>
         <bw-util-tz.version>5.0.0-SNAPSHOT</bw-util-tz.version>
         <bw-util-security.version>5.0.0-SNAPSHOT</bw-util-security.version>
