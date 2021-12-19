@@ -775,6 +775,12 @@
 
       <dependency>
         <groupId>org.bedework</groupId>
+        <artifactId>bw-xml-exchangews</artifactId>
+        <version>${bw-xml.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
         <artifactId>bw-xml-icalendar</artifactId>
         <version>${bw-xml.version}</version>
       </dependency>
