@@ -152,9 +152,9 @@
     <!-- Library versions
          Third party libraries we depend on.
     -->
+    <javax.activation-api.version>1.2.0</javax.activation-api.version>
 
-    <apache.struts.version>1.3.10</apache.struts.version>
-
+    <javax.cache-api.version>1.0.0</javax.cache-api.version>
     <commons.beanutils.version>1.7.0</commons.beanutils.version>
     <commons.codec.version>1.15</commons.codec.version>
     <commons.collections.version>3.2</commons.collections.version>
@@ -185,13 +185,11 @@
     <jackson.version>2.13.0</jackson.version>
     <jasypt.version>1.9.2</jasypt.version>
     <javassist.version>3.20.0-GA</javassist.version>
-    <javax.cache-api.version>1.0.0</javax.cache-api.version>
     <java.jaxb.api.version>2.3.1</java.jaxb.api.version>
     <java.jaxws.api.version>2.3.1</java.jaxws.api.version>
-    <java.jws.api.version>1.1</java.jws.api.version>
-    <javax.xml.soap-api.version>1.4.0</javax.xml.soap-api.version>
     <jms.version>2.0</jms.version>
     <jolokia.version>1.6.2</jolokia.version>
+    <java.jws.api.version>1.1</java.jws.api.version>
     <!-- test only -->
     <junit.version>4.13.1</junit.version>
 
@@ -199,6 +197,8 @@
     <!-- For elasticsearch dependencies -->
     <lucene.version>8.9.0</lucene.version>
 
+    <javax.mail.version>1.6.2</javax.mail.version>
+    <sun.mail.version>1.6.2</sun.mail.version>
     <maven-plugin-annotations.version>3.6.0</maven-plugin-annotations.version>
     <maven-plugin-api.version>3.6.3</maven-plugin-api.version>
     <mockito.version>4.1.0</mockito.version>
@@ -212,7 +212,9 @@
     <spring-webmvc-portlet.version>4.3.28.RELEASE</spring-webmvc-portlet.version>
     <spring-ws.version>3.0.9.RELEASE</spring-ws.version>
     <spring-ws-soap.version>2.0.0.RELEASE</spring-ws-soap.version>
-    <sun.mail.version>1.6.2</sun.mail.version>
+    <apache.struts.version>1.3.10</apache.struts.version>
+
+    <javax.xml.soap-api.version>1.4.0</javax.xml.soap-api.version>
   </properties>
 
   <dependencyManagement>
@@ -813,6 +815,12 @@
       </dependency>
 
       <dependency>
+        <groupId>javax.activation</groupId>
+        <artifactId>javax.activation-api</artifactId>
+        <version>${javax.activation-api.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>commons-beanutils</groupId>
         <artifactId>commons-beanutils</artifactId>
         <version>${commons.beanutils.version}</version>
@@ -1142,12 +1150,6 @@
       </dependency>
 
       <dependency>
-        <groupId>com.sun.mail</groupId>
-        <artifactId>javax.mail</artifactId>
-        <version>${sun.mail.version}</version>
-      </dependency>
-
-      <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
         <version>${servlet-api.version}</version>
@@ -1165,6 +1167,18 @@
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-slf4j-impl</artifactId>
         <version>${log4j.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.mail</groupId>
+        <artifactId>javax.mail-api</artifactId>
+        <version>${javax.mail.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.sun.mail</groupId>
+        <artifactId>javax.mail</artifactId>
+        <version>${sun.mail.version}</version>
       </dependency>
 
       <dependency>
