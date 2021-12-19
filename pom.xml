@@ -1113,6 +1113,12 @@
 
       <dependency>
         <groupId>org.jolokia</groupId>
+        <artifactId>jolokia-client-java</artifactId>
+        <version>${jolokia.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jolokia</groupId>
         <artifactId>jolokia-core</artifactId>
         <version>${jolokia.version}</version>
       </dependency>
@@ -1918,10 +1924,11 @@
         <bw-calendar-engine.version>3.14.0-SNAPSHOT</bw-calendar-engine.version>
         <bw-carddav.version>4.0.11-SNAPSHOT</bw-carddav.version>
         <bw-category.version>4.0.0-SNAPSHOT</bw-category.version>
+        <bw-cliutil.version>5.0.0-SNAPSHOT</bw-cliutil.version>
 
         <bw-eventreg.version>5.0.0-SNAPSHOT</bw-eventreg.version>
 
-        <bw-jsforj.version>1.0.3-SNAPSHOT</bw-jsforj.version>
+        <bw-jsforj.version>1.1.0-SNAPSHOT</bw-jsforj.version>
 
         <bw-notifier.version>5.0.0-SNAPSHOT</bw-notifier.version>
 
