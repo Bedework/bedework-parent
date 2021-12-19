@@ -191,7 +191,7 @@
     <!-- test only -->
     <junit.version>4.13.1</junit.version>
 
-    <log4j.version>2.16.0</log4j.version>
+    <log4j.version>2.17.0</log4j.version>
     <!-- For elasticsearch dependencies -->
     <lucene.version>8.9.0</lucene.version>
 
@@ -200,7 +200,7 @@
     <mockito.version>4.1.0</mockito.version>
 
     <servlet-api.version>4.0.0</servlet-api.version>
-    <slf4j.version>1.7.25</slf4j.version>
+    <slf4j.version>1.7.32</slf4j.version>
     <spring-framework.version>5.2.4.RELEASE</spring-framework.version>
     <spring-ldap.version>2.3.3.RELEASE</spring-ldap.version>
     <spring-security.version>5.3.4.RELEASE</spring-security.version>
@@ -583,6 +583,12 @@
       </dependency>
 
       <!-- ================= bw-util ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-args</artifactId>
+        <version>${bw-util.version}</version>
+      </dependency>
 
       <dependency>
         <groupId>org.bedework</groupId>
@@ -1116,6 +1122,12 @@
       </dependency>
 
       <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-slf4j-impl</artifactId>
+        <version>${log4j.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-aop</artifactId>
         <version>${spring-framework.version}</version>
@@ -1287,8 +1299,30 @@
 
   <build>
     <pluginManagement>
-      <!-- All plugins ordered by shortname (antrun, assembly ...) -->
+      <!-- All plugins ordered by bedework then maven and then
+      shortname (antrun, assembly ...) -->
+
       <plugins>
+        <plugin>
+          <groupId>org.bedework</groupId>
+          <artifactId>bw-util-maven-deploy</artifactId>
+          <version>${bw-util-deploy.version}</version>
+
+          <executions>
+            <execution>
+              <phase>install</phase>
+              <goals>
+                <goal>bw-deploy</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <checkonly>${org.bedework.deploy.checkonly}</checkonly>
+            <noversion>true</noversion>
+            <delete>true</delete>
+          </configuration>
+        </plugin>
+
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
@@ -1355,6 +1389,13 @@
           <version>${version.ear.plugin}</version>
 
           <configuration>
+            <earSourceExcludes>**/application.xml</earSourceExcludes>
+            <defaultLibBundleDir>lib</defaultLibBundleDir>
+            <skinnyWars>true</skinnyWars>
+            <!-- use maven generated application.xml instead -->
+            <generateApplicationXml>true</generateApplicationXml>
+            <unpackTypes>sar,rar,war</unpackTypes>
+
             <archive>
               <index>true</index>
               <manifest>
@@ -1598,8 +1639,11 @@
           <artifactId>maven-war-plugin</artifactId>
           <version>${version.war.plugin}</version>
           <configuration>
+            <packagingExcludes>WEB-INF/lib/*.jar</packagingExcludes>
+
             <archive>
               <index>true</index>
+
               <manifest>
                 <addDefaultSpecificationEntries>
                   true
@@ -1608,6 +1652,7 @@
                   true
                 </addDefaultImplementationEntries>
               </manifest>
+
               <manifestEntries>
                 <Implementation-URL>${project.url}</Implementation-URL>
                 <Java-Version>${java.version}</Java-Version>
