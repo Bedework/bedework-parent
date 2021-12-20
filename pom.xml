@@ -193,6 +193,7 @@
     <java.jaxws.api.version>2.3.1</java.jaxws.api.version>
     <jms.version>2.0</jms.version>
     <jolokia.version>1.6.2</jolokia.version>
+    <jsp-api.version>2.3.1</jsp-api.version>
     <java.jws.api.version>1.1</java.jws.api.version>
     <!-- test only -->
     <junit.version>4.13.1</junit.version>
@@ -206,6 +207,9 @@
     <maven-plugin-annotations.version>3.6.0</maven-plugin-annotations.version>
     <maven-plugin-api.version>3.6.3</maven-plugin-api.version>
     <mockito.version>4.1.0</mockito.version>
+
+    <portals-bridge.version>1.0.4</portals-bridge.version>
+    <portlet-api.version>1.0</portlet-api.version>
 
     <servlet-api.version>4.0.0</servlet-api.version>
     <slf4j.version>1.7.32</slf4j.version>
@@ -1234,6 +1238,24 @@
       </dependency>
 
       <dependency>
+        <groupId>org.apache.portals.bridges</groupId>
+        <artifactId>portals-bridges-common</artifactId>
+        <version>${portals-bridge.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.portals.bridges</groupId>
+        <artifactId>portals-bridges-struts-1.2.7</artifactId>
+        <version>${portals-bridge.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.portlet</groupId>
+        <artifactId>portlet-api</artifactId>
+        <version>${portlet-api.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-aop</artifactId>
         <version>${spring-framework.version}</version>
@@ -1952,7 +1974,7 @@
         <bw-caldav.version>5.0.0-SNAPSHOT</bw-caldav.version>
         <bw-calendar-client.version>3.14.0-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.0-SNAPSHOT</bw-calendar-common.version>
-        <bw-calendar-engine.version>3.14.0-SNAPSHOT</bw-calendar-engine.version>
+        <bw-calendar-engine.version>4.0.0-SNAPSHOT</bw-calendar-engine.version>
         <bw-carddav.version>5.0.0-SNAPSHOT</bw-carddav.version>
         <bw-category.version>4.0.0-SNAPSHOT</bw-category.version>
         <bw-cliutil.version>5.0.0-SNAPSHOT</bw-cliutil.version>
