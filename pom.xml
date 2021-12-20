@@ -1458,6 +1458,12 @@
         </plugin>
 
         <plugin>
+          <groupId>org.bedework</groupId>
+          <artifactId>bw-util-maven-deploy-wfmodule</artifactId>
+          <version>${bw-util-deploy.version}</version>
+        </plugin>
+
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
           <version>${version.antrun.plugin}</version>
