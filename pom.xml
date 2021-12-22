@@ -96,6 +96,7 @@
     <version.exec.plugin>3.0.0</version.exec.plugin>
     <version.failsafe.plugin>2.12</version.failsafe.plugin>
     <version.gpg.plugin>1.5</version.gpg.plugin>
+    <version.help.plugin>3.2.0</version.help.plugin>
     <version.install.plugin>2.5.2</version.install.plugin>
     <version.jar.plugin>3.1.2</version.jar.plugin>
     <version.javadoc.plugin>3.1.1</version.javadoc.plugin>
@@ -315,6 +316,15 @@
         <groupId>org.bedework.bwwebcl</groupId>
         <artifactId>bw-calendar-client-webcommon</artifactId>
         <version>${bw-calendar-client.version}</version>
+      </dependency>
+
+      <!-- ============= bw-calendar-x.ear ============= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calendar-ro-ear</artifactId>
+        <version>${bw-calendar-client.version}</version>
+        <type>ear</type>
       </dependency>
 
       <!-- ============= bw-calendar-common ============= -->
@@ -627,6 +637,13 @@
         <groupId>org.bedework.bw-tzsvr</groupId>
         <artifactId>bw-timezone-server-web</artifactId>
         <version>${bw-timezone-server.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-tzsvr</groupId>
+        <artifactId>bw-timezone-server-ear</artifactId>
+        <version>${bw-timezone-server.version}</version>
+        <type>ear</type>
       </dependency>
 
       <!-- ================= bw-util ================= -->
@@ -2048,6 +2065,9 @@
         </executions>
       </plugin>
 
+      <plugin>
+        <artifactId>maven-help-plugin</artifactId>
+      </plugin>
     </plugins>
 
   </build>
@@ -2067,7 +2087,7 @@
         <bw-access.version>5.0.0-SNAPSHOT</bw-access.version>
 
         <bw-caldav.version>5.0.0-SNAPSHOT</bw-caldav.version>
-        <bw-calendar-client.version>3.14.0-SNAPSHOT</bw-calendar-client.version>
+        <bw-calendar-client.version>4.0.0-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.0-SNAPSHOT</bw-calendar-common.version>
         <bw-calendar-engine.version>4.0.0-SNAPSHOT</bw-calendar-engine.version>
         <bw-carddav.version>5.0.0-SNAPSHOT</bw-carddav.version>
