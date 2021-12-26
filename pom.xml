@@ -196,6 +196,7 @@
     <imgscalr.version>4.2</imgscalr.version>
 
     <jackson.version>2.13.0</jackson.version>
+    <jasig.cas.version>3.4.1</jasig.cas.version>
     <jasypt.version>1.9.2</jasypt.version>
     <javassist.version>3.20.0-GA</javassist.version>
     <java.jaxb.api.version>2.3.1</java.jaxb.api.version>
@@ -216,6 +217,8 @@
     <maven-plugin-annotations.version>3.6.0</maven-plugin-annotations.version>
     <maven-plugin-api.version>3.6.3</maven-plugin-api.version>
     <mockito.version>1.10.19</mockito.version>
+
+    <opensaml.version>2.5.1-1</opensaml.version>
 
     <portals-bridge.version>1.0.4</portals-bridge.version>
     <portlet-api.version>1.0</portlet-api.version>
@@ -832,6 +835,13 @@
 
       <dependency>
         <groupId>org.bedework</groupId>
+        <artifactId>bw-xml-ear</artifactId>
+        <version>${bw-xml.version}</version>
+        <type>ear</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
         <artifactId>bw-xml-exchangews</artifactId>
         <version>${bw-xml.version}</version>
       </dependency>
@@ -888,6 +898,12 @@
         <groupId>javax.activation</groupId>
         <artifactId>javax.activation-api</artifactId>
         <version>${javax.activation-api.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jasig.cas.client</groupId>
+        <artifactId>cas-client-core</artifactId>
+        <version>${jasig.cas.version}</version>
       </dependency>
 
       <dependency>
@@ -1379,6 +1395,12 @@
       </dependency>
 
       <dependency>
+        <groupId>org.springframework.ldap</groupId>
+        <artifactId>spring-ldap-core</artifactId>
+        <version>${spring-ldap.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-oxm</artifactId>
         <version>${spring-framework.version}</version>
@@ -1406,12 +1428,6 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-webmvc-portlet</artifactId>
         <version>${spring-webmvc-portlet.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.ldap</groupId>
-        <artifactId>spring-ldap-core</artifactId>
-        <version>${spring-ldap.version}</version>
       </dependency>
 
       <dependency>
