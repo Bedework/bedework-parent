@@ -201,6 +201,7 @@
     <javassist.version>3.20.0-GA</javassist.version>
     <java.jaxb.api.version>2.3.1</java.jaxb.api.version>
     <java.jaxws.api.version>2.3.1</java.jaxws.api.version>
+    <jaxen.version>1.1.6</jaxen.version>
     <jms.version>2.0</jms.version>
     <jolokia.version>1.6.2</jolokia.version>
     <jsp-api.version>2.3.1</jsp-api.version>
@@ -627,6 +628,12 @@
       <dependency>
         <groupId>org.bedework.bw-tzsvr</groupId>
         <artifactId>bw-timezone-server-common</artifactId>
+        <version>${bw-timezone-server.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-tzsvr</groupId>
+        <artifactId>bw-timezone-server-data</artifactId>
         <version>${bw-timezone-server.version}</version>
       </dependency>
 
@@ -1210,6 +1217,12 @@
         <groupId>javax.xml.soap</groupId>
         <artifactId>javax.xml.soap-api</artifactId>
         <version>${javax.xml.soap-api.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>jaxen</groupId>
+        <artifactId>jaxen</artifactId>
+        <version>${jaxen.version}</version>
       </dependency>
 
       <dependency>
