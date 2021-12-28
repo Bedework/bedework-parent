@@ -501,6 +501,14 @@
         <version>${bw-category.version}</version>
       </dependency>
 
+      <!-- ============ bw-cli ============ -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-cli</artifactId>
+        <version>${bw-cli.version}</version>
+      </dependency>
+
       <!-- ============ bw-cliutil ============ -->
 
       <dependency>
@@ -2121,6 +2129,7 @@
         <bw-calendar-engine.version>4.0.0-SNAPSHOT</bw-calendar-engine.version>
         <bw-carddav.version>5.0.0-SNAPSHOT</bw-carddav.version>
         <bw-category.version>4.0.0-SNAPSHOT</bw-category.version>
+        <bw-cli.version>5.0.0-SNAPSHOT</bw-cli.version>
         <bw-cliutil.version>5.0.0-SNAPSHOT</bw-cliutil.version>
 
         <bw-eventreg.version>5.0.0-SNAPSHOT</bw-eventreg.version>
