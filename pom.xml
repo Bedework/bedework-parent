@@ -1246,6 +1246,12 @@
       </dependency>
 
       <dependency>
+        <groupId>org.jolokia</groupId>
+        <artifactId>jolokia-jsr160</artifactId>
+        <version>${jolokia.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>javax.servlet.jsp</groupId>
         <artifactId>javax.servlet.jsp-api</artifactId>
         <version>${jsp-api.version}</version>
