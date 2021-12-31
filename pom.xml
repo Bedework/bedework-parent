@@ -223,6 +223,7 @@
 
     <portals-bridge.version>1.0.4</portals-bridge.version>
     <portlet-api.version>1.0</portlet-api.version>
+    <postgresql-driver.version>42.3.1</postgresql-driver.version>
 
     <saaj.version>1.5.1</saaj.version>
     <servlet-api.version>4.0.0</servlet-api.version>
@@ -1362,6 +1363,12 @@
       </dependency>
 
       <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>${postgresql-driver.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>com.sun.xml.messaging.saaj</groupId>
         <artifactId>saaj-impl</artifactId>
         <version>1.5.1</version>
@@ -1903,6 +1910,7 @@
           <version>${version.release.plugin}</version>
           <configuration>
             <autoVersionSubmodules>true</autoVersionSubmodules>
+            <useReleaseProfile>false</useReleaseProfile>
             <releaseProfiles>bedework-rel,bedework-local</releaseProfiles>
           </configuration>
         </plugin>
