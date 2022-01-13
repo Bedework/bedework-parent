@@ -534,6 +534,15 @@
         <version>${bw-cliutil.version}</version>
       </dependency>
 
+      <!-- ================= bw-esdata ================= -->
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-esdata</artifactId>
+        <version>${bw-esdata.version}</version>
+        <type>zip</type>
+      </dependency>
+
       <!-- ============ bw-event-registration ============ -->
 
       <dependency>
@@ -2166,6 +2175,7 @@
         <bw-cli.version>5.0.0-SNAPSHOT</bw-cli.version>
         <bw-cliutil.version>5.0.0-SNAPSHOT</bw-cliutil.version>
 
+        <bw-esdata.version>1.0.0-SNAPSHOT</bw-esdata.version>
         <bw-eventreg.version>5.0.0-SNAPSHOT</bw-eventreg.version>
 
         <bw-jsforj.version>1.1.0-SNAPSHOT</bw-jsforj.version>
