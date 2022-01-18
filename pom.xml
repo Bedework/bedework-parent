@@ -141,6 +141,7 @@
     <!-- exposed additional params for javadoc, such as Xlint -->
     <javadoc.additional.params />
 
+    <wildfly.core.version>18.0.3.Final</wildfly.core.version>
     <wildfly.version>25.0.1.Final</wildfly.version>
 
     <!-- iCal4j versions
