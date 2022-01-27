@@ -398,6 +398,15 @@
         <version>${bw-calendar-common.version}</version>
       </dependency>
 
+      <!-- ============= bw-calendar-data ============= -->
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-calendar-data-h2</artifactId>
+        <version>${bw-calendar-data.version}</version>
+        <type>zip</type>
+      </dependency>
+
       <!-- ============= bw-calendar-engine ============= -->
 
       <dependency>
@@ -2169,6 +2178,7 @@
         <bw-caldav.version>5.0.0-SNAPSHOT</bw-caldav.version>
         <bw-calendar-client.version>4.0.0-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.0-SNAPSHOT</bw-calendar-common.version>
+        <bw-calendar-data.version>5.0.0-SNAPSHOT</bw-calendar-data.version>
         <bw-calendar-engine.version>4.0.0-SNAPSHOT</bw-calendar-engine.version>
         <bw-carddav.version>5.0.0-SNAPSHOT</bw-carddav.version>
         <bw-category.version>4.0.0-SNAPSHOT</bw-category.version>
