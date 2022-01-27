@@ -336,9 +336,16 @@
       <!-- ============= bw-calendar-x.ear ============= -->
 
       <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-calendar-ro-ear</artifactId>
-        <version>${bw-calendar-client.version}</version>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-calendar-ro</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
+        <type>ear</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-calendar-all</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
         <type>ear</type>
       </dependency>
 
@@ -2178,7 +2185,8 @@
         <bw-caldav.version>5.0.0-SNAPSHOT</bw-caldav.version>
         <bw-calendar-client.version>4.0.0-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.0-SNAPSHOT</bw-calendar-common.version>
-        <bw-calendar-data.version>5.0.0-SNAPSHOT</bw-calendar-data.version>
+        <bw-calendar-data.version>4.0.0-SNAPSHOT</bw-calendar-data.version>
+        <bw-calendar-deploy.version>4.0.0-SNAPSHOT</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.0.0-SNAPSHOT</bw-calendar-engine.version>
         <bw-carddav.version>5.0.0-SNAPSHOT</bw-carddav.version>
         <bw-category.version>4.0.0-SNAPSHOT</bw-category.version>
