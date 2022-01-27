@@ -269,6 +269,15 @@
         <type>zip</type>
       </dependency>
 
+      <!-- ================= bw-bedeworkqs ================= -->
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-bedeworkqs</artifactId>
+        <version>${bw-bedeworkqs.version}</version>
+        <type>zip</type>
+      </dependency>
+
       <!-- ================= bw-caldav ================= -->
 
       <dependency>
@@ -2190,6 +2199,7 @@
         <bw-apacheds.version>1.0.0-SNAPSHOT</bw-apacheds.version>
 
         <bw-bedework.version>4.0.0-SNAPSHOT</bw-bedework.version>
+        <bw-bedeworkqs.version>4.0.0-SNAPSHOT</bw-bedeworkqs.version>
 
         <bw-caldav.version>5.0.0-SNAPSHOT</bw-caldav.version>
         <bw-calendar-client.version>4.0.0-SNAPSHOT</bw-calendar-client.version>
@@ -2241,6 +2251,9 @@
       </activation>
       <properties>
         <bw-access.version>4.0.10</bw-access.version>
+        <bw-apacheds.version>1.0.0</bw-apacheds.version>
+
+        <bw-bedeworkqs.version>4.0.0</bw-bedeworkqs.version>
 
         <bw-caldav.version>4.0.18</bw-caldav.version>
         <bw-calendar-client.version>4.0.0</bw-calendar-client.version>
