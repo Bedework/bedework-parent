@@ -482,6 +482,15 @@
         <version>${bw-calendar-engine.version}</version>
       </dependency>
 
+      <!-- ================= bw-calendar-xsl ================= -->
+
+      <dependency>
+        <groupId>org.bedework.bwxsl</groupId>
+        <artifactId>bw-calendar-xsl</artifactId>
+        <version>${bw-calendar-xsl.version}</version>
+        <type>war</type>
+      </dependency>
+
       <!-- ================= bw-carddav ================= -->
 
       <dependency>
@@ -2188,6 +2197,7 @@
         <bw-calendar-data.version>4.0.0-SNAPSHOT</bw-calendar-data.version>
         <bw-calendar-deploy.version>4.0.0-SNAPSHOT</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.0.0-SNAPSHOT</bw-calendar-engine.version>
+        <bw-calendar-xsl.version>4.0.0-SNAPSHOT</bw-calendar-xsl.version>
         <bw-carddav.version>5.0.0-SNAPSHOT</bw-carddav.version>
         <bw-category.version>4.0.0-SNAPSHOT</bw-category.version>
         <bw-cli.version>5.0.0-SNAPSHOT</bw-cli.version>
@@ -2233,9 +2243,12 @@
         <bw-access.version>4.0.10</bw-access.version>
 
         <bw-caldav.version>4.0.18</bw-caldav.version>
-        <bw-calendar-client.version>3.13.0</bw-calendar-client.version>
+        <bw-calendar-client.version>4.0.0</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.0</bw-calendar-common.version>
-        <bw-calendar-engine.version>3.13.0</bw-calendar-engine.version>
+        <bw-calendar-data.version>4.0.0</bw-calendar-data.version>
+        <bw-calendar-deploy.version>4.0.0</bw-calendar-deploy.version>
+        <bw-calendar-engine.version>4.0.0</bw-calendar-engine.version>
+        <bw-calendar-xsl.version>4.0.0</bw-calendar-xsl.version>
         <bw-carddav.version>4.0.10</bw-carddav.version>
         <bw-category.version>4.0.0</bw-category.version>
 
