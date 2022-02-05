@@ -576,12 +576,12 @@
         <version>${bw-cliutil.version}</version>
       </dependency>
 
-      <!-- ================= bw-esdata ================= -->
+      <!-- ================= bw-oschdata ================= -->
 
       <dependency>
         <groupId>org.bedework.deploy</groupId>
-        <artifactId>bw-esdata</artifactId>
-        <version>${bw-esdata.version}</version>
+        <artifactId>bw-oschdata</artifactId>
+        <version>${bw-oschdata.version}</version>
         <type>zip</type>
       </dependency>
 
@@ -719,6 +719,7 @@
         <groupId>org.bedework.bw-tzsvr</groupId>
         <artifactId>bw-timezone-server-data</artifactId>
         <version>${bw-timezone-server.version}</version>
+        <type>zip</type>
       </dependency>
 
       <dependency>
@@ -1437,13 +1438,13 @@
         <artifactId>portals-bridges-struts-1.2.7</artifactId>
         <version>${portals-bridge.version}</version>
       </dependency>
+      -->
 
       <dependency>
         <groupId>javax.portlet</groupId>
         <artifactId>portlet-api</artifactId>
         <version>${portlet-api.version}</version>
       </dependency>
-      -->
 
       <dependency>
         <groupId>org.postgresql</groupId>
@@ -2193,6 +2194,7 @@
 
         <configuration>
           <flattenMode>ossrh</flattenMode>
+          <outputDirectory>${project.build.directory}</outputDirectory>
         </configuration>
 
         <executions>
@@ -2278,7 +2280,7 @@
         <bw-cli.version>5.0.0-SNAPSHOT</bw-cli.version>
         <bw-cliutil.version>5.0.0-SNAPSHOT</bw-cliutil.version>
 
-        <bw-esdata.version>1.0.0-SNAPSHOT</bw-esdata.version>
+        <bw-oschdata.version>1.0.0-SNAPSHOT</bw-oschdata.version>
         <bw-eventreg.version>5.0.0-SNAPSHOT</bw-eventreg.version>
 
         <bw-jsforj.version>1.1.0-SNAPSHOT</bw-jsforj.version>
