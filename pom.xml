@@ -95,6 +95,7 @@
     <version.enforcer.plugin>3.0.0-M3</version.enforcer.plugin>
     <version.exec.plugin>3.0.0</version.exec.plugin>
     <version.failsafe.plugin>2.12</version.failsafe.plugin>
+    <version.flatten.plugin>1.2.7</version.flatten.plugin>
     <version.gpg.plugin>1.5</version.gpg.plugin>
     <version.help.plugin>3.2.0</version.help.plugin>
     <version.install.plugin>2.5.2</version.install.plugin>
@@ -165,7 +166,7 @@
 
     <javax.cache-api.version>1.0.0</javax.cache-api.version>
     <classmate.version>1.3.0</classmate.version>
-    <commons.beanutils.version>1.7.0</commons.beanutils.version>
+    <commons.beanutils.version>1.8.0</commons.beanutils.version>
     <commons.codec.version>1.15</commons.codec.version>
     <commons.collections.version>3.2</commons.collections.version>
     <commons.collections4.version>4.1</commons.collections4.version>
@@ -187,7 +188,7 @@
     <freemarker.version>2.3.23</freemarker.version>
 
     <hibernate.version>5.2.5.Final</hibernate.version>
-    <hibernate.patched.version>5.2.5.FinalBwPatched</hibernate.patched.version>
+    <hibernate.patched.version>5.2.5.1FinalBwPatched</hibernate.patched.version>
     <hsqldb.version>2.5.1</hsqldb.version>
     <http-client.version>4.5.13</http-client.version>
     <http-core.version>4.4.14</http-core.version>
@@ -222,13 +223,13 @@
     <opensaml.version>2.5.1-1</opensaml.version>
     <opensearch.version>1.2.3</opensearch.version>
 
-    <portals-bridge.version>1.0.4</portals-bridge.version>
     <portlet-api.version>1.0</portlet-api.version>
     <postgresql-driver.version>42.3.1</postgresql-driver.version>
 
     <saaj.version>1.5.1</saaj.version>
     <servlet-api.version>4.0.0</servlet-api.version>
     <slf4j.version>1.6.6</slf4j.version>
+    <snakeyaml.version>1.26</snakeyaml.version>
     <spring-framework.version>5.2.4.RELEASE</spring-framework.version>
     <spring-ldap.version>2.3.3.RELEASE</spring-ldap.version>
     <spring-security.version>5.3.4.RELEASE</spring-security.version>
@@ -1424,6 +1425,7 @@
         <version>${opensearch.version}</version>
       </dependency>
 
+      <!--
       <dependency>
         <groupId>org.apache.portals.bridges</groupId>
         <artifactId>portals-bridges-common</artifactId>
@@ -1441,6 +1443,7 @@
         <artifactId>portlet-api</artifactId>
         <version>${portlet-api.version}</version>
       </dependency>
+      -->
 
       <dependency>
         <groupId>org.postgresql</groupId>
@@ -1452,6 +1455,12 @@
         <groupId>com.sun.xml.messaging.saaj</groupId>
         <artifactId>saaj-impl</artifactId>
         <version>1.5.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.yaml</groupId>
+        <artifactId>snakeyaml</artifactId>
+        <version>${snakeyaml.version}</version>
       </dependency>
 
       <dependency>
@@ -1749,6 +1758,12 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>buildnumber-maven-plugin</artifactId>
           <version>${version.buildnumber.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>flatten-maven-plugin</artifactId>
+          <version>${version.flatten.plugin}</version>
         </plugin>
 
         <plugin>
@@ -2132,6 +2147,7 @@
               </rules>
             </configuration>
           </execution>
+
           <execution>
             <id>enforce-maven-version</id>
             <goals>
@@ -2167,6 +2183,34 @@
               <revisionOnScmFailure>UNKNOWN</revisionOnScmFailure>
               <getRevisionOnlyOnce>true</getRevisionOnlyOnce>
             </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>flatten-maven-plugin</artifactId>
+
+        <configuration>
+          <flattenMode>ossrh</flattenMode>
+        </configuration>
+
+        <executions>
+          <!-- enable flattening -->
+          <execution>
+            <id>flatten</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>flatten</goal>
+            </goals>
+          </execution>
+          <!-- ensure proper cleanup -->
+          <execution>
+            <id>flatten.clean</id>
+            <phase>clean</phase>
+            <goals>
+              <goal>clean</goal>
+            </goals>
           </execution>
         </executions>
       </plugin>
@@ -2244,6 +2288,7 @@
         <bw-notifier.version>5.0.0-SNAPSHOT</bw-notifier.version>
 
         <bw-selfreg.version>5.0.0-SNAPSHOT</bw-selfreg.version>
+        <bw-sometime.version>2.0.0-SNAPSHOT</bw-sometime.version>
         <bw-synch.version>5.0.0-SNAPSHOT</bw-synch.version>
 
         <bw-timezone-server.version>5.0.0-SNAPSHOT</bw-timezone-server.version>
@@ -2260,6 +2305,7 @@
         <bw-util2.version>5.0.0-SNAPSHOT</bw-util2.version>
 
         <bw-webdav.version>5.0.0-SNAPSHOT</bw-webdav.version>
+        <bw-wfmodules.version>1.0.0-SNAPSHOT</bw-wfmodules.version>
 
         <bw-xml.version>5.0.0-SNAPSHOT</bw-xml.version>
       </properties>
