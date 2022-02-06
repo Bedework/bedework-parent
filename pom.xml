@@ -104,6 +104,7 @@
     <version.jaxb2.plugin>2.5.0</version.jaxb2.plugin>
     <version.jaxws.plugin>2.6.1</version.jaxws.plugin>
     <version.license.plugin>2.0</version.license.plugin>
+    <version.nexus.staging.plugin>1.6.8</version.nexus.staging.plugin>
     <version.notice.plugin>1.0.4</version.notice.plugin>
     <version.plugin.plugin>3.6.0</version.plugin.plugin>
     <version.release.plugin>2.5.3</version.release.plugin>
@@ -1680,15 +1681,15 @@
         </plugin>
 
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-antrun-plugin</artifactId>
-          <version>${version.antrun.plugin}</version>
-        </plugin>
-
-        <plugin>
           <groupId>org.flywaydb</groupId>
           <artifactId>flyway-maven-plugin</artifactId>
           <version>${flywaydb.version}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>${version.antrun.plugin}</version>
         </plugin>
 
         <plugin>
@@ -1785,8 +1786,8 @@
             <testSource>${maven.compiler.argument.testSource}</testSource>
             <testTarget>${maven.compiler.argument.testTarget}</testTarget>
             <compilerArgs>
-<!--              <arg>-Xlint:unchecked</arg>
--->
+              <!--              <arg>-Xlint:unchecked</arg>
+              -->
             </compilerArgs>
           </configuration>
         </plugin>
@@ -1971,6 +1972,19 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>license-maven-plugin</artifactId>
           <version>${version.license.plugin}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.sonatype.plugins</groupId>
+          <artifactId>nexus-staging-maven-plugin</artifactId>
+          <version>${version.nexus.staging.plugin}</version>
+          <extensions>true</extensions>
+
+          <configuration>
+            <serverId>ossrh</serverId>
+            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+          </configuration>
         </plugin>
 
         <plugin>
@@ -2280,7 +2294,6 @@
         <bw-cli.version>5.0.0-SNAPSHOT</bw-cli.version>
         <bw-cliutil.version>5.0.0-SNAPSHOT</bw-cliutil.version>
 
-        <bw-oschdata.version>1.0.0-SNAPSHOT</bw-oschdata.version>
         <bw-eventreg.version>5.0.0-SNAPSHOT</bw-eventreg.version>
 
         <bw-jsforj.version>1.1.0-SNAPSHOT</bw-jsforj.version>
@@ -2288,6 +2301,8 @@
         <bw-logs.version>1.1.0-SNAPSHOT</bw-logs.version>
 
         <bw-notifier.version>5.0.0-SNAPSHOT</bw-notifier.version>
+
+        <bw-oschdata.version>1.0.0-SNAPSHOT</bw-oschdata.version>
 
         <bw-selfreg.version>5.0.0-SNAPSHOT</bw-selfreg.version>
         <bw-sometime.version>2.0.0-SNAPSHOT</bw-sometime.version>
@@ -2319,46 +2334,54 @@
         <activeByDefault>false</activeByDefault>
       </activation>
       <properties>
-        <bw-access.version>4.0.10</bw-access.version>
+        <bw-access.version>5.0.0</bw-access.version>
         <bw-apacheds.version>1.0.0</bw-apacheds.version>
 
+        <bw-bedework.version>4.0.0</bw-bedework.version>
         <bw-bedeworkqs.version>4.0.0</bw-bedeworkqs.version>
 
-        <bw-caldav.version>4.0.18</bw-caldav.version>
+        <bw-caldav.version>5.0.0</bw-caldav.version>
         <bw-calendar-client.version>4.0.0</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.0</bw-calendar-common.version>
         <bw-calendar-data.version>4.0.0</bw-calendar-data.version>
         <bw-calendar-deploy.version>4.0.0</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.0.0</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.0.0</bw-calendar-xsl.version>
-        <bw-carddav.version>4.0.10</bw-carddav.version>
+        <bw-carddav.version>5.0.0</bw-carddav.version>
         <bw-category.version>4.0.0</bw-category.version>
+        <bw-cli.version>5.0.0</bw-cli.version>
+        <bw-cliutil.version>5.0.0</bw-cliutil.version>
 
-        <bw-eventreg.version>4.0.9</bw-eventreg.version>
+        <bw-eventreg.version>5.0.0</bw-eventreg.version>
 
-        <bw-jsforj.version>1.0.2</bw-jsforj.version>
+        <bw-jsforj.version>1.1.0</bw-jsforj.version>
 
-        <bw-notifier.version>4.0.11</bw-notifier.version>
+        <bw-logs.version>1.1.0</bw-logs.version>
 
-        <bw-selfreg.version>4.0.11</bw-selfreg.version>
-        <bw-synch.version>4.0.14</bw-synch.version>
+        <bw-notifier.version>5.0.0</bw-notifier.version>
 
-        <bw-timezone-server.version>4.0.13</bw-timezone-server.version>
+        <bw-oschdata.version>1.0.0</bw-oschdata.version>
 
-        <bw-util-logging.version>5.0.0</bw-util-logging.version>
+        <bw-selfreg.version>5.0.0</bw-selfreg.version>
+        <bw-sometime.version>2.0.0</bw-sometime.version>
+        <bw-synch.version>5.0.0</bw-synch.version>
+
+        <bw-timezone-server.version>5.0.0</bw-timezone-server.version>
+
+        <bw-util-logging.version>5.1.0</bw-util-logging.version>
         <bw-util.version>5.0.0</bw-util.version>
-        <bw-util-conf.version>4.1.4</bw-util-conf.version>
-        <bw-util-hibernate.version>4.0.29</bw-util-hibernate.version>
-        <bw-util-index.version>4.1.4</bw-util-index.version>
-        <bw-util-network.version>4.1.4</bw-util-network.version>
-        <bw-util-tz.version>4.1.4</bw-util-tz.version>
-        <bw-util-security.version>4.1.4</bw-util-security.version>
-        <bw-util2.version>4.0.12</bw-util2.version>
+        <bw-util-conf.version>5.0.0</bw-util-conf.version>
+        <bw-util-hibernate.version>5.0.0</bw-util-hibernate.version>
+        <bw-util-index.version>5.0.0</bw-util-index.version>
+        <bw-util-network.version>5.0.0</bw-util-network.version>
+        <bw-util-tz.version>5.0.0</bw-util-tz.version>
+        <bw-util-security.version>5.0.0</bw-util-security.version>
+        <bw-util2.version>5.0.0</bw-util2.version>
 
-        <bw-webdav.version>4.0.13</bw-webdav.version>
+        <bw-webdav.version>5.0.0</bw-webdav.version>
+        <bw-wfmodules.version>1.0.0</bw-wfmodules.version>
 
-        <bw-xml.version>4.0.11</bw-xml.version>
-
+        <bw-xml.version>5.0.0</bw-xml.version>
       </properties>
 
       <build>
