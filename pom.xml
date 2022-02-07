@@ -948,7 +948,16 @@
         <version>${bw-webdav.version}</version>
       </dependency>
 
-      <!-- Bedework: XML -->
+      <!-- ================= bw feature packs ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-wf-core-feature-pack</artifactId>
+        <version>${bw-wf-core-feature-pack.version}</version>
+        <type>pom</type>
+      </dependency>
+
+      <!-- ================= bw-xml ================= -->
 
       <dependency>
         <groupId>org.bedework</groupId>
@@ -2365,6 +2374,8 @@
 
         <bw-webdav.version>5.0.0-SNAPSHOT</bw-webdav.version>
         <bw-wfmodules.version>1.0.0-SNAPSHOT</bw-wfmodules.version>
+        <bw-wf-core-feature-pack.version>4.0.0-SNAPSHOT</bw-wf-core-feature-pack.version>
+        <bw-wf-feature-pack.version>4.0.0-SNAPSHOT</bw-wf-feature-pack.version>
 
         <bw-xml.version>5.0.0-SNAPSHOT</bw-xml.version>
       </properties>
