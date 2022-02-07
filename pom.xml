@@ -497,7 +497,49 @@
 
       <dependency>
         <groupId>org.bedework.bwxsl</groupId>
-        <artifactId>bw-calendar-xsl</artifactId>
+        <artifactId>bw-calendar-xsl-caladminrsrc</artifactId>
+        <version>${bw-calendar-xsl.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwxsl</groupId>
+        <artifactId>bw-calendar-xsl-calfeedrsrc-MainCampus</artifactId>
+        <version>${bw-calendar-xsl.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwxsl</groupId>
+        <artifactId>bw-calendar-xsl-calrsrc-MainCampus</artifactId>
+        <version>${bw-calendar-xsl.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwxsl</groupId>
+        <artifactId>bw-calendar-xsl-calrsrc-SoEDepartmental</artifactId>
+        <version>${bw-calendar-xsl.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwxsl</groupId>
+        <artifactId>bw-calendar-xsl-common</artifactId>
+        <version>${bw-calendar-xsl.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwxsl</groupId>
+        <artifactId>bw-calendar-xsl-eventsubmitrsrc</artifactId>
+        <version>${bw-calendar-xsl.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwxsl</groupId>
+        <artifactId>bw-calendar-xsl-ucalrsrc</artifactId>
         <version>${bw-calendar-xsl.version}</version>
         <type>war</type>
       </dependency>
