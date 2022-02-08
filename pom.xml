@@ -114,6 +114,9 @@
     <version.versions.plugin>2.8.1</version.versions.plugin>
     <version.war.plugin>3.3.2</version.war.plugin>
 
+    <version.org.wildfly.galleon-plugins>5.2.6.Final</version.org.wildfly.galleon-plugins>
+
+
     <!-- Repository Deployment URLs -->
     <bedework.releases.repo.id>ossrh</bedework.releases.repo.id>
     <bedework.releases.repo.url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</bedework.releases.repo.url>
@@ -843,6 +846,13 @@
         <version>${bw-synch.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>org.bedework.bw-synch</groupId>
+        <artifactId>bw-synch-ear</artifactId>
+        <version>${bw-synch.version}</version>
+        <type>ear</type>
+      </dependency>
+
       <!-- ============ bw-timezone-server =========== -->
 
       <dependency>
@@ -1054,6 +1064,13 @@
         <groupId>org.bedework</groupId>
         <artifactId>bw-wf-xml-feature-pack</artifactId>
         <version>${bw-xml.version}</version>
+        <type>pom</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-synch</groupId>
+        <artifactId>bw-wf-synch-feature-pack</artifactId>
+        <version>${bw-synch.version}</version>
         <type>pom</type>
       </dependency>
 
@@ -1843,6 +1860,22 @@
           <groupId>org.bedework</groupId>
           <artifactId>bw-util-maven-deploy-wfmodule</artifactId>
           <version>${bw-util-deploy.version}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.wildfly.galleon-plugins</groupId>
+          <artifactId>wildfly-galleon-maven-plugin</artifactId>
+          <version>${version.org.wildfly.galleon-plugins}</version>
+
+          <executions>
+            <execution>
+              <id>galleon-pack-build</id>
+              <goals>
+                <goal>build-feature-pack</goal>
+              </goals>
+              <phase>package</phase>
+            </execution>
+          </executions>
         </plugin>
 
         <plugin>
