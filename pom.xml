@@ -1057,6 +1057,13 @@
         <type>pom</type>
       </dependency>
 
+      <dependency>
+        <groupId>org.bedework.bw-tzsvr</groupId>
+        <artifactId>bw-wf-timezone-server-feature-pack</artifactId>
+        <version>${bw-timezone-server.version}</version>
+        <type>pom</type>
+      </dependency>
+
       <!-- ================= bw-xml ================= -->
 
       <dependency>
