@@ -112,7 +112,7 @@
     <version.source.plugin>3.1.0</version.source.plugin>
     <version.surefire.plugin>2.22.2</version.surefire.plugin>
     <version.versions.plugin>2.8.1</version.versions.plugin>
-    <version.war.plugin>3.2.3</version.war.plugin>
+    <version.war.plugin>3.3.2</version.war.plugin>
 
     <!-- Repository Deployment URLs -->
     <bedework.releases.repo.id>ossrh</bedework.releases.repo.id>
@@ -491,6 +491,99 @@
         <groupId>org.bedework.caleng</groupId>
         <artifactId>bw-calendar-engine-tools</artifactId>
         <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <!-- ================= bw-calendar-deploy ================= -->
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-calendar-notifyws</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-calendar-pubcaldav</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-calendar-publicws</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-calendar-synchws</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-calendar-ucaldav</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-calendar-userws</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-webclient-cal</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-webclient-caladmin</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-webclient-calauth</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-webclient-demosoe</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-webclient-feeder</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-webclient-submit</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-webclient-ucal</artifactId>
+        <version>${bw-calendar-deploy.version}</version>
+        <type>war</type>
       </dependency>
 
       <!-- ================= bw-calendar-xsl ================= -->
@@ -996,13 +1089,6 @@
         <groupId>org.bedework</groupId>
         <artifactId>bw-xml-calws-soap</artifactId>
         <version>${bw-xml.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-xml-ear</artifactId>
-        <version>${bw-xml.version}</version>
-        <type>ear</type>
       </dependency>
 
       <dependency>
@@ -2171,6 +2257,7 @@
           <version>${version.war.plugin}</version>
           <configuration>
             <packagingExcludes>WEB-INF/lib/*.jar</packagingExcludes>
+            <filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
 
             <archive>
               <index>true</index>
@@ -2194,6 +2281,7 @@
                 <Scm-Url>${project.scm.url}</Scm-Url>
                 <Scm-Connection>${project.scm.connection}</Scm-Connection>
                 <Scm-Revision>${buildNumber}</Scm-Revision>
+                <Dependencies>${org.bedework.war.dependency}</Dependencies>
               </manifestEntries>
             </archive>
             <failOnMissingWebXml>false</failOnMissingWebXml>
