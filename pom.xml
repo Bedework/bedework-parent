@@ -957,7 +957,28 @@
         <type>pom</type>
       </dependency>
 
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-wf-xml-feature-pack</artifactId>
+        <version>${bw-xml.version}</version>
+        <type>pom</type>
+      </dependency>
+
       <!-- ================= bw-xml ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-xml</artifactId>
+        <version>${bw-xml.version}</version>
+        <type>pom</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-xml-ear</artifactId>
+        <version>${bw-xml.version}</version>
+        <type>ear</type>
+      </dependency>
 
       <dependency>
         <groupId>org.bedework</groupId>
