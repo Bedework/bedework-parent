@@ -805,6 +805,13 @@
         <version>${bw-notifier.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>org.bedework.notifier</groupId>
+        <artifactId>bw-note-ear</artifactId>
+        <version>${bw-notifier.version}</version>
+        <type>ear</type>
+      </dependency>
+
       <!-- ============ bw-self-registration ============ -->
 
       <dependency>
@@ -1064,6 +1071,13 @@
         <groupId>org.bedework</groupId>
         <artifactId>bw-wf-xml-feature-pack</artifactId>
         <version>${bw-xml.version}</version>
+        <type>pom</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.notifier</groupId>
+        <artifactId>bw-wf-note-feature-pack</artifactId>
+        <version>${bw-notifier.version}</version>
         <type>pom</type>
       </dependency>
 
