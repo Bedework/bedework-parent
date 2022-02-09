@@ -693,6 +693,13 @@
         <version>${bw-category.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>org.bedework.bw-cat</groupId>
+        <artifactId>bw-category-ear</artifactId>
+        <version>${bw-category.version}</version>
+        <type>ear</type>
+      </dependency>
+
       <!-- ============ bw-cli ============ -->
 
       <dependency>
@@ -1071,6 +1078,13 @@
         <groupId>org.bedework</groupId>
         <artifactId>bw-wf-xml-feature-pack</artifactId>
         <version>${bw-xml.version}</version>
+        <type>pom</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-cat</groupId>
+        <artifactId>bw-wf-category-feature-pack</artifactId>
+        <version>${bw-category.version}</version>
         <type>pom</type>
       </dependency>
 
