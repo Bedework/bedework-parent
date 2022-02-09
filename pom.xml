@@ -1082,6 +1082,13 @@
       </dependency>
 
       <dependency>
+        <groupId>org.bedework.selfreg</groupId>
+        <artifactId>bw-wf-self-registration-feature-pack</artifactId>
+        <version>${bw-selfreg.version}</version>
+        <type>pom</type>
+      </dependency>
+
+      <dependency>
         <groupId>org.bedework.bw-synch</groupId>
         <artifactId>bw-wf-synch-feature-pack</artifactId>
         <version>${bw-synch.version}</version>
