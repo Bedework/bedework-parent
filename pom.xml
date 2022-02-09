@@ -1069,6 +1069,13 @@
 
       <dependency>
         <groupId>org.bedework</groupId>
+        <artifactId>bw-wf-carddav-feature-pack</artifactId>
+        <version>${bw-carddav.version}</version>
+        <type>pom</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
         <artifactId>bw-wf-core-feature-pack</artifactId>
         <version>${bw-wf-core-feature-pack.version}</version>
         <type>pom</type>
