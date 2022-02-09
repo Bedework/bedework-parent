@@ -225,7 +225,7 @@
     <mockito.version>1.10.19</mockito.version>
 
     <opensaml.version>2.5.1-1</opensaml.version>
-    <opensearch.version>1.2.3</opensearch.version>
+    <opensearch.version>1.2.4</opensearch.version>
 
     <portlet-api.version>1.0</portlet-api.version>
     <postgresql-driver.version>42.3.1</postgresql-driver.version>
@@ -720,6 +720,15 @@
         <groupId>org.bedework</groupId>
         <artifactId>bw-util-jolokia</artifactId>
         <version>${bw-cliutil.version}</version>
+      </dependency>
+
+      <!-- ================= bw-opensearch-qs ================= -->
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-opensearch-qs</artifactId>
+        <version>${bw-opensearch-qs.version}</version>
+        <type>zip</type>
       </dependency>
 
       <!-- ================= bw-oschdata ================= -->
@@ -2557,6 +2566,8 @@
         <bw-logs.version>1.1.0-SNAPSHOT</bw-logs.version>
 
         <bw-notifier.version>5.0.0-SNAPSHOT</bw-notifier.version>
+
+        <bw-opensearch-qs.version>1.0.0-SNAPSHOT</bw-opensearch-qs.version>
 
         <bw-oschdata.version>1.0.0-SNAPSHOT</bw-oschdata.version>
 
