@@ -1082,6 +1082,13 @@
       </dependency>
 
       <dependency>
+        <groupId>org.bedework.evreg</groupId>
+        <artifactId>bw-wf-event-registration-feature-pack</artifactId>
+        <version>${bw-eventreg.version}</version>
+        <type>pom</type>
+      </dependency>
+
+      <dependency>
         <groupId>org.bedework.selfreg</groupId>
         <artifactId>bw-wf-self-registration-feature-pack</artifactId>
         <version>${bw-selfreg.version}</version>
