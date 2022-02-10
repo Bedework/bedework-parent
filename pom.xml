@@ -2586,7 +2586,7 @@
         <bw-util-logging.version>5.2.0-SNAPSHOT</bw-util-logging.version>
         <bw-util.version>5.1.0-SNAPSHOT</bw-util.version>
         <bw-util-conf.version>5.0.0-SNAPSHOT</bw-util-conf.version>
-        <bw-util-deploy.version>5.0.0-SNAPSHOT</bw-util-deploy.version>
+        <bw-util-deploy.version>5.1.0-SNAPSHOT</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.0-SNAPSHOT</bw-util-hibernate.version>
         <bw-util-index.version>5.0.0-SNAPSHOT</bw-util-index.version>
         <bw-util-network.version>5.0.0-SNAPSHOT</bw-util-network.version>
@@ -2647,6 +2647,7 @@
         <bw-util-logging.version>5.1.0</bw-util-logging.version>
         <bw-util.version>5.0.0</bw-util.version>
         <bw-util-conf.version>5.0.0</bw-util-conf.version>
+        <bw-util-deploy.version>5.0.0</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.0</bw-util-hibernate.version>
         <bw-util-index.version>5.0.0</bw-util-index.version>
         <bw-util-network.version>5.0.0</bw-util-network.version>
