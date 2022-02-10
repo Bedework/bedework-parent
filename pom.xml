@@ -22,7 +22,7 @@
 
   <groupId>org.bedework</groupId>
   <artifactId>bedework-parent</artifactId>
-  <version>3.RC2</version>
+  <version>3.RC3</version>
 
   <packaging>pom</packaging>
 
@@ -2308,8 +2308,7 @@
               <id>attach-sources</id>
               <phase>verify</phase>
               <goals>
-                <goal>jar</goal>
-                <goal>test-jar</goal>
+                <goal>jar-no-fork</goal>
               </goals>
               <configuration>
                 <archive>
@@ -2426,6 +2425,10 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
       </plugin>
 
       <!-- Check for the minimum version of Java and Maven.  Runs during the validate phase. -->
