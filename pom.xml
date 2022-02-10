@@ -2583,8 +2583,8 @@
 
         <bw-timezone-server.version>5.0.0-SNAPSHOT</bw-timezone-server.version>
 
-        <bw-util-logging.version>5.1.0-SNAPSHOT</bw-util-logging.version>
-        <bw-util.version>5.0.0-SNAPSHOT</bw-util.version>
+        <bw-util-logging.version>5.2.0-SNAPSHOT</bw-util-logging.version>
+        <bw-util.version>5.1.0-SNAPSHOT</bw-util.version>
         <bw-util-conf.version>5.0.0-SNAPSHOT</bw-util-conf.version>
         <bw-util-deploy.version>5.0.0-SNAPSHOT</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.0-SNAPSHOT</bw-util-hibernate.version>
@@ -2600,7 +2600,7 @@
         <bw-wf-core-feature-pack.version>4.0.0-SNAPSHOT</bw-wf-core-feature-pack.version>
         <bw-wf-feature-pack.version>4.0.0-SNAPSHOT</bw-wf-feature-pack.version>
 
-        <bw-xml.version>5.0.0-SNAPSHOT</bw-xml.version>
+        <bw-xml.version>5.1.0-SNAPSHOT</bw-xml.version>
       </properties>
     </profile>
 
