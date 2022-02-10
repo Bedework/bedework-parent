@@ -148,6 +148,9 @@
     <!-- exposed additional params for javadoc, such as Xlint -->
     <javadoc.additional.params />
 
+    <!-- Placeholder tooverride -->
+    <org.bedework.war.dependency/>
+
     <!-- iCal4j versions
          We have our own version of ical4j which is
          trying to track the real project.
@@ -2532,12 +2535,24 @@
         <artifactId>maven-help-plugin</artifactId>
       </plugin>
     </plugins>
-
   </build>
 
   <profiles>
+    <profile>
+      <id>release</id>
+      <!--
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation> -->
 
-
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-javadoc-plugin</artifactId>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
     <!-- The bedework-dev profile sets all the bw
          versions to SNAPSHOT versions
          -->
