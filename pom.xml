@@ -114,8 +114,10 @@
     <version.versions.plugin>2.8.1</version.versions.plugin>
     <version.war.plugin>3.3.2</version.war.plugin>
 
-    <version.org.wildfly.galleon-plugins>5.2.6.Final</version.org.wildfly.galleon-plugins>
+    <version.org.wildfly.galleon-plugins>5.2.10.Final</version.org.wildfly.galleon-plugins>
 
+    <wildfly.core.version>18.0.3.Final</wildfly.core.version>
+    <wildfly.version>26.0.1.Final</wildfly.version>
 
     <!-- Repository Deployment URLs -->
     <bedework.releases.repo.id>ossrh</bedework.releases.repo.id>
@@ -145,9 +147,6 @@
 
     <!-- exposed additional params for javadoc, such as Xlint -->
     <javadoc.additional.params />
-
-    <wildfly.core.version>18.0.3.Final</wildfly.core.version>
-    <wildfly.version>25.0.1.Final</wildfly.version>
 
     <!-- iCal4j versions
          We have our own version of ical4j which is
@@ -723,6 +722,13 @@
       </dependency>
 
       <!-- ================= bw-opensearch-qs ================= -->
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-opensearch-GeoLite2-City</artifactId>
+        <version>${bw-opensearch-qs.version}</version>
+        <type>zip</type>
+      </dependency>
 
       <dependency>
         <groupId>org.bedework.deploy</groupId>
