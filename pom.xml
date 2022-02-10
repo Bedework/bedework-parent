@@ -2255,19 +2255,6 @@
         </plugin>
 
         <plugin>
-          <groupId>org.sonatype.plugins</groupId>
-          <artifactId>nexus-staging-maven-plugin</artifactId>
-          <version>${version.nexus.staging.plugin}</version>
-          <extensions>true</extensions>
-
-          <configuration>
-            <serverId>ossrh</serverId>
-            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-            <autoReleaseAfterClose>true</autoReleaseAfterClose>
-          </configuration>
-        </plugin>
-
-        <plugin>
           <groupId>org.jasig.maven</groupId>
           <artifactId>maven-notice-plugin</artifactId>
           <version>1.0.4</version>
@@ -2413,6 +2400,18 @@
     </pluginManagement>
 
     <plugins>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>${version.nexus.staging.plugin}</version>
+        <extensions>true</extensions>
+
+        <configuration>
+          <serverId>ossrh</serverId>
+          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+          <autoReleaseAfterClose>true</autoReleaseAfterClose>
+        </configuration>
+      </plugin>
 
       <!-- Check for the minimum version of Java and Maven.  Runs during the validate phase. -->
       <plugin>
