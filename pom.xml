@@ -22,7 +22,7 @@
 
   <groupId>org.bedework</groupId>
   <artifactId>bedework-parent</artifactId>
-  <version>3</version>
+  <version>4</version>
 
   <packaging>pom</packaging>
 
@@ -1088,70 +1088,70 @@
       <dependency>
         <groupId>org.bedework</groupId>
         <artifactId>bw-wf-calendar-feature-pack</artifactId>
-        <version>${bw-wf-calendar-feature-pack.version}</version>
+        <version>${bw-wf-feature-pack.version}</version>
         <type>pom</type>
       </dependency>
 
       <dependency>
         <groupId>org.bedework</groupId>
         <artifactId>bw-wf-carddav-feature-pack</artifactId>
-        <version>${bw-carddav.version}</version>
+        <version>${bw-wf-feature-pack.version}</version>
         <type>pom</type>
       </dependency>
 
       <dependency>
         <groupId>org.bedework</groupId>
         <artifactId>bw-wf-core-feature-pack</artifactId>
-        <version>${bw-wf-core-feature-pack.version}</version>
+        <version>${bw-wf-feature-pack.version}</version>
         <type>pom</type>
       </dependency>
 
       <dependency>
         <groupId>org.bedework</groupId>
         <artifactId>bw-wf-xml-feature-pack</artifactId>
-        <version>${bw-xml.version}</version>
+        <version>${bw-wf-feature-pack.version}</version>
         <type>pom</type>
       </dependency>
 
       <dependency>
         <groupId>org.bedework.bw-cat</groupId>
         <artifactId>bw-wf-category-feature-pack</artifactId>
-        <version>${bw-category.version}</version>
+        <version>${bw-wf-feature-pack.version}</version>
         <type>pom</type>
       </dependency>
 
       <dependency>
         <groupId>org.bedework.notifier</groupId>
         <artifactId>bw-wf-note-feature-pack</artifactId>
-        <version>${bw-notifier.version}</version>
+        <version>${bw-wf-feature-pack.version}</version>
         <type>pom</type>
       </dependency>
 
       <dependency>
         <groupId>org.bedework.evreg</groupId>
         <artifactId>bw-wf-event-registration-feature-pack</artifactId>
-        <version>${bw-eventreg.version}</version>
+        <version>${bw-wf-feature-pack.version}</version>
         <type>pom</type>
       </dependency>
 
       <dependency>
         <groupId>org.bedework.selfreg</groupId>
         <artifactId>bw-wf-self-registration-feature-pack</artifactId>
-        <version>${bw-selfreg.version}</version>
+        <version>${bw-wf-feature-pack.version}</version>
         <type>pom</type>
       </dependency>
 
       <dependency>
         <groupId>org.bedework.bw-synch</groupId>
         <artifactId>bw-wf-synch-feature-pack</artifactId>
-        <version>${bw-synch.version}</version>
+        <version>${bw-wf-feature-pack.version}</version>
         <type>pom</type>
       </dependency>
 
       <dependency>
         <groupId>org.bedework.bw-tzsvr</groupId>
         <artifactId>bw-wf-timezone-server-feature-pack</artifactId>
-        <version>${bw-timezone-server.version}</version>
+        <version>${bw-wf-feature-pack.version}</version>
         <type>pom</type>
       </dependency>
 
@@ -2632,9 +2632,7 @@
 
         <bw-webdav.version>5.0.1-SNAPSHOT</bw-webdav.version>
         <bw-wfmodules.version>1.0.1-SNAPSHOT</bw-wfmodules.version>
-        <bw-wf-calendar-feature-pack.version>4.0.1-SNAPSHOT</bw-wf-calendar-feature-pack.version>
-        <bw-wf-core-feature-pack.version>4.0.1-SNAPSHOT</bw-wf-core-feature-pack.version>
-        <bw-wf-feature-pack.version>4.0.1-SNAPSHOT</bw-wf-feature-pack.version>
+        <bw-wildfly-galleon-feature-pack.version>4.0.1-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
 
         <bw-xml.version>5.0.1-SNAPSHOT</bw-xml.version>
       </properties>
@@ -2695,9 +2693,7 @@
 
         <bw-webdav.version>5.0.0</bw-webdav.version>
         <bw-wfmodules.version>1.0.0</bw-wfmodules.version>
-        <bw-wf-calendar-feature-pack.version>4.0.0</bw-wf-calendar-feature-pack.version>
-        <bw-wf-core-feature-pack.version>4.0.0</bw-wf-core-feature-pack.version>
-        <bw-wf-feature-pack.version>4.0.0</bw-wf-feature-pack.version>
+        <bw-wildfly-galleon-feature-pack.version>4.0.1</bw-wildfly-galleon-feature-pack.version>
 
         <bw-xml.version>5.0.0</bw-xml.version>
       </properties>
