@@ -22,7 +22,7 @@
 
   <groupId>org.bedework</groupId>
   <artifactId>bedework-parent</artifactId>
-  <version>3.RC4</version>
+  <version>3</version>
 
   <packaging>pom</packaging>
 
@@ -2583,60 +2583,60 @@
         <activeByDefault>false</activeByDefault>
       </activation>
       <properties>
-        <bw-access.version>5.0.0-SNAPSHOT</bw-access.version>
-        <bw-apacheds.version>1.0.0-SNAPSHOT</bw-apacheds.version>
+        <bw-access.version>5.0.1-SNAPSHOT</bw-access.version>
+        <bw-apacheds.version>1.0.1-SNAPSHOT</bw-apacheds.version>
 
-        <bw-bedework.version>4.0.0-SNAPSHOT</bw-bedework.version>
-        <bw-bedeworkqs.version>4.0.0-SNAPSHOT</bw-bedeworkqs.version>
+        <bw-bedework.version>4.0.1-SNAPSHOT</bw-bedework.version>
+        <bw-bedeworkqs.version>4.0.1-SNAPSHOT</bw-bedeworkqs.version>
 
-        <bw-caldav.version>5.0.0-SNAPSHOT</bw-caldav.version>
-        <bw-calendar-client.version>4.0.0-SNAPSHOT</bw-calendar-client.version>
-        <bw-calendar-common.version>4.0.0-SNAPSHOT</bw-calendar-common.version>
-        <bw-calendar-data.version>4.0.0-SNAPSHOT</bw-calendar-data.version>
-        <bw-calendar-deploy.version>4.0.0-SNAPSHOT</bw-calendar-deploy.version>
-        <bw-calendar-engine.version>4.0.0-SNAPSHOT</bw-calendar-engine.version>
-        <bw-calendar-xsl.version>4.0.0-SNAPSHOT</bw-calendar-xsl.version>
-        <bw-carddav.version>5.0.0-SNAPSHOT</bw-carddav.version>
-        <bw-category.version>4.0.0-SNAPSHOT</bw-category.version>
-        <bw-cli.version>5.0.0-SNAPSHOT</bw-cli.version>
-        <bw-cliutil.version>5.0.0-SNAPSHOT</bw-cliutil.version>
+        <bw-caldav.version>5.0.1-SNAPSHOT</bw-caldav.version>
+        <bw-calendar-client.version>4.0.1-SNAPSHOT</bw-calendar-client.version>
+        <bw-calendar-common.version>4.0.1-SNAPSHOT</bw-calendar-common.version>
+        <bw-calendar-data.version>4.0.1-SNAPSHOT</bw-calendar-data.version>
+        <bw-calendar-deploy.version>4.0.1-SNAPSHOT</bw-calendar-deploy.version>
+        <bw-calendar-engine.version>4.0.1-SNAPSHOT</bw-calendar-engine.version>
+        <bw-calendar-xsl.version>4.0.1-SNAPSHOT</bw-calendar-xsl.version>
+        <bw-carddav.version>5.0.1-SNAPSHOT</bw-carddav.version>
+        <bw-category.version>4.0.1-SNAPSHOT</bw-category.version>
+        <bw-cli.version>5.0.1-SNAPSHOT</bw-cli.version>
+        <bw-cliutil.version>5.0.1-SNAPSHOT</bw-cliutil.version>
 
-        <bw-eventreg.version>5.0.0-SNAPSHOT</bw-eventreg.version>
+        <bw-eventreg.version>5.0.1-SNAPSHOT</bw-eventreg.version>
 
-        <bw-jsforj.version>1.1.0-SNAPSHOT</bw-jsforj.version>
+        <bw-jsforj.version>1.1.1-SNAPSHOT</bw-jsforj.version>
 
-        <bw-logs.version>1.1.0-SNAPSHOT</bw-logs.version>
+        <bw-logs.version>1.1.1-SNAPSHOT</bw-logs.version>
 
-        <bw-notifier.version>5.0.0-SNAPSHOT</bw-notifier.version>
+        <bw-notifier.version>5.0.1-SNAPSHOT</bw-notifier.version>
 
-        <bw-opensearch-qs.version>1.0.0-SNAPSHOT</bw-opensearch-qs.version>
+        <bw-opensearch-qs.version>1.0.1-SNAPSHOT</bw-opensearch-qs.version>
 
-        <bw-oschdata.version>1.0.0-SNAPSHOT</bw-oschdata.version>
+        <bw-oschdata.version>1.0.1-SNAPSHOT</bw-oschdata.version>
 
-        <bw-selfreg.version>5.0.0-SNAPSHOT</bw-selfreg.version>
-        <bw-sometime.version>2.0.0-SNAPSHOT</bw-sometime.version>
-        <bw-synch.version>5.0.0-SNAPSHOT</bw-synch.version>
+        <bw-selfreg.version>5.0.1-SNAPSHOT</bw-selfreg.version>
+        <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
+        <bw-synch.version>5.0.1-SNAPSHOT</bw-synch.version>
 
-        <bw-timezone-server.version>5.0.0-SNAPSHOT</bw-timezone-server.version>
+        <bw-timezone-server.version>5.0.1-SNAPSHOT</bw-timezone-server.version>
 
-        <bw-util-logging.version>5.2.0-SNAPSHOT</bw-util-logging.version>
-        <bw-util.version>5.1.0-SNAPSHOT</bw-util.version>
-        <bw-util-conf.version>5.0.0-SNAPSHOT</bw-util-conf.version>
-        <bw-util-deploy.version>5.1.0-SNAPSHOT</bw-util-deploy.version>
-        <bw-util-hibernate.version>5.0.0-SNAPSHOT</bw-util-hibernate.version>
-        <bw-util-index.version>5.0.0-SNAPSHOT</bw-util-index.version>
-        <bw-util-network.version>5.0.0-SNAPSHOT</bw-util-network.version>
-        <bw-util-tz.version>5.0.0-SNAPSHOT</bw-util-tz.version>
-        <bw-util-security.version>5.0.0-SNAPSHOT</bw-util-security.version>
-        <bw-util2.version>5.0.0-SNAPSHOT</bw-util2.version>
+        <bw-util-logging.version>5.2.1-SNAPSHOT</bw-util-logging.version>
+        <bw-util.version>5.1.1-SNAPSHOT</bw-util.version>
+        <bw-util-conf.version>5.0.1-SNAPSHOT</bw-util-conf.version>
+        <bw-util-deploy.version>5.0.1-SNAPSHOT</bw-util-deploy.version>
+        <bw-util-hibernate.version>5.0.1-SNAPSHOT</bw-util-hibernate.version>
+        <bw-util-index.version>5.0.1-SNAPSHOT</bw-util-index.version>
+        <bw-util-network.version>5.0.1-SNAPSHOT</bw-util-network.version>
+        <bw-util-tz.version>5.0.1-SNAPSHOT</bw-util-tz.version>
+        <bw-util-security.version>5.0.1-SNAPSHOT</bw-util-security.version>
+        <bw-util2.version>5.0.1-SNAPSHOT</bw-util2.version>
 
-        <bw-webdav.version>5.0.0-SNAPSHOT</bw-webdav.version>
-        <bw-wfmodules.version>1.0.0-SNAPSHOT</bw-wfmodules.version>
-        <bw-wf-calendar-feature-pack.version>4.0.0-SNAPSHOT</bw-wf-calendar-feature-pack.version>
-        <bw-wf-core-feature-pack.version>4.0.0-SNAPSHOT</bw-wf-core-feature-pack.version>
-        <bw-wf-feature-pack.version>4.0.0-SNAPSHOT</bw-wf-feature-pack.version>
+        <bw-webdav.version>5.0.1-SNAPSHOT</bw-webdav.version>
+        <bw-wfmodules.version>1.0.1-SNAPSHOT</bw-wfmodules.version>
+        <bw-wf-calendar-feature-pack.version>4.0.1-SNAPSHOT</bw-wf-calendar-feature-pack.version>
+        <bw-wf-core-feature-pack.version>4.0.1-SNAPSHOT</bw-wf-core-feature-pack.version>
+        <bw-wf-feature-pack.version>4.0.1-SNAPSHOT</bw-wf-feature-pack.version>
 
-        <bw-xml.version>5.1.0-SNAPSHOT</bw-xml.version>
+        <bw-xml.version>5.0.1-SNAPSHOT</bw-xml.version>
       </properties>
     </profile>
 
@@ -2672,6 +2672,8 @@
 
         <bw-notifier.version>5.0.0</bw-notifier.version>
 
+        <bw-opensearch-qs.version>1.0.0</bw-opensearch-qs.version>
+
         <bw-oschdata.version>1.0.0</bw-oschdata.version>
 
         <bw-selfreg.version>5.0.0</bw-selfreg.version>
@@ -2680,8 +2682,8 @@
 
         <bw-timezone-server.version>5.0.0</bw-timezone-server.version>
 
-        <bw-util-logging.version>5.1.0</bw-util-logging.version>
-        <bw-util.version>5.0.0</bw-util.version>
+        <bw-util-logging.version>5.2.0</bw-util-logging.version>
+        <bw-util.version>5.1.0</bw-util.version>
         <bw-util-conf.version>5.0.0</bw-util-conf.version>
         <bw-util-deploy.version>5.0.0</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.0</bw-util-hibernate.version>
@@ -2693,6 +2695,9 @@
 
         <bw-webdav.version>5.0.0</bw-webdav.version>
         <bw-wfmodules.version>1.0.0</bw-wfmodules.version>
+        <bw-wf-calendar-feature-pack.version>4.0.0</bw-wf-calendar-feature-pack.version>
+        <bw-wf-core-feature-pack.version>4.0.0</bw-wf-core-feature-pack.version>
+        <bw-wf-feature-pack.version>4.0.0</bw-wf-feature-pack.version>
 
         <bw-xml.version>5.0.0</bw-xml.version>
       </properties>
