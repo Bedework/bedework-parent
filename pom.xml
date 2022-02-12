@@ -22,7 +22,7 @@
 
   <groupId>org.bedework</groupId>
   <artifactId>bedework-parent</artifactId>
-  <version>6-SNAPSHOT</version>
+  <version>6</version>
 
   <packaging>pom</packaging>
 
@@ -2605,7 +2605,7 @@
 
         <bw-jsforj.version>1.1.1-SNAPSHOT</bw-jsforj.version>
 
-        <bw-logs.version>1.1.1-SNAPSHOT</bw-logs.version>
+        <bw-logs.version>1.1.2-SNAPSHOT</bw-logs.version>
 
         <bw-notifier.version>5.0.1-SNAPSHOT</bw-notifier.version>
 
@@ -2666,7 +2666,7 @@
 
         <bw-jsforj.version>1.1.0</bw-jsforj.version>
 
-        <bw-logs.version>1.1.0</bw-logs.version>
+        <bw-logs.version>1.1.1</bw-logs.version>
 
         <bw-notifier.version>5.0.0</bw-notifier.version>
 
