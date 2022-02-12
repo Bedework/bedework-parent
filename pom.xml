@@ -2620,8 +2620,8 @@
         <bw-timezone-server.version>5.0.1-SNAPSHOT</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.1-SNAPSHOT</bw-util-logging.version>
-        <bw-util.version>5.0.1-SNAPSHOT</bw-util.version>
-        <bw-util-conf.version>5.0.1-SNAPSHOT</bw-util-conf.version>
+        <bw-util.version>5.0.2-SNAPSHOT</bw-util.version>
+        <bw-util-conf.version>5.0.2-SNAPSHOT</bw-util-conf.version>
         <bw-util-deploy.version>5.0.1-SNAPSHOT</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.1-SNAPSHOT</bw-util-hibernate.version>
         <bw-util-index.version>5.0.1-SNAPSHOT</bw-util-index.version>
@@ -2634,7 +2634,7 @@
         <bw-wfmodules.version>1.0.1-SNAPSHOT</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.0.1-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
 
-        <bw-xml.version>5.0.1-SNAPSHOT</bw-xml.version>
+        <bw-xml.version>5.0.2-SNAPSHOT</bw-xml.version>
       </properties>
     </profile>
 
@@ -2681,8 +2681,8 @@
         <bw-timezone-server.version>5.0.0</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.0</bw-util-logging.version>
-        <bw-util.version>5.0.0</bw-util.version>
-        <bw-util-conf.version>5.0.0</bw-util-conf.version>
+        <bw-util.version>5.0.1</bw-util.version>
+        <bw-util-conf.version>5.0.1</bw-util-conf.version>
         <bw-util-deploy.version>5.0.0</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.0</bw-util-hibernate.version>
         <bw-util-index.version>5.0.0</bw-util-index.version>
@@ -2695,7 +2695,7 @@
         <bw-wfmodules.version>1.0.0</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.0.1</bw-wildfly-galleon-feature-pack.version>
 
-        <bw-xml.version>5.0.0</bw-xml.version>
+        <bw-xml.version>5.0.1</bw-xml.version>
       </properties>
     </profile>
   </profiles>
