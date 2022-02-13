@@ -22,7 +22,7 @@
 
   <groupId>org.bedework</groupId>
   <artifactId>bedework-parent</artifactId>
-  <version>13-SNAPSHOT</version>
+  <version>13</version>
 
   <packaging>pom</packaging>
 
@@ -2661,7 +2661,7 @@
 
         <bw-notifier.version>5.0.0</bw-notifier.version>
 
-        <bw-quickstart.version>4.0.0</bw-quickstart.version>
+        <bw-quickstart.version>4.0.1</bw-quickstart.version>
 
         <bw-selfreg.version>5.0.0</bw-selfreg.version>
         <bw-sometime.version>2.0.0</bw-sometime.version>
