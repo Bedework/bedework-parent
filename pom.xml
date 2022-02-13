@@ -22,7 +22,7 @@
 
   <groupId>org.bedework</groupId>
   <artifactId>bedework-parent</artifactId>
-  <version>12-SNAPSHOT</version>
+  <version>12</version>
 
   <packaging>pom</packaging>
 
@@ -1078,73 +1078,80 @@
       <!-- ================= bw feature packs ================= -->
 
       <dependency>
-        <groupId>org.bedework</groupId>
+        <groupId>org.wildfly</groupId>
+        <artifactId>wildfly-ee-galleon-pack</artifactId>
+        <version>${wildfly.version}</version>
+        <type>zip</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-calendar-feature-pack</artifactId>
-        <version>${bw-wf-feature-pack.version}</version>
-        <type>pom</type>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
       </dependency>
 
       <dependency>
-        <groupId>org.bedework</groupId>
+        <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-carddav-feature-pack</artifactId>
-        <version>${bw-wf-feature-pack.version}</version>
-        <type>pom</type>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
       </dependency>
 
       <dependency>
-        <groupId>org.bedework</groupId>
+        <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-core-feature-pack</artifactId>
-        <version>${bw-wf-feature-pack.version}</version>
-        <type>pom</type>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
       </dependency>
 
       <dependency>
-        <groupId>org.bedework</groupId>
+        <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-xml-feature-pack</artifactId>
-        <version>${bw-wf-feature-pack.version}</version>
-        <type>pom</type>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
       </dependency>
 
       <dependency>
-        <groupId>org.bedework.bw-cat</groupId>
+        <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-category-feature-pack</artifactId>
-        <version>${bw-wf-feature-pack.version}</version>
-        <type>pom</type>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
       </dependency>
 
       <dependency>
-        <groupId>org.bedework.notifier</groupId>
+        <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-note-feature-pack</artifactId>
-        <version>${bw-wf-feature-pack.version}</version>
-        <type>pom</type>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
       </dependency>
 
       <dependency>
-        <groupId>org.bedework.evreg</groupId>
+        <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-event-registration-feature-pack</artifactId>
-        <version>${bw-wf-feature-pack.version}</version>
-        <type>pom</type>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
       </dependency>
 
       <dependency>
-        <groupId>org.bedework.selfreg</groupId>
+        <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-self-registration-feature-pack</artifactId>
-        <version>${bw-wf-feature-pack.version}</version>
-        <type>pom</type>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
       </dependency>
 
       <dependency>
-        <groupId>org.bedework.bw-synch</groupId>
+        <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-synch-feature-pack</artifactId>
-        <version>${bw-wf-feature-pack.version}</version>
-        <type>pom</type>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
       </dependency>
 
       <dependency>
-        <groupId>org.bedework.bw-tzsvr</groupId>
+        <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-timezone-server-feature-pack</artifactId>
-        <version>${bw-wf-feature-pack.version}</version>
-        <type>pom</type>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
       </dependency>
 
       <!-- ================= bw-xml ================= -->
