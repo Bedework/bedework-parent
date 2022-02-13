@@ -22,7 +22,7 @@
 
   <groupId>org.bedework</groupId>
   <artifactId>bedework-parent</artifactId>
-  <version>10-SNAPSHOT</version>
+  <version>10</version>
 
   <packaging>pom</packaging>
 
@@ -2610,7 +2610,7 @@
         <bw-util.version>5.0.2-SNAPSHOT</bw-util.version>
         <bw-util-conf.version>5.0.3-SNAPSHOT</bw-util-conf.version>
         <bw-util-deploy.version>5.0.2-SNAPSHOT</bw-util-deploy.version>
-        <bw-util-hibernate.version>5.0.2-SNAPSHOT</bw-util-hibernate.version>
+        <bw-util-hibernate.version>5.0.3-SNAPSHOT</bw-util-hibernate.version>
         <bw-util-index.version>5.0.1-SNAPSHOT</bw-util-index.version>
         <bw-util-network.version>5.0.1-SNAPSHOT</bw-util-network.version>
         <bw-util-tz.version>5.0.1-SNAPSHOT</bw-util-tz.version>
@@ -2666,7 +2666,7 @@
         <bw-util.version>5.0.1</bw-util.version>
         <bw-util-conf.version>5.0.2</bw-util-conf.version>
         <bw-util-deploy.version>5.0.1</bw-util-deploy.version>
-        <bw-util-hibernate.version>5.0.1</bw-util-hibernate.version>
+        <bw-util-hibernate.version>5.0.2</bw-util-hibernate.version>
         <bw-util-index.version>5.0.0</bw-util-index.version>
         <bw-util-network.version>5.0.0</bw-util-network.version>
         <bw-util-tz.version>5.0.0</bw-util-tz.version>
