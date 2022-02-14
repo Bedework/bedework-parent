@@ -22,7 +22,7 @@
 
   <groupId>org.bedework</groupId>
   <artifactId>bedework-parent</artifactId>
-  <version>14-SNAPSHOT</version>
+  <version>14</version>
 
   <packaging>pom</packaging>
 
@@ -2625,7 +2625,7 @@
         <bw-util2.version>5.0.1-SNAPSHOT</bw-util2.version>
 
         <bw-webdav.version>5.0.1-SNAPSHOT</bw-webdav.version>
-        <bw-wfmodules.version>1.0.3-SNAPSHOT</bw-wfmodules.version>
+        <bw-wfmodules.version>1.0.4-SNAPSHOT</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.0.1-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
 
         <bw-xml.version>5.0.2-SNAPSHOT</bw-xml.version>
@@ -2681,8 +2681,8 @@
         <bw-util2.version>5.0.0</bw-util2.version>
 
         <bw-webdav.version>5.0.0</bw-webdav.version>
-        <bw-wfmodules.version>1.0.2</bw-wfmodules.version>
-        <bw-wildfly-galleon-feature-pack.version>4.0.1</bw-wildfly-galleon-feature-pack.version>
+        <bw-wfmodules.version>1.0.3</bw-wfmodules.version>
+        <bw-wildfly-galleon-feature-pack.version>4.0.1-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
 
         <bw-xml.version>5.0.1</bw-xml.version>
       </properties>
