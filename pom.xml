@@ -168,6 +168,7 @@
          Third party libraries we depend on.
     -->
     <javax.activation-api.version>1.2.0</javax.activation-api.version>
+    <ant.contrib.version>1.0b3</ant.contrib.version>
     <apacheds-service.version>2.0.0.AM26</apacheds-service.version>
 
     <javax.cache-api.version>1.0.0</javax.cache-api.version>
@@ -1255,6 +1256,19 @@
       </dependency>
 
       <dependency>
+        <groupId>ant-contrib</groupId>
+        <artifactId>ant-contrib</artifactId>
+        <version>${ant.contrib.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>ant</groupId>
+            <artifactId>ant</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+
+      <dependency>
         <groupId>org.jasig.cas.client</groupId>
         <artifactId>cas-client-core</artifactId>
         <version>${jasig.cas.version}</version>
@@ -1961,6 +1975,19 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-antrun-plugin</artifactId>
           <version>${version.antrun.plugin}</version>
+          <dependencies>
+            <dependency>
+              <groupId>ant-contrib</groupId>
+              <artifactId>ant-contrib</artifactId>
+
+              <exclusions>
+                <exclusion>
+                  <groupId>ant</groupId>
+                  <artifactId>ant</artifactId>
+                </exclusion>
+              </exclusions>
+            </dependency>
+          </dependencies>
         </plugin>
 
         <plugin>
