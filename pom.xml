@@ -22,7 +22,7 @@
 
   <groupId>org.bedework</groupId>
   <artifactId>bedework-parent</artifactId>
-  <version>15-SNAPSHOT</version>
+  <version>15</version>
 
   <packaging>pom</packaging>
 
@@ -2614,7 +2614,7 @@
         <bw-bedework.version>4.0.1-SNAPSHOT</bw-bedework.version>
 
         <bw-caldav.version>5.0.1-SNAPSHOT</bw-caldav.version>
-        <bw-calendar-client.version>4.0.1-SNAPSHOT</bw-calendar-client.version>
+        <bw-calendar-client.version>4.0.2-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.1-SNAPSHOT</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.0.1-SNAPSHOT</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.0.1-SNAPSHOT</bw-calendar-engine.version>
@@ -2670,7 +2670,7 @@
         <bw-bedework.version>4.0.0</bw-bedework.version>
 
         <bw-caldav.version>5.0.0</bw-caldav.version>
-        <bw-calendar-client.version>4.0.0</bw-calendar-client.version>
+        <bw-calendar-client.version>4.0.1</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.0</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.0.0</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.0.0</bw-calendar-engine.version>
