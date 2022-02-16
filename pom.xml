@@ -22,7 +22,7 @@
 
   <groupId>org.bedework</groupId>
   <artifactId>bedework-parent</artifactId>
-  <version>18-SNAPSHOT</version>
+  <version>18</version>
 
   <packaging>pom</packaging>
 
@@ -2617,7 +2617,7 @@
         <bw-caldav.version>5.0.1-SNAPSHOT</bw-caldav.version>
         <bw-calendar-client.version>4.0.2-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.1-SNAPSHOT</bw-calendar-common.version>
-        <bw-calendar-deploy.version>4.0.1-SNAPSHOT</bw-calendar-deploy.version>
+        <bw-calendar-deploy.version>4.0.2-SNAPSHOT</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.0.1-SNAPSHOT</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.0.1-SNAPSHOT</bw-calendar-xsl.version>
         <bw-carddav.version>5.0.1-SNAPSHOT</bw-carddav.version>
@@ -2654,7 +2654,7 @@
 
         <bw-webdav.version>5.0.1-SNAPSHOT</bw-webdav.version>
         <bw-wfmodules.version>1.0.4-SNAPSHOT</bw-wfmodules.version>
-        <bw-wildfly-galleon-feature-pack.version>4.0.1-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
+        <bw-wildfly-galleon-feature-pack.version>4.0.2-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
 
         <bw-xml.version>5.0.2-SNAPSHOT</bw-xml.version>
       </properties>
@@ -2673,7 +2673,7 @@
         <bw-caldav.version>5.0.0</bw-caldav.version>
         <bw-calendar-client.version>4.0.1</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.0</bw-calendar-common.version>
-        <bw-calendar-deploy.version>4.0.0</bw-calendar-deploy.version>
+        <bw-calendar-deploy.version>4.0.1</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.0.0</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.0.0</bw-calendar-xsl.version>
         <bw-carddav.version>5.0.0</bw-carddav.version>
@@ -2710,7 +2710,7 @@
 
         <bw-webdav.version>5.0.0</bw-webdav.version>
         <bw-wfmodules.version>1.0.3</bw-wfmodules.version>
-        <bw-wildfly-galleon-feature-pack.version>4.0.1</bw-wildfly-galleon-feature-pack.version>
+        <bw-wildfly-galleon-feature-pack.version>4.0.2</bw-wildfly-galleon-feature-pack.version>
 
         <bw-xml.version>5.0.1</bw-xml.version>
       </properties>
