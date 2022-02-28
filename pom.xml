@@ -217,6 +217,8 @@
     <!-- test only -->
     <junit.version>4.13.1</junit.version>
 
+    <keycloak.version>17.0.0</keycloak.version>
+
     <log4j.version>2.17.0</log4j.version>
     <!-- For opensearch dependencies -->
     <lucene.version>8.10.1</lucene.version>
@@ -1101,20 +1103,6 @@
 
       <dependency>
         <groupId>org.bedework.deploy</groupId>
-        <artifactId>bw-wf-core-feature-pack</artifactId>
-        <version>${bw-wildfly-galleon-feature-pack.version}</version>
-        <type>zip</type>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework.deploy</groupId>
-        <artifactId>bw-wf-xml-feature-pack</artifactId>
-        <version>${bw-wildfly-galleon-feature-pack.version}</version>
-        <type>zip</type>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-category-feature-pack</artifactId>
         <version>${bw-wildfly-galleon-feature-pack.version}</version>
         <type>zip</type>
@@ -1122,7 +1110,7 @@
 
       <dependency>
         <groupId>org.bedework.deploy</groupId>
-        <artifactId>bw-wf-note-feature-pack</artifactId>
+        <artifactId>bw-wf-core-feature-pack</artifactId>
         <version>${bw-wildfly-galleon-feature-pack.version}</version>
         <type>zip</type>
       </dependency>
@@ -1130,6 +1118,20 @@
       <dependency>
         <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-event-registration-feature-pack</artifactId>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-wf-keycloak-saml-filter-feature-pack</artifactId>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-wf-note-feature-pack</artifactId>
         <version>${bw-wildfly-galleon-feature-pack.version}</version>
         <type>zip</type>
       </dependency>
@@ -1151,6 +1153,13 @@
       <dependency>
         <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-timezone-server-feature-pack</artifactId>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-wf-xml-feature-pack</artifactId>
         <version>${bw-wildfly-galleon-feature-pack.version}</version>
         <type>zip</type>
       </dependency>
@@ -1550,6 +1559,54 @@
         <groupId>javax.cache</groupId>
         <artifactId>cache-api</artifactId>
         <version>${javax.cache-api.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-adapter-spi</artifactId>
+        <version>${keycloak.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-common</artifactId>
+        <version>${keycloak.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-saml-servlet-filter-adapter</artifactId>
+        <version>${keycloak.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-undertow-adapter-spi</artifactId>
+        <version>${keycloak.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-servlet-adapter-spi</artifactId>
+        <version>${keycloak.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-saml-core</artifactId>
+        <version>${keycloak.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-saml-adapter-api-public</artifactId>
+        <version>${keycloak.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.keycloak</groupId>
+        <artifactId>keycloak-saml-adapter-core</artifactId>
+        <version>${keycloak.version}</version>
       </dependency>
 
       <dependency>
