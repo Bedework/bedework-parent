@@ -1103,6 +1103,13 @@
 
       <dependency>
         <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-wf-cas-filter-feature-pack</artifactId>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-category-feature-pack</artifactId>
         <version>${bw-wildfly-galleon-feature-pack.version}</version>
         <type>zip</type>
