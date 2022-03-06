@@ -2679,7 +2679,7 @@
         <bw-bedework.version>4.0.1-SNAPSHOT</bw-bedework.version>
 
         <bw-caldav.version>5.0.1-SNAPSHOT</bw-caldav.version>
-        <bw-calendar-client.version>4.0.2-SNAPSHOT</bw-calendar-client.version>
+        <bw-calendar-client.version>4.0.3-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.1-SNAPSHOT</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.0.2-SNAPSHOT</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.0.1-SNAPSHOT</bw-calendar-engine.version>
@@ -2711,14 +2711,14 @@
         <bw-util-deploy.version>5.0.2-SNAPSHOT</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.3-SNAPSHOT</bw-util-hibernate.version>
         <bw-util-index.version>5.0.1-SNAPSHOT</bw-util-index.version>
-        <bw-util-network.version>5.0.1-SNAPSHOT</bw-util-network.version>
+        <bw-util-network.version>5.0.2-SNAPSHOT</bw-util-network.version>
         <bw-util-tz.version>5.0.1-SNAPSHOT</bw-util-tz.version>
         <bw-util-security.version>5.0.1-SNAPSHOT</bw-util-security.version>
         <bw-util2.version>5.0.1-SNAPSHOT</bw-util2.version>
 
         <bw-webdav.version>5.0.1-SNAPSHOT</bw-webdav.version>
-        <bw-wfmodules.version>1.0.4-SNAPSHOT</bw-wfmodules.version>
-        <bw-wildfly-galleon-feature-pack.version>4.0.3-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
+        <bw-wfmodules.version>1.0.5-SNAPSHOT</bw-wfmodules.version>
+        <bw-wildfly-galleon-feature-pack.version>4.0.4-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
 
         <bw-xml.version>5.0.2-SNAPSHOT</bw-xml.version>
       </properties>
@@ -2735,7 +2735,7 @@
         <bw-bedework.version>4.0.0</bw-bedework.version>
 
         <bw-caldav.version>5.0.0</bw-caldav.version>
-        <bw-calendar-client.version>4.0.1</bw-calendar-client.version>
+        <bw-calendar-client.version>4.0.2</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.0</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.0.1</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.0.0</bw-calendar-engine.version>
@@ -2767,14 +2767,14 @@
         <bw-util-deploy.version>5.0.1</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.2</bw-util-hibernate.version>
         <bw-util-index.version>5.0.0</bw-util-index.version>
-        <bw-util-network.version>5.0.0</bw-util-network.version>
+        <bw-util-network.version>5.0.1</bw-util-network.version>
         <bw-util-tz.version>5.0.0</bw-util-tz.version>
         <bw-util-security.version>5.0.0</bw-util-security.version>
         <bw-util2.version>5.0.0</bw-util2.version>
 
         <bw-webdav.version>5.0.0</bw-webdav.version>
-        <bw-wfmodules.version>1.0.3</bw-wfmodules.version>
-        <bw-wildfly-galleon-feature-pack.version>4.0.2</bw-wildfly-galleon-feature-pack.version>
+        <bw-wfmodules.version>1.0.4</bw-wfmodules.version>
+        <bw-wildfly-galleon-feature-pack.version>4.0.3</bw-wildfly-galleon-feature-pack.version>
 
         <bw-xml.version>5.0.1</bw-xml.version>
       </properties>
