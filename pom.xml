@@ -186,6 +186,7 @@
     <commons.logging.version>1.2</commons.logging.version>
     <commons.pool.version>1.5.6</commons.pool.version>
     <commons.text.version>1.7</commons.text.version>
+    <commons.validator.version>1.7</commons.validator.version>
 
     <derby.version>10.15.2.0</derby.version>
     <diff-utils.version>4.5</diff-utils.version>
@@ -248,6 +249,8 @@
     <spring-ws-soap.version>2.0.0.RELEASE</spring-ws-soap.version>
     <apache.struts.version>1.3.10</apache.struts.version>
 
+    <taglibs-standard-impl.version>1.2.5</taglibs-standard-impl.version>
+
     <javax.websockets.version>1.1</javax.websockets.version>
 
     <javax.xml.soap-api.version>1.4.0</javax.xml.soap-api.version>
@@ -301,6 +304,12 @@
       <dependency>
         <groupId>org.bedework.bwwebcl</groupId>
         <artifactId>bw-calendar-client-rw</artifactId>
+        <version>${bw-calendar-client.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwwebcl</groupId>
+        <artifactId>bw-calendar-client-taglib</artifactId>
         <version>${bw-calendar-client.version}</version>
       </dependency>
 
@@ -1070,6 +1079,20 @@
         <version>${bw-util2.version}</version>
       </dependency>
 
+      <!-- ================= bw-webcache ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-webcache-common</artifactId>
+        <version>${bw-webcache.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-webcache-web</artifactId>
+        <version>${bw-webcache.version}</version>
+      </dependency>
+
       <!-- ================= bw-webdav ================= -->
 
       <dependency>
@@ -1372,6 +1395,12 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-text</artifactId>
         <version>${commons.text.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-validator</groupId>
+        <artifactId>commons-validator</artifactId>
+        <version>${commons.validator.version}</version>
       </dependency>
 
       <dependency>
@@ -1969,7 +1998,7 @@
       <dependency>
         <groupId>org.apache.taglibs</groupId>
         <artifactId>taglibs-standard-impl</artifactId>
-        <version>1.2.5</version>
+        <version>${taglibs-standard-impl.version}</version>
         <scope>runtime</scope>
       </dependency>
 
@@ -2716,6 +2745,7 @@
         <bw-util-security.version>5.0.1-SNAPSHOT</bw-util-security.version>
         <bw-util2.version>5.0.1-SNAPSHOT</bw-util2.version>
 
+        <bw-webcache.version>1.0.0-SNAPSHOT</bw-webcache.version>
         <bw-webdav.version>5.0.1-SNAPSHOT</bw-webdav.version>
         <bw-wfmodules.version>1.0.5-SNAPSHOT</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.0.4-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
@@ -2772,6 +2802,7 @@
         <bw-util-security.version>5.0.0</bw-util-security.version>
         <bw-util2.version>5.0.0</bw-util2.version>
 
+        <bw-webcache.version>1.0.0</bw-webcache.version>
         <bw-webdav.version>5.0.0</bw-webdav.version>
         <bw-wfmodules.version>1.0.4</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.0.3</bw-wildfly-galleon-feature-pack.version>
