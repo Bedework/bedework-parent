@@ -316,7 +316,13 @@
 
       <dependency>
         <groupId>org.bedework.bwwebcl</groupId>
-        <artifactId>bw-calendar-client-strutsmodule</artifactId>
+        <artifactId>bw-calendar-client-struts</artifactId>
+        <version>${bw-calendar-client.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwwebcl</groupId>
+        <artifactId>bw-calendar-client-struts2</artifactId>
         <version>${bw-calendar-client.version}</version>
       </dependency>
 
