@@ -2721,11 +2721,11 @@
         <bw-bedework.version>4.0.1-SNAPSHOT</bw-bedework.version>
 
         <bw-caldav.version>5.0.1-SNAPSHOT</bw-caldav.version>
-        <bw-calendar-client.version>4.0.3-SNAPSHOT</bw-calendar-client.version>
-        <bw-calendar-common.version>4.0.1-SNAPSHOT</bw-calendar-common.version>
-        <bw-calendar-deploy.version>4.0.2-SNAPSHOT</bw-calendar-deploy.version>
-        <bw-calendar-engine.version>4.0.1-SNAPSHOT</bw-calendar-engine.version>
-        <bw-calendar-xsl.version>4.0.1-SNAPSHOT</bw-calendar-xsl.version>
+        <bw-calendar-client.version>4.1.0-SNAPSHOT</bw-calendar-client.version>
+        <bw-calendar-common.version>4.1.0-SNAPSHOT</bw-calendar-common.version>
+        <bw-calendar-deploy.version>4.1.0-SNAPSHOT</bw-calendar-deploy.version>
+        <bw-calendar-engine.version>4.1.0-SNAPSHOT</bw-calendar-engine.version>
+        <bw-calendar-xsl.version>4.1.0-SNAPSHOT</bw-calendar-xsl.version>
         <bw-carddav.version>5.0.1-SNAPSHOT</bw-carddav.version>
         <bw-category.version>4.0.1-SNAPSHOT</bw-category.version>
         <bw-cli.version>5.0.1-SNAPSHOT</bw-cli.version>
