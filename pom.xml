@@ -2720,7 +2720,7 @@
 
         <bw-bedework.version>4.0.1-SNAPSHOT</bw-bedework.version>
 
-        <bw-caldav.version>5.0.1-SNAPSHOT</bw-caldav.version>
+        <bw-caldav.version>5.1.0-SNAPSHOT</bw-caldav.version>
         <bw-calendar-client.version>4.1.0-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.1.0-SNAPSHOT</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.1.0-SNAPSHOT</bw-calendar-deploy.version>
@@ -2739,7 +2739,7 @@
 
         <bw-notifier.version>5.0.1-SNAPSHOT</bw-notifier.version>
 
-        <bw-quickstart.version>4.0.1-SNAPSHOT</bw-quickstart.version>
+        <bw-quickstart.version>4.0.2-SNAPSHOT</bw-quickstart.version>
 
         <bw-selfreg.version>5.0.1-SNAPSHOT</bw-selfreg.version>
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
@@ -2753,7 +2753,7 @@
         <bw-util-deploy.version>5.0.3-SNAPSHOT</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.3-SNAPSHOT</bw-util-hibernate.version>
         <bw-util-index.version>5.0.1-SNAPSHOT</bw-util-index.version>
-        <bw-util-network.version>5.0.2-SNAPSHOT</bw-util-network.version>
+        <bw-util-network.version>5.1.0-SNAPSHOT</bw-util-network.version>
         <bw-util-tz.version>5.0.1-SNAPSHOT</bw-util-tz.version>
         <bw-util-security.version>5.0.1-SNAPSHOT</bw-util-security.version>
         <bw-util2.version>5.0.1-SNAPSHOT</bw-util2.version>
