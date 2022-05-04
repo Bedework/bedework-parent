@@ -204,7 +204,8 @@
 
     <imgscalr.version>4.2</imgscalr.version>
 
-    <jackson.version>2.13.0</jackson.version>
+    <jackson.databind.version>2.13.2.2</jackson.databind.version>
+    <jackson.version>2.13.2</jackson.version>
     <jasig.cas.version>3.6.4</jasig.cas.version>
     <jasypt.version>1.9.2</jasypt.version>
     <javassist.version>3.20.0-GA</javassist.version>
@@ -751,6 +752,14 @@
         <version>${bw-jsforj.version}</version>
       </dependency>
 
+      <!-- ================= bw-json ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-json</artifactId>
+        <version>${bw-json.version}</version>
+      </dependency>
+
       <!-- ============ bw-logs ============ -->
 
       <dependency>
@@ -846,6 +855,14 @@
         <artifactId>bw-qsbedework</artifactId>
         <version>${bw-quickstart.version}</version>
         <type>zip</type>
+      </dependency>
+
+      <!-- ============ bw-schemaorgforj ============ -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-schemaorgforj</artifactId>
+        <version>${bw-schemaorg.version}</version>
       </dependency>
 
       <!-- ============ bw-self-registration ============ -->
@@ -1509,7 +1526,7 @@
       <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
-        <version>${jackson.version}</version>
+        <version>${jackson.databind.version}</version>
       </dependency>
 
       <dependency>
@@ -2734,6 +2751,7 @@
         <bw-eventreg.version>5.0.2-SNAPSHOT</bw-eventreg.version>
 
         <bw-jsforj.version>1.1.1-SNAPSHOT</bw-jsforj.version>
+        <bw-json.version>1.0.0-SNAPSHOT</bw-json.version>
 
         <bw-logs.version>1.1.2-SNAPSHOT</bw-logs.version>
 
@@ -2741,6 +2759,7 @@
 
         <bw-quickstart.version>4.0.2-SNAPSHOT</bw-quickstart.version>
 
+        <bw-schemaorg.version>1.0.0-SNAPSHOT</bw-schemaorg.version>
         <bw-selfreg.version>5.0.1-SNAPSHOT</bw-selfreg.version>
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
         <bw-synch.version>5.0.1-SNAPSHOT</bw-synch.version>
