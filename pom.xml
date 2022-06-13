@@ -195,8 +195,8 @@
     <flywaydb.version>3.1</flywaydb.version>
     <freemarker.version>2.3.31</freemarker.version>
 
-    <hibernate.version>5.2.5.Final</hibernate.version>
-    <hibernate.patched.version>5.2.5.1FinalBwPatched</hibernate.patched.version>
+    <hibernate.version>5.6.9.Final</hibernate.version>
+    <!--<hibernate.patched.version>5.2.5.1FinalBwPatched</hibernate.patched.version>-->
     <hsqldb.version>2.5.1</hsqldb.version>
     <http-client.version>4.5.13</http-client.version>
     <http-core.version>4.4.14</http-core.version>
@@ -1463,11 +1463,12 @@
         <version>${hibernate.version}</version>
       </dependency>
 
+      <!--
       <dependency>
         <groupId>org.bedework</groupId>
         <artifactId>hibernate-core</artifactId>
         <version>${hibernate.patched.version}</version>
-      </dependency>
+      </dependency>-->
 
       <dependency>
         <groupId>org.hibernate</groupId>
