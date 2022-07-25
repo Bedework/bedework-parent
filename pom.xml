@@ -81,6 +81,12 @@
     <maven.compiler.testTarget>${maven.compiler.target}</maven.compiler.testTarget>
     <maven.compiler.testSource>${maven.compiler.source}</maven.compiler.testSource>
 
+    <maven.repository.protocol>https</maven.repository.protocol>
+    <!-- The full remote maven repo URL; can be overridden via -D for special use cases -->
+    <maven.repository.url>${maven.repository.protocol}://repository.jboss.org/nexus/content/groups/public/</maven.repository.url>
+    <!-- https://access.redhat.com/maven-repository -->
+    <maven.redhat.repository.url>${maven.repository.protocol}://maven.repository.redhat.com/ga/</maven.redhat.repository.url>
+
     <!-- Maven Plugin Versions -->
     <version.antrun.plugin>1.8</version.antrun.plugin>
     <version.appassembler.plugin>1.10</version.appassembler.plugin>
@@ -117,6 +123,7 @@
     <version.org.wildfly.galleon-plugins>5.2.10.Final</version.org.wildfly.galleon-plugins>
 
     <wildfly.core.version>18.0.3.Final</wildfly.core.version>
+    <wildfly.common.version>1.6.0.Final</wildfly.common.version>
     <wildfly.version>26.0.1.Final</wildfly.version>
 
     <!-- Repository Deployment URLs -->
@@ -179,7 +186,7 @@
     <commons.collections4.version>4.1</commons.collections4.version>
     <commons.csv.version>1.2</commons.csv.version>
     <commons.digester-version>1.8</commons.digester-version>
-    <commons-fileupload.version>1.3.3</commons-fileupload.version>
+    <commons-fileupload.version>1.4</commons-fileupload.version>
     <commons.io.version>2.8.0</commons.io.version>
     <commons.lang.version>2.6</commons.lang.version>
     <commons.lang3.version>3.9</commons.lang3.version>
@@ -195,6 +202,7 @@
     <flywaydb.version>3.1</flywaydb.version>
     <freemarker.version>2.3.31</freemarker.version>
 
+    <hawtio.version>2.15.0</hawtio.version>
     <hibernate.version>5.6.9.Final</hibernate.version>
     <!--<hibernate.patched.version>5.2.5.1FinalBwPatched</hibernate.patched.version>-->
     <hsqldb.version>2.5.1</hsqldb.version>
@@ -235,7 +243,7 @@
     <opensearch.version>1.2.4</opensearch.version>
 
     <portlet-api.version>1.0</portlet-api.version>
-    <postgresql-driver.version>42.3.1</postgresql-driver.version>
+    <postgresql-driver.version>42.3.3</postgresql-driver.version>
 
     <saaj.version>1.5.1</saaj.version>
     <servlet-api.version>4.0.0</servlet-api.version>
@@ -248,14 +256,21 @@
     <spring-webmvc-portlet.version>4.3.28.RELEASE</spring-webmvc-portlet.version>
     <spring-ws.version>3.1.2</spring-ws.version>
     <spring-ws-soap.version>2.0.0.RELEASE</spring-ws-soap.version>
-    <apache.struts.version>1.3.10</apache.struts.version>
-    <apache.struts2.version>2.5.29</apache.struts2.version>
+    <apache.struts2.version>2.5.30</apache.struts2.version>
 
     <taglibs-standard-impl.version>1.2.5</taglibs-standard-impl.version>
 
     <javax.websockets.version>1.1</javax.websockets.version>
 
     <javax.xml.soap-api.version>1.4.0</javax.xml.soap-api.version>
+
+    <!-- hawtio and dependencies -->
+    <checker-qual.version>3.5.0</checker-qual.version>
+    <error_prone_annotations.version>2.3.4</error_prone_annotations.version>
+    <json.version>20171018</json.version>
+    <json-simple.version>1.1.1</json-simple.version>
+    <jsr305.version>3.0.2</jsr305.version>
+    <j2objc-annotations.version>1.3</j2objc-annotations.version>
   </properties>
 
   <dependencyManagement>
@@ -312,12 +327,6 @@
       <dependency>
         <groupId>org.bedework.bwwebcl</groupId>
         <artifactId>bw-calendar-client-taglib</artifactId>
-        <version>${bw-calendar-client.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework.bwwebcl</groupId>
-        <artifactId>bw-calendar-client-struts</artifactId>
         <version>${bw-calendar-client.version}</version>
       </dependency>
 
@@ -831,6 +840,13 @@
 
       <dependency>
         <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-hawtio</artifactId>
+        <version>${bw-quickstart.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-opensearch-GeoLite2-City</artifactId>
         <version>${bw-quickstart.version}</version>
         <type>zip</type>
@@ -1128,7 +1144,7 @@
       <!-- ================= bw wildfly extensions ================= -->
 
       <dependency>
-        <groupId>org.bedework</groupId>
+        <groupId>org.bedework.wfextensions</groupId>
         <artifactId>bw-wf-calendar-subsystem</artifactId>
         <version>${bw-wf-extensions.version}</version>
       </dependency>
@@ -2023,18 +2039,6 @@
       </dependency>
 
       <dependency>
-        <groupId>org.apache.struts</groupId>
-        <artifactId>struts-core</artifactId>
-        <version>${apache.struts.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.apache.struts</groupId>
-        <artifactId>struts-taglib</artifactId>
-        <version>${apache.struts.version}</version>
-      </dependency>
-
-      <dependency>
         <groupId>org.apache.taglibs</groupId>
         <artifactId>taglibs-standard-impl</artifactId>
         <version>${taglibs-standard-impl.version}</version>
@@ -2065,6 +2069,86 @@
         <version>${wildfly.core.version}</version>
         <type>pom</type>
         <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.wildfly.core</groupId>
+        <artifactId>wildfly-embedded</artifactId>
+        <version>${wildfly.core.version}</version>
+      </dependency>
+
+      <!-- If you add a dependency on wildfly-embedded you need to bring your own transitives -->
+      <dependency>
+        <groupId>org.wildfly.common</groupId>
+        <artifactId>wildfly-common</artifactId>
+        <version>${wildfly.common.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.wildfly.galleon-plugins</groupId>
+        <artifactId>wildfly-galleon-plugins</artifactId>
+        <version>${version.org.wildfly.galleon-plugins}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.jboss.galleon</groupId>
+            <artifactId>*</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+      <!-- hawtio -->
+      <dependency>
+        <groupId>org.checkerframework</groupId>
+        <artifactId>checker-qual</artifactId>
+        <version>${checker-qual.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.errorprone</groupId>
+        <artifactId>error_prone_annotations</artifactId>
+        <version>${error_prone_annotations.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>${json.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.googlecode.json-simple</groupId>
+        <artifactId>json-simple</artifactId>
+        <version>${json-simple.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.code.findbugs</groupId>
+        <artifactId>jsr305</artifactId>
+        <version>${jsr305.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.j2objc</groupId>
+        <artifactId>j2objc-annotations</artifactId>
+        <version>${j2objc-annotations.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.hawt</groupId>
+        <artifactId>hawtio-core</artifactId>
+        <version>${hawtio.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.hawt</groupId>
+        <artifactId>hawtio-system</artifactId>
+        <version>${hawtio.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.hawt</groupId>
+        <artifactId>hawtio-util</artifactId>
+        <version>${hawtio.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -2874,6 +2958,53 @@
       </properties>
     </profile>
   </profiles>
+
+  <repositories>
+    <repository>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </snapshots>
+      <id>jboss-public-repository-group</id>
+      <name>JBoss Public Repository Group</name>
+      <url>${maven.repository.url}</url>
+      <layout>default</layout>
+    </repository>
+
+    <repository>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </snapshots>
+      <id>jboss-enterprise-maven-repository</id>
+      <name>JBoss Enterprise Maven Repository</name>
+      <url>${maven.redhat.repository.url}</url>
+      <layout>default</layout>
+    </repository>
+
+    <repository>
+      <releases>
+        <enabled>false</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </snapshots>
+      <id>${bedework.snapshots.repo.id}</id>
+      <name>Bedework Snapshots Repository</name>
+      <url>${bedework.snapshots.repo.url}</url>
+      <layout>default</layout>
+    </repository>
+  </repositories>
 
   <!-- Some plugins are available in the jboss repository only -->
   <pluginRepositories>
