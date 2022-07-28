@@ -2966,7 +2966,7 @@
         <updatePolicy>never</updatePolicy>
       </releases>
       <snapshots>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <updatePolicy>never</updatePolicy>
       </snapshots>
       <id>jboss-public-repository-group</id>
@@ -2981,7 +2981,7 @@
         <updatePolicy>never</updatePolicy>
       </releases>
       <snapshots>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <updatePolicy>never</updatePolicy>
       </snapshots>
       <id>jboss-enterprise-maven-repository</id>
@@ -2996,7 +2996,7 @@
         <updatePolicy>never</updatePolicy>
       </releases>
       <snapshots>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
         <updatePolicy>never</updatePolicy>
       </snapshots>
       <id>${bedework.snapshots.repo.id}</id>
