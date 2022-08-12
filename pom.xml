@@ -230,8 +230,6 @@
     <keycloak.version>17.0.0</keycloak.version>
 
     <log4j.version>2.17.1</log4j.version>
-    <!-- For opensearch dependencies -->
-    <lucene.version>8.10.1</lucene.version>
 
     <javax.mail.version>1.6.2</javax.mail.version>
     <sun.mail.version>1.6.2</sun.mail.version>
@@ -240,7 +238,14 @@
     <mockito.version>1.10.19</mockito.version>
 
     <opensaml.version>2.5.1-1</opensaml.version>
-    <opensearch.version>1.2.4</opensearch.version>
+    <opensearch.version>2.1.0</opensearch.version>
+    <!-- For opensearch dependencies -->
+    <carrotsearch-hppc.version>0.8.1</carrotsearch-hppc.version>
+    <HdrHistogram.version>2.1.12</HdrHistogram.version>
+    <jopt-simple.version>5.0.4</jopt-simple.version>
+    <joda-time.version>2.10.12</joda-time.version>
+    <lucene.version>9.2.0</lucene.version>
+    <t-digest.version>3.2</t-digest.version>
 
     <portlet-api.version>1.0</portlet-api.version>
     <postgresql-driver.version>42.3.3</postgresql-driver.version>
