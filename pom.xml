@@ -122,9 +122,9 @@
 
     <version.org.wildfly.galleon-plugins>5.2.10.Final</version.org.wildfly.galleon-plugins>
 
-    <wildfly.core.version>18.0.3.Final</wildfly.core.version>
+    <wildfly.core.version>18.1.2.Final</wildfly.core.version>
     <wildfly.common.version>1.6.0.Final</wildfly.common.version>
-    <wildfly.version>26.0.1.Final</wildfly.version>
+    <wildfly.version>26.1.3.Final</wildfly.version>
 
     <!-- Repository Deployment URLs -->
     <bedework.releases.repo.id>ossrh</bedework.releases.repo.id>
@@ -192,7 +192,7 @@
     <commons.lang3.version>3.9</commons.lang3.version>
     <commons.logging.version>1.2</commons.logging.version>
     <commons.pool.version>1.5.6</commons.pool.version>
-    <commons.text.version>1.8</commons.text.version>
+    <commons.text.version>1.10.0</commons.text.version>
     <commons.validator.version>1.7</commons.validator.version>
 
     <derby.version>10.15.2.0</derby.version>
@@ -212,7 +212,7 @@
 
     <imgscalr.version>4.2</imgscalr.version>
 
-    <jackson.databind.version>2.13.2.2</jackson.databind.version>
+    <jackson.databind.version>2.13.4</jackson.databind.version>
     <jackson.version>2.13.2</jackson.version>
     <jansi.version>2.4.0</jansi.version>
     <jasig.cas.version>3.6.4</jasig.cas.version>
