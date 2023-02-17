@@ -212,7 +212,7 @@
 
     <imgscalr.version>4.2</imgscalr.version>
 
-    <jackson.databind.version>2.13.4</jackson.databind.version>
+    <jackson.databind.version>2.13.4.1</jackson.databind.version>
     <jackson.version>2.13.2</jackson.version>
     <jansi.version>2.4.0</jansi.version>
     <jasig.cas.version>3.6.4</jasig.cas.version>
