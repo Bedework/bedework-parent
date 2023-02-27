@@ -2892,7 +2892,7 @@
     <profile>
       <id>bedework-dev</id>
       <activation>
-        <activeByDefault>false</activeByDefault>
+        <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
         <bw-access.version>5.0.1-SNAPSHOT</bw-access.version>
