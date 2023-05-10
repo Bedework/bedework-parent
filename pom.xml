@@ -96,6 +96,7 @@
     <version.clean.plugin>3.1.0</version.clean.plugin>
     <version.compiler.plugin>3.8.1</version.compiler.plugin>
     <version.dependency.plugin>3.1.1</version.dependency.plugin>
+    <version.dependency.check.plugin>8.2.1</version.dependency.check.plugin>
     <version.deploy.plugin>2.8.2</version.deploy.plugin>
     <version.ear.plugin>3.0.1</version.ear.plugin>
     <version.enforcer.plugin>3.0.0-M3</version.enforcer.plugin>
@@ -212,8 +213,8 @@
 
     <imgscalr.version>4.2</imgscalr.version>
 
-    <jackson.databind.version>2.13.4.1</jackson.databind.version>
-    <jackson.version>2.13.2</jackson.version>
+    <jackson.databind.version>2.15.0</jackson.databind.version>
+    <jackson.version>2.15.0</jackson.version>
     <jansi.version>2.4.0</jansi.version>
     <jasig.cas.version>3.6.4</jasig.cas.version>
     <jasypt.version>1.9.2</jasypt.version>
@@ -267,7 +268,8 @@
     <saaj.version>1.5.1</saaj.version>
     <servlet-api.version>4.0.0</servlet-api.version>
     <slf4j.version>1.6.6</slf4j.version>
-    <snakeyaml.version>1.32</snakeyaml.version>
+    <!-- Snakeyaml for jackson -->
+    <snakeyaml.version>2.0</snakeyaml.version>
     <spring-framework.version>5.2.19.RELEASE</spring-framework.version>
     <spring-ldap.version>2.3.3.RELEASE</spring-ldap.version>
     <spring-security.version>5.3.9.RELEASE</spring-security.version>
@@ -2257,6 +2259,12 @@
         </plugin>
 
         <plugin>
+          <groupId>org.owasp</groupId>
+          <artifactId>dependency-check-maven</artifactId>
+          <version>${version.dependency.check.plugin}</version>
+        </plugin>
+
+        <plugin>
           <groupId>org.flywaydb</groupId>
           <artifactId>flyway-maven-plugin</artifactId>
           <version>${flywaydb.version}</version>
@@ -2728,6 +2736,12 @@
           <nexusUrl>https://oss.sonatype.org/</nexusUrl>
           <autoReleaseAfterClose>true</autoReleaseAfterClose>
         </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.owasp</groupId>
+        <artifactId>dependency-check-maven</artifactId>
+        <version>${version.dependency.check.plugin}</version>
       </plugin>
 
       <!-- Check for the minimum version of Java and Maven.  Runs during the validate phase. -->
