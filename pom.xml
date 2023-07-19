@@ -239,6 +239,7 @@
     <maven.version>3.8.4</maven.version>
     <maven-plugin-annotations.version>3.6.4</maven-plugin-annotations.version>
     <mockito.version>1.10.19</mockito.version>
+    <mysql-driver.version>8.0.33</mysql-driver.version>
 
     <opensaml.version>2.5.1-1</opensaml.version>
     <opensearch.version>2.1.0</opensearch.version>
@@ -1803,6 +1804,12 @@
         <groupId>com.sun.mail</groupId>
         <artifactId>javax.mail</artifactId>
         <version>${sun.mail.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.mysql</groupId>
+        <artifactId>mysql-connector-j</artifactId>
+        <version>${mysql-driver.version}</version>
       </dependency>
 
       <dependency>
