@@ -946,9 +946,9 @@
 
       <dependency>
         <groupId>org.bedework.bw-synch</groupId>
-        <artifactId>bw-synch-ear</artifactId>
+        <artifactId>bw-synch-war</artifactId>
         <version>${bw-synch.version}</version>
-        <type>ear</type>
+        <type>war</type>
       </dependency>
 
       <!-- ============ bw-timezone-server =========== -->
