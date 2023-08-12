@@ -1275,9 +1275,9 @@
 
       <dependency>
         <groupId>org.bedework</groupId>
-        <artifactId>bw-xml-ear</artifactId>
+        <artifactId>bw-xml-war</artifactId>
         <version>${bw-xml.version}</version>
-        <type>ear</type>
+        <type>war</type>
       </dependency>
 
       <dependency>
