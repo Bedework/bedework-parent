@@ -22,7 +22,7 @@
 
   <groupId>org.bedework</groupId>
   <artifactId>bedework-parent</artifactId>
-  <version>27-SNAPSHOT</version>
+  <version>27</version>
 
   <packaging>pom</packaging>
 
@@ -3007,7 +3007,7 @@
         <bw-wfmodules.version>1.0.5-SNAPSHOT</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.0.4-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
 
-        <bw-xml.version>5.0.2-SNAPSHOT</bw-xml.version>
+        <bw-xml.version>5.0.2</bw-xml.version>
       </properties>
     </profile>
 
@@ -3065,7 +3065,7 @@
         <bw-wfmodules.version>1.0.4</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.0.3</bw-wildfly-galleon-feature-pack.version>
 
-        <bw-xml.version>5.0.1</bw-xml.version>
+        <bw-xml.version>5.0.2</bw-xml.version>
       </properties>
     </profile>
   </profiles>
