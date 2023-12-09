@@ -2994,7 +2994,7 @@
         <bw-util.version>5.0.2</bw-util.version>
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
         <bw-util-deploy.version>5.0.3-SNAPSHOT</bw-util-deploy.version>
-        <bw-util-hibernate.version>5.0.3-SNAPSHOT</bw-util-hibernate.version>
+        <bw-util-hibernate.version>5.0.3</bw-util-hibernate.version>
         <bw-util-index.version>5.0.1</bw-util-index.version>
         <bw-util-network.version>5.1.3</bw-util-network.version>
         <bw-util-tz.version>5.0.1</bw-util-tz.version>
@@ -3052,7 +3052,7 @@
         <bw-util.version>5.0.2</bw-util.version>
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
         <bw-util-deploy.version>5.0.2</bw-util-deploy.version>
-        <bw-util-hibernate.version>5.0.2</bw-util-hibernate.version>
+        <bw-util-hibernate.version>5.0.3</bw-util-hibernate.version>
         <bw-util-index.version>5.0.1</bw-util-index.version>
         <bw-util-network.version>5.1.3</bw-util-network.version>
         <bw-util-tz.version>5.0.1</bw-util-tz.version>
