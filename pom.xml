@@ -2961,7 +2961,7 @@
 
         <bw-bedework.version>4.0.1-SNAPSHOT</bw-bedework.version>
 
-        <bw-caldav.version>5.1.0-SNAPSHOT</bw-caldav.version>
+        <bw-caldav.version>5.0.1</bw-caldav.version>
         <bw-calendar-client.version>4.1.0-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.1.0-SNAPSHOT</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.1.0-SNAPSHOT</bw-calendar-deploy.version>
@@ -2988,7 +2988,7 @@
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
         <bw-synch.version>5.0.1-SNAPSHOT</bw-synch.version>
 
-        <bw-timezone-server.version>5.0.1-SNAPSHOT</bw-timezone-server.version>
+        <bw-timezone-server.version>5.0.1</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.1</bw-util-logging.version>
         <bw-util.version>5.0.2</bw-util.version>
@@ -3021,7 +3021,7 @@
 
         <bw-bedework.version>4.0.0</bw-bedework.version>
 
-        <bw-caldav.version>5.0.0</bw-caldav.version>
+        <bw-caldav.version>5.0.1</bw-caldav.version>
         <bw-calendar-client.version>4.0.2</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.0</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.0.1</bw-calendar-deploy.version>
@@ -3046,7 +3046,7 @@
         <bw-sometime.version>2.0.0</bw-sometime.version>
         <bw-synch.version>5.0.0</bw-synch.version>
 
-        <bw-timezone-server.version>5.0.0</bw-timezone-server.version>
+        <bw-timezone-server.version>5.0.1</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.1</bw-util-logging.version>
         <bw-util.version>5.0.2</bw-util.version>
