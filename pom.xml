@@ -2986,7 +2986,7 @@
         <bw-schemaorg.version>1.0.0-SNAPSHOT</bw-schemaorg.version>
         <bw-selfreg.version>5.0.1-SNAPSHOT</bw-selfreg.version>
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
-        <bw-synch.version>5.0.1-SNAPSHOT</bw-synch.version>
+        <bw-synch.version>5.0.1</bw-synch.version>
 
         <bw-timezone-server.version>5.0.1</bw-timezone-server.version>
 
@@ -3044,7 +3044,7 @@
 
         <bw-selfreg.version>5.0.0</bw-selfreg.version>
         <bw-sometime.version>2.0.0</bw-sometime.version>
-        <bw-synch.version>5.0.0</bw-synch.version>
+        <bw-synch.version>5.0.1</bw-synch.version>
 
         <bw-timezone-server.version>5.0.1</bw-timezone-server.version>
 
