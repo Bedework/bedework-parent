@@ -269,7 +269,7 @@
 
     <saaj.version>1.5.1</saaj.version>
     <servlet-api.version>4.0.0</servlet-api.version>
-    <slf4j.version>1.6.6</slf4j.version>
+    <slf4j.version>1.7.36</slf4j.version>
     <!-- Snakeyaml for jackson -->
     <snakeyaml.version>2.0</snakeyaml.version>
     <spring-framework.version>5.2.19.RELEASE</spring-framework.version>
