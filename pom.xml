@@ -840,9 +840,9 @@
 
       <dependency>
         <groupId>org.bedework.notifier</groupId>
-        <artifactId>bw-note-ear</artifactId>
+        <artifactId>bw-note-war</artifactId>
         <version>${bw-notifier.version}</version>
-        <type>ear</type>
+        <type>war</type>
       </dependency>
 
       <!-- ================= bw-quickstart ================= -->
@@ -3120,7 +3120,7 @@
       <id>spring-snapshots</id>
       <url>https://repo.spring.io/snapshot</url>
       <snapshots>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
       </snapshots>
     </repository>
 
