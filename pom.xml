@@ -22,7 +22,7 @@
 
   <groupId>org.bedework</groupId>
   <artifactId>bedework-parent</artifactId>
-  <version>35</version>
+  <version>36-SNAPSHOT</version>
 
   <packaging>pom</packaging>
 
