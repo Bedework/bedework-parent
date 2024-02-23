@@ -76,8 +76,8 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <!-- maven-compiler-plugin -->
-    <maven.compiler.target>11</maven.compiler.target>
-    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.testTarget>${maven.compiler.target}</maven.compiler.testTarget>
     <maven.compiler.testSource>${maven.compiler.source}</maven.compiler.testSource>
 
@@ -111,9 +111,9 @@
     <version.jaxb2.plugin>2.5.0</version.jaxb2.plugin>
     <version.jaxws.plugin>2.6.1</version.jaxws.plugin>
     <version.license.plugin>2.0</version.license.plugin>
-    <version.nexus.staging.plugin>1.6.8</version.nexus.staging.plugin>
+    <version.nexus.staging.plugin>1.6.13</version.nexus.staging.plugin>
     <version.notice.plugin>1.0.4</version.notice.plugin>
-    <version.plugin.plugin>3.6.0</version.plugin.plugin>
+    <version.plugin.plugin>3.11.0</version.plugin.plugin>
     <version.release.plugin>2.5.3</version.release.plugin>
     <version.resources.plugin>3.2.0</version.resources.plugin>
     <version.source.plugin>3.1.0</version.source.plugin>
