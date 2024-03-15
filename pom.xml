@@ -920,9 +920,9 @@
 
       <dependency>
         <groupId>org.bedework.selfreg</groupId>
-        <artifactId>bw-self-registration-ear</artifactId>
+        <artifactId>bw-self-registration-war</artifactId>
         <version>${bw-selfreg.version}</version>
-        <type>ear</type>
+        <type>war</type>
       </dependency>
 
       <!-- ================= bw-synch ================= -->
