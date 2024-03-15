@@ -2988,7 +2988,7 @@
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
         <bw-synch.version>5.0.3</bw-synch.version>
 
-        <bw-timezone-server.version>5.0.1</bw-timezone-server.version>
+        <bw-timezone-server.version>5.0.3</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.2</bw-util-logging.version>
         <bw-util.version>5.0.3</bw-util.version>
@@ -3046,7 +3046,7 @@
         <bw-sometime.version>2.0.0</bw-sometime.version>
         <bw-synch.version>5.0.3</bw-synch.version>
 
-        <bw-timezone-server.version>5.0.1</bw-timezone-server.version>
+        <bw-timezone-server.version>5.0.3</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.2</bw-util-logging.version>
         <bw-util.version>5.0.3</bw-util.version>
