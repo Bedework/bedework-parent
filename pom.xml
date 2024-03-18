@@ -329,6 +329,18 @@
 
       <dependency>
         <groupId>org.bedework</groupId>
+        <artifactId>bw-caldav-xml</artifactId>
+        <version>${bw-caldav.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calws-soap-xml</artifactId>
+        <version>${bw-caldav.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
         <artifactId>bw-calws-soap-xml</artifactId>
         <version>${bw-caldav.version}</version>
         <type>zip</type>
@@ -783,6 +795,21 @@
         <type>ear</type>
       </dependency>
 
+      <!-- ============== bw-exchangews-xml ============= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-exchangews-xml</artifactId>
+        <version>${bw-exchangews-xml.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-exchangews-xml</artifactId>
+        <version>${bw-exchangews-xml.version}</version>
+        <type>zip</type>
+      </dependency>
+
       <!-- ============== bw-icalendar-xml ============= -->
 
       <dependency>
@@ -972,6 +999,19 @@
         <artifactId>bw-synch-war</artifactId>
         <version>${bw-synch.version}</version>
         <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-synch</groupId>
+        <artifactId>bw-synch-ws-xml</artifactId>
+        <version>${bw-synch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-synch</groupId>
+        <artifactId>bw-synch-ws-xml</artifactId>
+        <version>${bw-synch.version}</version>
+        <type>zip</type>
       </dependency>
 
       <!-- ============ bw-timezone-server =========== -->
@@ -1224,6 +1264,13 @@
 
       <dependency>
         <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-wf-calws-xml-feature-pack</artifactId>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-carddav-feature-pack</artifactId>
         <version>${bw-wildfly-galleon-feature-pack.version}</version>
         <type>zip</type>
@@ -1297,58 +1344,6 @@
         <artifactId>bw-wf-xml-feature-pack</artifactId>
         <version>${bw-wildfly-galleon-feature-pack.version}</version>
         <type>zip</type>
-      </dependency>
-
-      <!-- ================= bw-xml ================= -->
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-xml</artifactId>
-        <version>${bw-xml.version}</version>
-        <type>pom</type>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-xml-war</artifactId>
-        <version>${bw-xml.version}</version>
-        <type>war</type>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-xml-appleServer</artifactId>
-        <version>${bw-xml.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-xml-caldav</artifactId>
-        <version>${bw-xml.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-xml-calws-soap</artifactId>
-        <version>${bw-xml.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-xml-exchangews</artifactId>
-        <version>${bw-xml.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-xml-bwlicense</artifactId>
-        <version>${bw-xml.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-xml-synchws</artifactId>
-        <version>${bw-xml.version}</version>
       </dependency>
 
       <dependency>
@@ -2991,6 +2986,8 @@
 
         <bw-eventreg.version>5.0.2-SNAPSHOT</bw-eventreg.version>
 
+        <bw-exchangews-xml.version>5.1.0-SNAPSHOT</bw-exchangews-xml.version>
+
         <bw-icalendar-xml.version>5.1.0-SNAPSHOT</bw-icalendar-xml.version>
 
         <bw-jsforj.version>1.1.1-SNAPSHOT</bw-jsforj.version>
@@ -3005,12 +3002,12 @@
         <bw-schemaorg.version>1.0.0-SNAPSHOT</bw-schemaorg.version>
         <bw-selfreg.version>5.0.1-SNAPSHOT</bw-selfreg.version>
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
-        <bw-synch.version>5.0.3</bw-synch.version>
+        <bw-synch.version>5.0.4-SNAPSHOT</bw-synch.version>
 
         <bw-timezone-server.version>5.0.4-SNAPSHOT</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.2</bw-util-logging.version>
-        <bw-util.version>5.0.3</bw-util.version>
+        <bw-util.version>5.0.4-SNAPSHOT</bw-util.version>
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
         <bw-util-deploy.version>5.0.3-SNAPSHOT</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.3</bw-util-hibernate.version>
@@ -3053,6 +3050,8 @@
 
         <bw-eventreg.version>5.0.1</bw-eventreg.version>
 
+        <bw-exchangews-xml.version>5.1.0-SNAPSHOT</bw-exchangews-xml.version>
+
         <bw-icalendar-xml.version>5.1.0-SNAPSHOT</bw-icalendar-xml.version>
 
         <bw-jsforj.version>1.1.0</bw-jsforj.version>
@@ -3065,7 +3064,7 @@
 
         <bw-selfreg.version>5.0.0</bw-selfreg.version>
         <bw-sometime.version>2.0.0</bw-sometime.version>
-        <bw-synch.version>5.0.3</bw-synch.version>
+        <bw-synch.version>5.0.4-SNAPSHOT</bw-synch.version>
 
         <bw-timezone-server.version>5.0.3</bw-timezone-server.version>
 
