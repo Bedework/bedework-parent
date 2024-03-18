@@ -327,6 +327,13 @@
         <version>${bw-caldav.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calws-soap-xml</artifactId>
+        <version>${bw-caldav.version}</version>
+        <type>zip</type>
+      </dependency>
+
       <!-- ============= bw-calendar-client ============= -->
 
       <dependency>
@@ -776,6 +783,21 @@
         <type>ear</type>
       </dependency>
 
+      <!-- ============== bw-icalendar-xml ============= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-icalendar-xml</artifactId>
+        <version>${bw-icalendar-xml.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-icalendar-xml</artifactId>
+        <version>${bw-icalendar-xml.version}</version>
+        <type>zip</type>
+      </dependency>
+
       <!-- ================= bw-jsforj ================= -->
 
       <dependency>
@@ -984,6 +1006,12 @@
         <artifactId>bw-timezone-server-war</artifactId>
         <version>${bw-timezone-server.version}</version>
         <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bw-tzsvr</groupId>
+        <artifactId>bw-timezone-server-xml</artifactId>
+        <version>${bw-timezone-server.version}</version>
       </dependency>
 
       <!-- ================= bw-util ================= -->
@@ -1313,19 +1341,6 @@
 
       <dependency>
         <groupId>org.bedework</groupId>
-        <artifactId>bw-xml-icalendar</artifactId>
-        <version>${bw-xml.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-xml-icalendar</artifactId>
-        <version>${bw-xml.version}</version>
-        <type>zip</type>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework</groupId>
         <artifactId>bw-xml-bwlicense</artifactId>
         <version>${bw-xml.version}</version>
       </dependency>
@@ -1333,12 +1348,6 @@
       <dependency>
         <groupId>org.bedework</groupId>
         <artifactId>bw-xml-synchws</artifactId>
-        <version>${bw-xml.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-xml-tzsvr</artifactId>
         <version>${bw-xml.version}</version>
       </dependency>
 
@@ -2969,7 +2978,7 @@
 
         <bw-bedework.version>4.0.1-SNAPSHOT</bw-bedework.version>
 
-        <bw-caldav.version>5.0.1</bw-caldav.version>
+        <bw-caldav.version>5.0.2-SNAPSHOT</bw-caldav.version>
         <bw-calendar-client.version>4.1.0-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.1.0-SNAPSHOT</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.1.0-SNAPSHOT</bw-calendar-deploy.version>
@@ -2981,6 +2990,8 @@
         <bw-cliutil.version>5.0.1-SNAPSHOT</bw-cliutil.version>
 
         <bw-eventreg.version>5.0.2-SNAPSHOT</bw-eventreg.version>
+
+        <bw-icalendar-xml.version>5.1.0-SNAPSHOT</bw-icalendar-xml.version>
 
         <bw-jsforj.version>1.1.1-SNAPSHOT</bw-jsforj.version>
         <bw-json.version>1.0.0-SNAPSHOT</bw-json.version>
@@ -2996,7 +3007,7 @@
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
         <bw-synch.version>5.0.3</bw-synch.version>
 
-        <bw-timezone-server.version>5.0.3</bw-timezone-server.version>
+        <bw-timezone-server.version>5.0.4-SNAPSHOT</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.2</bw-util-logging.version>
         <bw-util.version>5.0.3</bw-util.version>
@@ -3041,6 +3052,8 @@
         <bw-cliutil.version>5.0.0</bw-cliutil.version>
 
         <bw-eventreg.version>5.0.1</bw-eventreg.version>
+
+        <bw-icalendar-xml.version>5.1.0-SNAPSHOT</bw-icalendar-xml.version>
 
         <bw-jsforj.version>1.1.0</bw-jsforj.version>
 
