@@ -1334,14 +1334,14 @@
 
       <dependency>
         <groupId>org.bedework.deploy</groupId>
-        <artifactId>bw-wf-timezone-server-feature-pack</artifactId>
+        <artifactId>bw-wf-synch-xml-feature-pack</artifactId>
         <version>${bw-wildfly-galleon-feature-pack.version}</version>
         <type>zip</type>
       </dependency>
 
       <dependency>
         <groupId>org.bedework.deploy</groupId>
-        <artifactId>bw-wf-xml-feature-pack</artifactId>
+        <artifactId>bw-wf-timezone-server-feature-pack</artifactId>
         <version>${bw-wildfly-galleon-feature-pack.version}</version>
         <type>zip</type>
       </dependency>
