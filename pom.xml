@@ -2988,7 +2988,7 @@
 
         <bw-exchangews-xml.version>5.1.0-SNAPSHOT</bw-exchangews-xml.version>
 
-        <bw-icalendar-xml.version>5.1.0-SNAPSHOT</bw-icalendar-xml.version>
+        <bw-icalendar-xml.version>5.1.0</bw-icalendar-xml.version>
 
         <bw-jsforj.version>1.1.1-SNAPSHOT</bw-jsforj.version>
         <bw-json.version>1.0.0-SNAPSHOT</bw-json.version>
@@ -3052,7 +3052,7 @@
 
         <bw-exchangews-xml.version>5.1.0-SNAPSHOT</bw-exchangews-xml.version>
 
-        <bw-icalendar-xml.version>5.1.0-SNAPSHOT</bw-icalendar-xml.version>
+        <bw-icalendar-xml.version>5.1.0</bw-icalendar-xml.version>
 
         <bw-jsforj.version>1.1.0</bw-jsforj.version>
 
