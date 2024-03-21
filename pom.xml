@@ -2981,15 +2981,14 @@
         <bw-calendar-deploy.version>4.1.0-SNAPSHOT</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.1.0-SNAPSHOT</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.1.0-SNAPSHOT</bw-calendar-xsl.version>
-        <bw-calws-soap-xml.version>5.1.0-SNAPSHOT</bw-calws-soap-xml.version>
+        <bw-calws-soap-xml.version>5.1.0</bw-calws-soap-xml.version>
         <bw-carddav.version>5.0.1-SNAPSHOT</bw-carddav.version>
         <bw-category.version>4.0.1-SNAPSHOT</bw-category.version>
         <bw-cli.version>5.0.1-SNAPSHOT</bw-cli.version>
         <bw-cliutil.version>5.0.1-SNAPSHOT</bw-cliutil.version>
 
         <bw-eventreg.version>5.0.2-SNAPSHOT</bw-eventreg.version>
-
-        <bw-exchangews-xml.version>5.1.0-SNAPSHOT</bw-exchangews-xml.version>
+        <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
 
         <bw-icalendar-xml.version>5.1.0</bw-icalendar-xml.version>
 
@@ -3046,14 +3045,14 @@
         <bw-calendar-deploy.version>4.0.1</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.0.0</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.0.0</bw-calendar-xsl.version>
+        <bw-calws-soap-xml.version>5.1.0</bw-calws-soap-xml.version>
         <bw-carddav.version>5.0.0</bw-carddav.version>
         <bw-category.version>4.0.0</bw-category.version>
         <bw-cli.version>5.0.0</bw-cli.version>
         <bw-cliutil.version>5.0.0</bw-cliutil.version>
 
         <bw-eventreg.version>5.0.1</bw-eventreg.version>
-
-        <bw-exchangews-xml.version>5.1.0-SNAPSHOT</bw-exchangews-xml.version>
+        <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
 
         <bw-icalendar-xml.version>5.1.0</bw-icalendar-xml.version>
 
