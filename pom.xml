@@ -333,19 +333,6 @@
         <version>${bw-caldav.version}</version>
       </dependency>
 
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-calws-soap-xml</artifactId>
-        <version>${bw-caldav.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-calws-soap-xml</artifactId>
-        <version>${bw-caldav.version}</version>
-        <type>zip</type>
-      </dependency>
-
       <!-- ============= bw-calendar-client ============= -->
 
       <dependency>
@@ -542,7 +529,7 @@
         <version>${bw-calendar-engine.version}</version>
       </dependency>
 
-      <!-- ================= bw-calendar-deploy ================= -->
+      <!-- ============= bw-calendar-deploy ============= -->
 
       <dependency>
         <groupId>org.bedework.deploy</groupId>
@@ -635,7 +622,7 @@
         <type>war</type>
       </dependency>
 
-      <!-- ================= bw-calendar-xsl ================= -->
+      <!-- ============ bw-calendar-xsl ============= -->
 
       <dependency>
         <groupId>org.bedework.bwxsl</groupId>
@@ -684,6 +671,21 @@
         <artifactId>bw-calendar-xsl-ucalrsrc</artifactId>
         <version>${bw-calendar-xsl.version}</version>
         <type>war</type>
+      </dependency>
+
+      <!-- ================= bw-carddav ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calws-soap-xml</artifactId>
+        <version>${bw-calws-soap-xml.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calws-soap-xml</artifactId>
+        <version>${bw-calws-soap-xml.version}</version>
+        <type>zip</type>
       </dependency>
 
       <!-- ================= bw-carddav ================= -->
@@ -2979,6 +2981,7 @@
         <bw-calendar-deploy.version>4.1.0-SNAPSHOT</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.1.0-SNAPSHOT</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.1.0-SNAPSHOT</bw-calendar-xsl.version>
+        <bw-calws-soap-xml.version>5.1.0-SNAPSHOT</bw-calws-soap-xml.version>
         <bw-carddav.version>5.0.1-SNAPSHOT</bw-carddav.version>
         <bw-category.version>4.0.1-SNAPSHOT</bw-category.version>
         <bw-cli.version>5.0.1-SNAPSHOT</bw-cli.version>
@@ -3007,7 +3010,7 @@
         <bw-timezone-server.version>5.0.4-SNAPSHOT</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.2</bw-util-logging.version>
-        <bw-util.version>5.0.3</bw-util.version>
+        <bw-util.version>5.0.4</bw-util.version>
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
         <bw-util-deploy.version>5.0.4</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.3</bw-util-hibernate.version>
@@ -3069,7 +3072,7 @@
         <bw-timezone-server.version>5.0.3</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.2</bw-util-logging.version>
-        <bw-util.version>5.0.3</bw-util.version>
+        <bw-util.version>5.0.4</bw-util.version>
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
         <bw-util-deploy.version>5.0.4</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.3</bw-util-hibernate.version>
