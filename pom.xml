@@ -2982,12 +2982,12 @@
         <bw-calendar-engine.version>4.1.0-SNAPSHOT</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.1.0-SNAPSHOT</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>5.1.0</bw-calws-soap-xml.version>
-        <bw-carddav.version>5.0.1-SNAPSHOT</bw-carddav.version>
-        <bw-category.version>4.0.1</bw-category.version>
-        <bw-cli.version>5.0.1-SNAPSHOT</bw-cli.version>
+        <bw-carddav.version>5.0.1</bw-carddav.version>
+        <bw-category.version>4.0.2</bw-category.version>
+        <bw-cli.version>5.0.1</bw-cli.version>
         <bw-cliutil.version>5.0.1</bw-cliutil.version>
 
-        <bw-eventreg.version>5.0.2</bw-eventreg.version>
+        <bw-eventreg.version>5.0.3</bw-eventreg.version>
         <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
 
         <bw-icalendar-xml.version>5.1.0</bw-icalendar-xml.version>
@@ -3024,8 +3024,6 @@
         <bw-wf-extensions.version>1.0.0-SNAPSHOT</bw-wf-extensions.version>
         <bw-wfmodules.version>1.0.5-SNAPSHOT</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.0.4-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
-
-        <bw-xml.version>5.0.3-SNAPSHOT</bw-xml.version>
       </properties>
     </profile>
 
@@ -3046,12 +3044,12 @@
         <bw-calendar-engine.version>4.0.0</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.0.0</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>5.1.0</bw-calws-soap-xml.version>
-        <bw-carddav.version>5.0.0</bw-carddav.version>
-        <bw-category.version>4.0.1</bw-category.version>
-        <bw-cli.version>5.0.0</bw-cli.version>
+        <bw-carddav.version>5.0.1</bw-carddav.version>
+        <bw-category.version>4.0.2</bw-category.version>
+        <bw-cli.version>5.0.1</bw-cli.version>
         <bw-cliutil.version>5.0.1</bw-cliutil.version>
 
-        <bw-eventreg.version>5.0.2</bw-eventreg.version>
+        <bw-eventreg.version>5.0.3</bw-eventreg.version>
         <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
 
         <bw-icalendar-xml.version>5.1.0</bw-icalendar-xml.version>
@@ -3088,8 +3086,6 @@
         <bw-wf-extensions.version>1.0.0</bw-wf-extensions.version>
         <bw-wfmodules.version>1.0.4</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.0.3</bw-wildfly-galleon-feature-pack.version>
-
-        <bw-xml.version>5.0.2</bw-xml.version>
       </properties>
     </profile>
   </profiles>
