@@ -3002,7 +3002,7 @@
         <bw-quickstart.version>4.0.2</bw-quickstart.version>
 
         <bw-schemaorg.version>1.0.0</bw-schemaorg.version>
-        <bw-selfreg.version>5.0.1-SNAPSHOT</bw-selfreg.version>
+        <bw-selfreg.version>5.0.1</bw-selfreg.version>
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
         <bw-synch.version>5.0.6</bw-synch.version>
 
@@ -3066,7 +3066,7 @@
         <bw-quickstart.version>4.0.2</bw-quickstart.version>
 
         <bw-schemaorg.version>1.0.0</bw-schemaorg.version>
-        <bw-selfreg.version>5.0.0</bw-selfreg.version>
+        <bw-selfreg.version>5.0.1</bw-selfreg.version>
         <bw-sometime.version>2.0.0</bw-sometime.version>
         <bw-synch.version>5.0.6</bw-synch.version>
 
