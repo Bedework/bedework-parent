@@ -2983,11 +2983,11 @@
         <bw-calendar-xsl.version>4.1.0-SNAPSHOT</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>5.1.0</bw-calws-soap-xml.version>
         <bw-carddav.version>5.0.1-SNAPSHOT</bw-carddav.version>
-        <bw-category.version>4.0.1-SNAPSHOT</bw-category.version>
+        <bw-category.version>4.0.1</bw-category.version>
         <bw-cli.version>5.0.1-SNAPSHOT</bw-cli.version>
         <bw-cliutil.version>5.0.1</bw-cliutil.version>
 
-        <bw-eventreg.version>5.0.2-SNAPSHOT</bw-eventreg.version>
+        <bw-eventreg.version>5.0.2</bw-eventreg.version>
         <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
 
         <bw-icalendar-xml.version>5.1.0</bw-icalendar-xml.version>
@@ -3001,7 +3001,7 @@
 
         <bw-quickstart.version>4.0.2-SNAPSHOT</bw-quickstart.version>
 
-        <bw-schemaorg.version>1.0.0-SNAPSHOT</bw-schemaorg.version>
+        <bw-schemaorg.version>1.0.0</bw-schemaorg.version>
         <bw-selfreg.version>5.0.1-SNAPSHOT</bw-selfreg.version>
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
         <bw-synch.version>5.0.6</bw-synch.version>
@@ -3047,11 +3047,11 @@
         <bw-calendar-xsl.version>4.0.0</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>5.1.0</bw-calws-soap-xml.version>
         <bw-carddav.version>5.0.0</bw-carddav.version>
-        <bw-category.version>4.0.0</bw-category.version>
+        <bw-category.version>4.0.1</bw-category.version>
         <bw-cli.version>5.0.0</bw-cli.version>
         <bw-cliutil.version>5.0.1</bw-cliutil.version>
 
-        <bw-eventreg.version>5.0.1</bw-eventreg.version>
+        <bw-eventreg.version>5.0.2</bw-eventreg.version>
         <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
 
         <bw-icalendar-xml.version>5.1.0</bw-icalendar-xml.version>
@@ -3065,6 +3065,7 @@
 
         <bw-quickstart.version>4.0.1</bw-quickstart.version>
 
+        <bw-schemaorg.version>1.0.0</bw-schemaorg.version>
         <bw-selfreg.version>5.0.0</bw-selfreg.version>
         <bw-sometime.version>2.0.0</bw-sometime.version>
         <bw-synch.version>5.0.6</bw-synch.version>
