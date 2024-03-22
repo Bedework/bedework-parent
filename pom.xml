@@ -2999,7 +2999,7 @@
 
         <bw-notifier.version>5.0.1-SNAPSHOT</bw-notifier.version>
 
-        <bw-quickstart.version>4.0.2-SNAPSHOT</bw-quickstart.version>
+        <bw-quickstart.version>4.0.2</bw-quickstart.version>
 
         <bw-schemaorg.version>1.0.0</bw-schemaorg.version>
         <bw-selfreg.version>5.0.1-SNAPSHOT</bw-selfreg.version>
@@ -3063,7 +3063,7 @@
 
         <bw-notifier.version>5.0.0</bw-notifier.version>
 
-        <bw-quickstart.version>4.0.1</bw-quickstart.version>
+        <bw-quickstart.version>4.0.2</bw-quickstart.version>
 
         <bw-schemaorg.version>1.0.0</bw-schemaorg.version>
         <bw-selfreg.version>5.0.0</bw-selfreg.version>
