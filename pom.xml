@@ -2975,7 +2975,7 @@
 
         <bw-bedework.version>4.0.1-SNAPSHOT</bw-bedework.version>
 
-        <bw-caldav.version>5.0.2-SNAPSHOT</bw-caldav.version>
+        <bw-caldav.version>5.0.3</bw-caldav.version>
         <bw-calendar-client.version>4.1.0-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.1.0-SNAPSHOT</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.1.0-SNAPSHOT</bw-calendar-deploy.version>
@@ -2985,15 +2985,15 @@
         <bw-carddav.version>5.0.1-SNAPSHOT</bw-carddav.version>
         <bw-category.version>4.0.1-SNAPSHOT</bw-category.version>
         <bw-cli.version>5.0.1-SNAPSHOT</bw-cli.version>
-        <bw-cliutil.version>5.0.1-SNAPSHOT</bw-cliutil.version>
+        <bw-cliutil.version>5.0.1</bw-cliutil.version>
 
         <bw-eventreg.version>5.0.2-SNAPSHOT</bw-eventreg.version>
         <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
 
         <bw-icalendar-xml.version>5.1.0</bw-icalendar-xml.version>
 
-        <bw-jsforj.version>1.1.1-SNAPSHOT</bw-jsforj.version>
-        <bw-json.version>1.0.0-SNAPSHOT</bw-json.version>
+        <bw-jsforj.version>1.1.1</bw-jsforj.version>
+        <bw-json.version>1.0.0</bw-json.version>
 
         <bw-logs.version>1.1.2-SNAPSHOT</bw-logs.version>
 
@@ -3006,7 +3006,7 @@
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
         <bw-synch.version>5.0.6</bw-synch.version>
 
-        <bw-timezone-server.version>5.0.4-SNAPSHOT</bw-timezone-server.version>
+        <bw-timezone-server.version>5.0.5</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.2</bw-util-logging.version>
         <bw-util.version>5.0.4</bw-util.version>
@@ -3039,7 +3039,7 @@
 
         <bw-bedework.version>4.0.0</bw-bedework.version>
 
-        <bw-caldav.version>5.0.1</bw-caldav.version>
+        <bw-caldav.version>5.0.3</bw-caldav.version>
         <bw-calendar-client.version>4.0.2</bw-calendar-client.version>
         <bw-calendar-common.version>4.0.0</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.0.1</bw-calendar-deploy.version>
@@ -3049,14 +3049,15 @@
         <bw-carddav.version>5.0.0</bw-carddav.version>
         <bw-category.version>4.0.0</bw-category.version>
         <bw-cli.version>5.0.0</bw-cli.version>
-        <bw-cliutil.version>5.0.0</bw-cliutil.version>
+        <bw-cliutil.version>5.0.1</bw-cliutil.version>
 
         <bw-eventreg.version>5.0.1</bw-eventreg.version>
         <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
 
         <bw-icalendar-xml.version>5.1.0</bw-icalendar-xml.version>
 
-        <bw-jsforj.version>1.1.0</bw-jsforj.version>
+        <bw-jsforj.version>1.1.1</bw-jsforj.version>
+        <bw-json.version>1.0.0</bw-json.version>
 
         <bw-logs.version>1.1.1</bw-logs.version>
 
@@ -3068,7 +3069,7 @@
         <bw-sometime.version>2.0.0</bw-sometime.version>
         <bw-synch.version>5.0.6</bw-synch.version>
 
-        <bw-timezone-server.version>5.0.3</bw-timezone-server.version>
+        <bw-timezone-server.version>5.0.5</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.2</bw-util-logging.version>
         <bw-util.version>5.0.4</bw-util.version>
