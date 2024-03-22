@@ -2995,7 +2995,7 @@
         <bw-jsforj.version>1.1.1</bw-jsforj.version>
         <bw-json.version>1.0.0</bw-json.version>
 
-        <bw-logs.version>1.1.2-SNAPSHOT</bw-logs.version>
+        <bw-logs.version>1.1.2</bw-logs.version>
 
         <bw-notifier.version>5.0.1-SNAPSHOT</bw-notifier.version>
 
@@ -3059,7 +3059,7 @@
         <bw-jsforj.version>1.1.1</bw-jsforj.version>
         <bw-json.version>1.0.0</bw-json.version>
 
-        <bw-logs.version>1.1.1</bw-logs.version>
+        <bw-logs.version>1.1.2</bw-logs.version>
 
         <bw-notifier.version>5.0.0</bw-notifier.version>
 
