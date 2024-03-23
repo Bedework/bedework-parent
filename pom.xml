@@ -2997,7 +2997,7 @@
 
         <bw-logs.version>1.1.2</bw-logs.version>
 
-        <bw-notifier.version>5.0.1-SNAPSHOT</bw-notifier.version>
+        <bw-notifier.version>5.0.1</bw-notifier.version>
 
         <bw-quickstart.version>4.0.2</bw-quickstart.version>
 
@@ -3019,7 +3019,7 @@
         <bw-util-security.version>5.0.2</bw-util-security.version>
         <bw-util2.version>5.0.1</bw-util2.version>
 
-        <bw-webcache.version>1.0.0-SNAPSHOT</bw-webcache.version>
+        <bw-webcache.version>1.0.0</bw-webcache.version>
         <bw-webdav.version>5.0.1</bw-webdav.version>
         <bw-wf-extensions.version>1.0.0-SNAPSHOT</bw-wf-extensions.version>
         <bw-wfmodules.version>1.0.5-SNAPSHOT</bw-wfmodules.version>
@@ -3059,7 +3059,7 @@
 
         <bw-logs.version>1.1.2</bw-logs.version>
 
-        <bw-notifier.version>5.0.0</bw-notifier.version>
+        <bw-notifier.version>5.0.1</bw-notifier.version>
 
         <bw-quickstart.version>4.0.2</bw-quickstart.version>
 
