@@ -2975,7 +2975,7 @@
 
         <bw-bedework.version>4.0.1-SNAPSHOT</bw-bedework.version>
 
-        <bw-caldav.version>5.0.3</bw-caldav.version>
+        <bw-caldav.version>5.0.4</bw-caldav.version>
         <bw-calendar-client.version>4.1.0-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.1.0</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.1.0-SNAPSHOT</bw-calendar-deploy.version>
@@ -3037,7 +3037,7 @@
 
         <bw-bedework.version>4.0.0</bw-bedework.version>
 
-        <bw-caldav.version>5.0.3</bw-caldav.version>
+        <bw-caldav.version>5.0.4</bw-caldav.version>
         <bw-calendar-client.version>4.0.2</bw-calendar-client.version>
         <bw-calendar-common.version>4.1.0</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.0.1</bw-calendar-deploy.version>
