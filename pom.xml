@@ -683,7 +683,7 @@
 
       <dependency>
         <groupId>org.bedework</groupId>
-        <artifactId>bw-calws-soap-xml</artifactId>
+        <artifactId>bw-calws-soap-xml-source</artifactId>
         <version>${bw-calws-soap-xml.version}</version>
         <type>zip</type>
       </dependency>
@@ -2981,7 +2981,7 @@
         <bw-calendar-deploy.version>4.1.0-SNAPSHOT</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.1.1</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.1.0-SNAPSHOT</bw-calendar-xsl.version>
-        <bw-calws-soap-xml.version>5.1.0</bw-calws-soap-xml.version>
+        <bw-calws-soap-xml.version>5.1.1</bw-calws-soap-xml.version>
         <bw-carddav.version>5.0.1</bw-carddav.version>
         <bw-category.version>4.0.2</bw-category.version>
         <bw-cli.version>5.0.1</bw-cli.version>
@@ -3043,7 +3043,7 @@
         <bw-calendar-deploy.version>4.0.1</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.1.1</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.0.0</bw-calendar-xsl.version>
-        <bw-calws-soap-xml.version>5.1.0</bw-calws-soap-xml.version>
+        <bw-calws-soap-xml.version>5.1.1</bw-calws-soap-xml.version>
         <bw-carddav.version>5.0.1</bw-carddav.version>
         <bw-category.version>4.0.2</bw-category.version>
         <bw-cli.version>5.0.1</bw-cli.version>
