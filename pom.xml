@@ -2979,7 +2979,7 @@
         <bw-calendar-client.version>4.1.0-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.1.2</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.1.0-SNAPSHOT</bw-calendar-deploy.version>
-        <bw-calendar-engine.version>4.1.1</bw-calendar-engine.version>
+        <bw-calendar-engine.version>4.1.2</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.1.0</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>5.1.1</bw-calws-soap-xml.version>
         <bw-carddav.version>5.0.1</bw-carddav.version>
@@ -3041,7 +3041,7 @@
         <bw-calendar-client.version>4.1.1</bw-calendar-client.version>
         <bw-calendar-common.version>4.1.2</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.0.1</bw-calendar-deploy.version>
-        <bw-calendar-engine.version>4.1.1</bw-calendar-engine.version>
+        <bw-calendar-engine.version>4.1.2</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.1.0</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>5.1.1</bw-calws-soap-xml.version>
         <bw-carddav.version>5.0.1</bw-carddav.version>
