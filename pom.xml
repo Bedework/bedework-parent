@@ -2973,7 +2973,7 @@
       <properties>
         <bw-access.version>5.0.1</bw-access.version>
 
-        <bw-bedework.version>4.0.1-SNAPSHOT</bw-bedework.version>
+        <bw-bedework.version>4.1.0</bw-bedework.version>
 
         <bw-caldav.version>5.0.4</bw-caldav.version>
         <bw-calendar-client.version>4.1.1</bw-calendar-client.version>
@@ -3035,7 +3035,7 @@
       <properties>
         <bw-access.version>5.0.1</bw-access.version>
 
-        <bw-bedework.version>4.0.0</bw-bedework.version>
+        <bw-bedework.version>4.1.0</bw-bedework.version>
 
         <bw-caldav.version>5.0.4</bw-caldav.version>
         <bw-calendar-client.version>4.1.1</bw-calendar-client.version>
