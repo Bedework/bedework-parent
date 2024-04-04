@@ -3022,7 +3022,7 @@
         <bw-webcache.version>1.0.0</bw-webcache.version>
         <bw-webdav.version>5.0.1</bw-webdav.version>
         <bw-wf-extensions.version>1.0.0</bw-wf-extensions.version>
-        <bw-wfmodules.version>1.0.5-SNAPSHOT</bw-wfmodules.version>
+        <bw-wfmodules.version>1.0.5</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.0.4-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
       </properties>
     </profile>
@@ -3084,7 +3084,7 @@
         <bw-webcache.version>1.0.0</bw-webcache.version>
         <bw-webdav.version>5.0.1</bw-webdav.version>
         <bw-wf-extensions.version>1.0.0</bw-wf-extensions.version>
-        <bw-wfmodules.version>1.0.4</bw-wfmodules.version>
+        <bw-wfmodules.version>1.0.5</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.0.3</bw-wildfly-galleon-feature-pack.version>
       </properties>
     </profile>
