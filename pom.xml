@@ -2987,7 +2987,7 @@
         <bw-cli.version>5.0.1</bw-cli.version>
         <bw-cliutil.version>5.0.1</bw-cliutil.version>
 
-        <bw-eventreg.version>5.0.4-SNAPSHOT</bw-eventreg.version>
+        <bw-eventreg.version>5.0.4</bw-eventreg.version>
         <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
 
         <bw-icalendar-xml.version>5.1.0</bw-icalendar-xml.version>
@@ -2997,14 +2997,14 @@
 
         <bw-logs.version>1.1.2</bw-logs.version>
 
-        <bw-notifier.version>5.0.2-SNAPSHOT</bw-notifier.version>
+        <bw-notifier.version>5.0.2</bw-notifier.version>
 
         <bw-quickstart.version>4.0.2</bw-quickstart.version>
 
         <bw-schemaorg.version>1.0.0</bw-schemaorg.version>
-        <bw-selfreg.version>5.0.2-SNAPSHOT</bw-selfreg.version>
+        <bw-selfreg.version>5.0.2</bw-selfreg.version>
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
-        <bw-synch.version>5.0.10-SNAPSHOT</bw-synch.version>
+        <bw-synch.version>5.0.10</bw-synch.version>
 
         <bw-timezone-server.version>5.0.6</bw-timezone-server.version>
 
