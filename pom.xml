@@ -223,7 +223,7 @@
     <java.jaxb.api.version>2.3.1</java.jaxb.api.version>
     <java.jaxws.api.version>2.3.1</java.jaxws.api.version>
     <jaxen.version>1.1.6</jaxen.version>
-    <jline.version>3.22.0</jline.version>
+    <jline.version>3.26.0</jline.version>
     <jms.version>2.0</jms.version>
     <jolokia.version>1.6.2</jolokia.version>
     <jsp-api.version>2.3.1</jsp-api.version>
@@ -252,7 +252,7 @@
     <lucene.version>9.2.0</lucene.version>
     <t-digest.version>3.2</t-digest.version>
 
-    <picocli.version>4.7.1</picocli.version>
+    <picocli.version>4.7.6</picocli.version>
     <portlet-api.version>1.0</portlet-api.version>
     <postgresql-driver.version>42.3.3</postgresql-driver.version>
 
@@ -752,7 +752,25 @@
 
       <dependency>
         <groupId>org.bedework</groupId>
-        <artifactId>bw-cli</artifactId>
+        <artifactId>bw-cli-bwcmd</artifactId>
+        <version>${bw-cli.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-cli-jmx</artifactId>
+        <version>${bw-cli.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-cli-shell</artifactId>
+        <version>${bw-cli.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-cli-toolcmd</artifactId>
         <version>${bw-cli.version}</version>
       </dependency>
 
@@ -2984,7 +3002,7 @@
         <bw-calws-soap-xml.version>5.1.1</bw-calws-soap-xml.version>
         <bw-carddav.version>5.0.1</bw-carddav.version>
         <bw-category.version>4.0.2</bw-category.version>
-        <bw-cli.version>5.0.1</bw-cli.version>
+        <bw-cli.version>5.0.2-SNAPSHOT</bw-cli.version>
         <bw-cliutil.version>5.0.1</bw-cliutil.version>
 
         <bw-eventreg.version>5.0.4</bw-eventreg.version>
