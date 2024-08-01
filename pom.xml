@@ -231,7 +231,7 @@
     <java.jws.api.version>1.1</java.jws.api.version>
 
     <!-- test only -->
-    <junit.version>4.13.2</junit.version>
+    <junit.version>5.10.3</junit.version>
 
     <keycloak.version>17.0.0</keycloak.version>
 
@@ -1729,9 +1729,16 @@
         <scope>provided</scope>
       </dependency>
 
-      <dependency>
+<!--      <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+      </dependency>-->
+
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
         <version>${junit.version}</version>
         <scope>test</scope>
       </dependency>
