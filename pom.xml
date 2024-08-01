@@ -204,6 +204,7 @@
     <flywaydb.version>3.1</flywaydb.version>
     <freemarker.version>2.3.31</freemarker.version>
 
+    <hamcrest.version>2.2</hamcrest.version>
     <hawtio.version>2.15.0</hawtio.version>
     <hibernate.version>5.6.9.Final</hibernate.version>
     <!--<hibernate.patched.version>5.2.5.1FinalBwPatched</hibernate.patched.version>-->
@@ -228,6 +229,7 @@
     <jolokia.version>1.6.2</jolokia.version>
     <jsp-api.version>2.3.1</jsp-api.version>
     <java.jws.api.version>1.1</java.jws.api.version>
+
     <!-- test only -->
     <junit.version>4.13.2</junit.version>
 
@@ -268,6 +270,7 @@
     <axiom.version>1.2.15</axiom.version>
 
     <saaj.version>1.5.1</saaj.version>
+    <selenium.version>4.23.0</selenium.version>
     <servlet-api.version>4.0.0</servlet-api.version>
     <slf4j.version>1.7.36</slf4j.version>
     <!-- Snakeyaml for jackson -->
@@ -1570,6 +1573,12 @@
       </dependency>-->
 
       <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest</artifactId>
+        <version>${hamcrest.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-ehcache</artifactId>
         <version>${hibernate.version}</version>
@@ -1979,6 +1988,24 @@
         <groupId>net.sf.saxon</groupId>
         <artifactId>Saxon-HE</artifactId>
         <version>${saxon-he.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-api</artifactId>
+        <version>${selenium.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>htmlunit3-driver</artifactId>
+        <version>${selenium.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>${selenium.version}</version>
       </dependency>
 
       <dependency>
@@ -3101,6 +3128,7 @@
 
         <bw-webcache.version>1.0.0</bw-webcache.version>
         <bw-webdav.version>5.0.1</bw-webdav.version>
+        <bw-webtest.version>1.0.0-SNAPSHOT</bw-webtest.version>
         <bw-wf-extensions.version>1.0.0</bw-wf-extensions.version>
         <bw-wfmodules.version>1.0.5</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.1.0</bw-wildfly-galleon-feature-pack.version>
