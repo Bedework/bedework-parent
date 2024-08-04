@@ -232,6 +232,7 @@
 
     <!-- test only -->
     <junit.version>5.10.3</junit.version>
+    <junit-console.version>1.10.3</junit-console.version>
 
     <keycloak.version>17.0.0</keycloak.version>
 
@@ -1385,6 +1386,12 @@
         <groupId>org.bedework</groupId>
         <artifactId>apache-jdkim-library</artifactId>
         <version>${bedework.jdkim.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -1741,6 +1748,12 @@
         <artifactId>junit-jupiter-api</artifactId>
         <version>${junit.version}</version>
         <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.junit.platform</groupId>
+        <artifactId>junit-platform-console-standalone</artifactId>
+        <version>${junit-console.version}</version>
       </dependency>
 
       <dependency>
