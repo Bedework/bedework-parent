@@ -3074,7 +3074,7 @@
         <bw-timezone-server.version>5.0.6</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.2</bw-util-logging.version>
-        <bw-util.version>5.0.4</bw-util.version>
+        <bw-util.version>5.0.5-SNAPSHOT</bw-util.version>
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
         <bw-util-deploy.version>5.0.5</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.4</bw-util-hibernate.version>
