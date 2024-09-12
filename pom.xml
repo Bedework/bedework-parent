@@ -160,17 +160,6 @@
     <!-- Placeholder tooverride -->
     <org.bedework.war.dependency />
 
-    <!-- iCal4j versions
-         We have our own version of ical4j which is
-         trying to track the real project.
-    -->
-
-    <ical4j.groupId>org.bedework.ical4j</ical4j.groupId>
-    <ical4j.artifactId>ical4j</ical4j.artifactId>
-    <ical4j.version>3.0.19</ical4j.version>
-
-    <ical4j-vcard.version>1.0.8</ical4j-vcard.version>
-
     <bedework.jdkim.version>0.6</bedework.jdkim.version>
 
     <!-- Library versions
@@ -1736,12 +1725,13 @@
         <scope>provided</scope>
       </dependency>
 
-<!--      <dependency>
+      <!-- Until we update varuious tests -->
+      <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>${junit.version}</version>
+        <version>4.13.2</version>
         <scope>test</scope>
-      </dependency>-->
+      </dependency>
 
       <dependency>
         <groupId>org.junit.jupiter</groupId>
@@ -3082,13 +3072,24 @@
         <bw-util-network.version>5.1.5</bw-util-network.version>
         <bw-util-tz.version>5.0.1</bw-util-tz.version>
         <bw-util-security.version>5.0.2</bw-util-security.version>
-        <bw-util2.version>5.0.5</bw-util2.version>
+        <bw-util2.version>5.0.6-SNAPSHOT</bw-util2.version>
 
         <bw-webcache.version>1.0.0</bw-webcache.version>
         <bw-webdav.version>5.0.1</bw-webdav.version>
         <bw-wf-extensions.version>1.0.0</bw-wf-extensions.version>
         <bw-wfmodules.version>1.0.6-SNAPSHOT</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.1.1-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
+
+        <!-- iCal4j versions
+             We have our own version of ical4j which is
+             trying to track the real project.
+        -->
+
+        <ical4j.groupId>org.bedework.ical4j</ical4j.groupId>
+        <ical4j.artifactId>ical4j</ical4j.artifactId>
+        <ical4j.version>3.0.21-SNAPSHOT</ical4j.version>
+
+        <ical4j-vcard.version>1.0.8</ical4j-vcard.version>
       </properties>
     </profile>
 
@@ -3144,7 +3145,7 @@
         <bw-util-network.version>5.1.5</bw-util-network.version>
         <bw-util-tz.version>5.0.1</bw-util-tz.version>
         <bw-util-security.version>5.0.2</bw-util-security.version>
-        <bw-util2.version>5.0.5</bw-util2.version>
+        <bw-util2.version>5.0.6-SNAPSHOT</bw-util2.version>
 
         <bw-webcache.version>1.0.0</bw-webcache.version>
         <bw-webdav.version>5.0.1</bw-webdav.version>
@@ -3152,6 +3153,17 @@
         <bw-wf-extensions.version>1.0.0</bw-wf-extensions.version>
         <bw-wfmodules.version>1.0.5</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.1.0</bw-wildfly-galleon-feature-pack.version>
+
+        <!-- iCal4j versions
+             We have our own version of ical4j which is
+             trying to track the real project.
+        -->
+
+        <ical4j.groupId>org.bedework.ical4j</ical4j.groupId>
+        <ical4j.artifactId>ical4j</ical4j.artifactId>
+        <ical4j.version>3.0.20</ical4j.version>
+
+        <ical4j-vcard.version>1.0.8</ical4j-vcard.version>
       </properties>
     </profile>
   </profiles>
