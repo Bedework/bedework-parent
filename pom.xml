@@ -3072,7 +3072,7 @@
         <bw-util-network.version>5.1.5</bw-util-network.version>
         <bw-util-tz.version>5.0.1</bw-util-tz.version>
         <bw-util-security.version>5.0.2</bw-util-security.version>
-        <bw-util2.version>5.0.6</bw-util2.version>
+        <bw-util2.version>5.0.7</bw-util2.version>
 
         <bw-webcache.version>1.0.0</bw-webcache.version>
         <bw-webdav.version>5.0.3</bw-webdav.version>
@@ -3145,7 +3145,7 @@
         <bw-util-network.version>5.1.5</bw-util-network.version>
         <bw-util-tz.version>5.0.1</bw-util-tz.version>
         <bw-util-security.version>5.0.2</bw-util-security.version>
-        <bw-util2.version>5.0.6</bw-util2.version>
+        <bw-util2.version>5.0.7</bw-util2.version>
 
         <bw-webcache.version>1.0.0</bw-webcache.version>
         <bw-webdav.version>5.0.3</bw-webdav.version>
