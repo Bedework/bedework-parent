@@ -116,8 +116,8 @@
     <version.plugin.plugin>3.11.0</version.plugin.plugin>
     <version.release.plugin>2.5.3</version.release.plugin>
     <version.resources.plugin>3.2.0</version.resources.plugin>
-    <version.source.plugin>3.1.0</version.source.plugin>
-    <version.surefire.plugin>2.22.2</version.surefire.plugin>
+    <version.source.plugin>3.2.1</version.source.plugin>
+    <version.surefire.plugin>3.5.2</version.surefire.plugin>
     <version.versions.plugin>2.8.1</version.versions.plugin>
     <version.war.plugin>3.3.2</version.war.plugin>
 
@@ -160,7 +160,7 @@
     <!-- Placeholder tooverride -->
     <org.bedework.war.dependency />
 
-    <bedework.jdkim.version>0.6</bedework.jdkim.version>
+    <bedework.jdkim.version>0.7</bedework.jdkim.version>
 
     <!-- Library versions
          Third party libraries we depend on.
@@ -168,6 +168,7 @@
     <javax.activation-api.version>1.2.0</javax.activation-api.version>
     <ant.contrib.version>1.0b3</ant.contrib.version>
     <apacheds-service.version>2.0.0.AM26</apacheds-service.version>
+    <auto-service.version>1.1.1</auto-service.version>
 
     <javax.cache-api.version>1.0.0</javax.cache-api.version>
     <classmate.version>1.3.0</classmate.version>
@@ -216,6 +217,7 @@
     <jline.version>3.26.0</jline.version>
     <jms.version>2.0</jms.version>
     <jolokia.version>1.6.2</jolokia.version>
+    <joor.version>0.9.15</joor.version>
     <jsp-api.version>2.3.1</jsp-api.version>
     <java.jws.api.version>1.1</java.jws.api.version>
 
@@ -244,6 +246,7 @@
     <lucene.version>9.2.0</lucene.version>
     <t-digest.version>3.2</t-digest.version>
 
+    <javax.persistence.version>2.2</javax.persistence.version>
     <picocli.version>4.7.6</picocli.version>
     <portlet-api.version>1.0</portlet-api.version>
     <postgresql-driver.version>42.3.3</postgresql-driver.version>
@@ -272,7 +275,7 @@
     <spring-webmvc-portlet.version>4.3.28.RELEASE</spring-webmvc-portlet.version>
     <spring-ws.version>3.1.2</spring-ws.version>
     <spring-ws-soap.version>2.0.0.RELEASE</spring-ws-soap.version>
-    <apache.struts2.version>2.5.32</apache.struts2.version>
+    <apache.struts2.version>2.5.33</apache.struts2.version>
 
     <taglibs-standard-impl.version>1.2.5</taglibs-standard-impl.version>
 
@@ -1111,6 +1114,14 @@
         <version>${bw-util.version}</version>
       </dependency>
 
+      <!-- ================ bw-util-annotations ================ -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-annotations</artifactId>
+        <version>${bw-util-annotations.version}</version>
+      </dependency>
+
       <!-- ================ bw-util-conf ================ -->
 
       <dependency>
@@ -1373,6 +1384,12 @@
 
       <dependency>
         <groupId>org.bedework</groupId>
+        <artifactId>apache-jdkim-api</artifactId>
+        <version>${bedework.jdkim.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
         <artifactId>apache-jdkim-library</artifactId>
         <version>${bedework.jdkim.version}</version>
         <exclusions>
@@ -1413,6 +1430,12 @@
         </exclusions>
       </dependency>
 
+      <dependency>
+        <groupId>com.google.auto.service</groupId>
+        <artifactId>auto-service</artifactId>
+        <version>${auto-service.version}</version>
+        <scope>provided</scope>
+      </dependency>
 
       <dependency>
         <groupId>org.jasig.cas.client</groupId>
@@ -1707,6 +1730,13 @@
       </dependency>
 
       <dependency>
+        <groupId>org.jooq</groupId>
+        <artifactId>joor</artifactId>
+        <version>${joor.version}</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
         <groupId>org.jolokia</groupId>
         <artifactId>jolokia-core</artifactId>
         <version>${jolokia.version}</version>
@@ -1963,6 +1993,13 @@
         <version>${portals-bridge.version}</version>
       </dependency>
       -->
+
+      <dependency>
+        <groupId>javax.persistence</groupId>
+        <artifactId>javax.persistence-api</artifactId>
+        <version>${javax.persistence.version}</version>
+        <scope>compile</scope>
+      </dependency>
 
       <dependency>
         <groupId>info.picocli</groupId>
@@ -2779,6 +2816,13 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${version.surefire.plugin}</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.junit.jupiter</groupId>
+              <artifactId>junit-jupiter-engine</artifactId>
+              <version>${junit.version}</version>
+            </dependency>
+          </dependencies>
           <configuration>
             <trimStackTrace>false</trimStackTrace>
             <systemPropertyVariables>
@@ -3030,7 +3074,7 @@
 
         <bw-bedework.version>4.1.0</bw-bedework.version>
 
-        <bw-caldav.version>5.0.7</bw-caldav.version>
+        <bw-caldav.version>5.0.8-SNAPSHOT</bw-caldav.version>
         <bw-calendar-client.version>4.1.2-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.1.3-SNAPSHOT</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.1.1-SNAPSHOT</bw-calendar-deploy.version>
@@ -3065,6 +3109,7 @@
 
         <bw-util-logging.version>5.2.2</bw-util-logging.version>
         <bw-util.version>5.0.7</bw-util.version>
+        <bw-util-annotations.version>1.0.0-SNAPSHOT</bw-util-annotations.version>
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
         <bw-util-deploy.version>5.0.5</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.4</bw-util-hibernate.version>
@@ -3139,6 +3184,7 @@
 
         <bw-util-logging.version>5.2.2</bw-util-logging.version>
         <bw-util.version>5.0.6</bw-util.version>
+        <bw-util-annotations.version>1.0.0-SNAPSHOT</bw-util-annotations.version>
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
         <bw-util-deploy.version>5.0.5</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.4</bw-util-hibernate.version>
