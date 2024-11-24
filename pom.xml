@@ -205,8 +205,8 @@
 
     <imgscalr.version>4.2</imgscalr.version>
 
-    <jackson.databind.version>2.15.0</jackson.databind.version>
-    <jackson.version>2.15.0</jackson.version>
+    <jackson.databind.version>2.18.0</jackson.databind.version>
+    <jackson.version>2.18.0</jackson.version>
     <jansi.version>2.4.0</jansi.version>
     <jasig.cas.version>3.6.4</jasig.cas.version>
     <jasypt.version>1.9.2</jasypt.version>
@@ -237,7 +237,7 @@
     <mysql-driver.version>8.0.33</mysql-driver.version>
 
     <opensaml.version>2.5.1-1</opensaml.version>
-    <opensearch.version>2.1.0</opensearch.version>
+    <opensearch.version>2.18.0</opensearch.version>
     <!-- For opensearch dependencies -->
     <carrotsearch-hppc.version>0.8.1</carrotsearch-hppc.version>
     <HdrHistogram.version>2.1.12</HdrHistogram.version>
@@ -1916,6 +1916,12 @@
 
       <dependency>
         <groupId>org.opensearch</groupId>
+        <artifactId>opensearch-common</artifactId>
+        <version>${opensearch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.opensearch</groupId>
         <artifactId>opensearch-core</artifactId>
         <version>${opensearch.version}</version>
       </dependency>
@@ -3113,7 +3119,7 @@
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
         <bw-util-deploy.version>5.0.5</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.4</bw-util-hibernate.version>
-        <bw-util-index.version>5.0.1</bw-util-index.version>
+        <bw-util-index.version>5.0.2-SNAPSHOT</bw-util-index.version>
         <bw-util-network.version>5.1.5</bw-util-network.version>
         <bw-util-tz.version>5.0.1</bw-util-tz.version>
         <bw-util-security.version>5.0.2</bw-util-security.version>
