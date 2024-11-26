@@ -115,7 +115,7 @@
     <version.notice.plugin>1.0.4</version.notice.plugin>
     <version.plugin.plugin>3.11.0</version.plugin.plugin>
     <version.release.plugin>2.5.3</version.release.plugin>
-    <version.resources.plugin>3.2.0</version.resources.plugin>
+    <version.resources.plugin>3.3.1</version.resources.plugin>
     <version.source.plugin>3.2.1</version.source.plugin>
     <version.surefire.plugin>3.5.2</version.surefire.plugin>
     <version.versions.plugin>2.8.1</version.versions.plugin>
@@ -234,7 +234,7 @@
     <maven.version>3.8.4</maven.version>
     <maven-plugin-annotations.version>3.6.4</maven-plugin-annotations.version>
     <mockito.version>1.10.19</mockito.version>
-    <mysql-driver.version>8.0.33</mysql-driver.version>
+    <mysql-driver.version>8.2.0</mysql-driver.version>
 
     <opensaml.version>2.5.1-1</opensaml.version>
     <opensearch.version>2.18.0</opensearch.version>
@@ -249,7 +249,7 @@
     <javax.persistence.version>2.2</javax.persistence.version>
     <picocli.version>4.7.6</picocli.version>
     <portlet-api.version>1.0</portlet-api.version>
-    <postgresql-driver.version>42.3.3</postgresql-driver.version>
+    <postgresql-driver.version>42.7.2</postgresql-driver.version>
 
     <!-- Saxon-HE and dependencies -->
     <saxon-he.version>11.4</saxon-he.version>
@@ -3083,7 +3083,7 @@
         <bw-caldav.version>5.0.8</bw-caldav.version>
         <bw-calendar-client.version>4.1.2-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.1.3-SNAPSHOT</bw-calendar-common.version>
-        <bw-calendar-deploy.version>4.1.1-SNAPSHOT</bw-calendar-deploy.version>
+        <bw-calendar-deploy.version>4.1.1</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.1.3-SNAPSHOT</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.1.1-SNAPSHOT</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>5.1.1</bw-calws-soap-xml.version>
@@ -3119,7 +3119,7 @@
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
         <bw-util-deploy.version>5.0.5</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.4</bw-util-hibernate.version>
-        <bw-util-index.version>5.0.2-SNAPSHOT</bw-util-index.version>
+        <bw-util-index.version>5.0.2</bw-util-index.version>
         <bw-util-network.version>5.1.5</bw-util-network.version>
         <bw-util-tz.version>5.0.1</bw-util-tz.version>
         <bw-util-security.version>5.0.2</bw-util-security.version>
@@ -3158,7 +3158,7 @@
         <bw-caldav.version>5.0.8</bw-caldav.version>
         <bw-calendar-client.version>4.1.2-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>4.1.3-SNAPSHOT</bw-calendar-common.version>
-        <bw-calendar-deploy.version>4.1.1-SNAPSHOT</bw-calendar-deploy.version>
+        <bw-calendar-deploy.version>4.1.1</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.1.3-SNAPSHOT</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.1.1-SNAPSHOT</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>5.1.1</bw-calws-soap-xml.version>
@@ -3194,7 +3194,7 @@
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
         <bw-util-deploy.version>5.0.5</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.4</bw-util-hibernate.version>
-        <bw-util-index.version>5.0.1</bw-util-index.version>
+        <bw-util-index.version>5.0.2</bw-util-index.version>
         <bw-util-network.version>5.1.5</bw-util-network.version>
         <bw-util-tz.version>5.0.1</bw-util-tz.version>
         <bw-util-security.version>5.0.2</bw-util-security.version>
