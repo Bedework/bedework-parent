@@ -194,6 +194,9 @@
     <flywaydb.version>3.1</flywaydb.version>
     <freemarker.version>2.3.31</freemarker.version>
 
+    <!-- android for maven -->
+    <guava-android.version>32.0.0-android</guava-android.version>
+
     <hamcrest.version>2.2</hamcrest.version>
     <hawtio.version>2.15.0</hawtio.version>
     <hibernate.version>5.6.9.Final</hibernate.version>
@@ -201,7 +204,7 @@
     <hsqldb.version>2.5.1</hsqldb.version>
     <http-client.version>4.5.13</http-client.version>
     <http-core.version>4.4.14</http-core.version>
-    <h2.version>1.4.190</h2.version>
+    <h2.version>2.3.232</h2.version>
 
     <imgscalr.version>4.2</imgscalr.version>
 
@@ -286,7 +289,7 @@
     <!-- hawtio and dependencies -->
     <checker-qual.version>3.5.0</checker-qual.version>
     <error_prone_annotations.version>2.3.4</error_prone_annotations.version>
-    <json.version>20171018</json.version>
+    <json.version>20240303</json.version>
     <json-simple.version>1.1.1</json-simple.version>
     <jsr305.version>3.0.2</jsr305.version>
     <j2objc-annotations.version>1.3</j2objc-annotations.version>
@@ -1576,6 +1579,12 @@
         <groupId>org.freemarker</groupId>
         <artifactId>freemarker</artifactId>
         <version>${freemarker.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava-android.version}</version>
       </dependency>
 
       <dependency>
@@ -3088,7 +3097,7 @@
         <bw-calendar-xsl.version>4.1.1-SNAPSHOT</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>5.1.1</bw-calws-soap-xml.version>
         <bw-carddav.version>5.0.2</bw-carddav.version>
-        <bw-category.version>4.0.2</bw-category.version>
+        <bw-category.version>4.0.3</bw-category.version>
         <bw-cli.version>5.0.3</bw-cli.version>
         <bw-cliutil.version>5.0.1</bw-cliutil.version>
 
@@ -3102,7 +3111,7 @@
 
         <bw-logs.version>1.1.2</bw-logs.version>
 
-        <bw-notifier.version>5.0.2</bw-notifier.version>
+        <bw-notifier.version>5.0.3</bw-notifier.version>
 
         <bw-quickstart.version>4.0.3</bw-quickstart.version>
 
@@ -3117,7 +3126,7 @@
         <bw-util.version>5.0.7</bw-util.version>
         <bw-util-annotations.version>1.0.0-SNAPSHOT</bw-util-annotations.version>
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
-        <bw-util-deploy.version>5.0.5</bw-util-deploy.version>
+        <bw-util-deploy.version>5.0.6-SNAPSHOT</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.4</bw-util-hibernate.version>
         <bw-util-index.version>5.0.2</bw-util-index.version>
         <bw-util-network.version>5.1.5</bw-util-network.version>
@@ -3163,7 +3172,7 @@
         <bw-calendar-xsl.version>4.1.1-SNAPSHOT</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>5.1.1</bw-calws-soap-xml.version>
         <bw-carddav.version>5.0.2</bw-carddav.version>
-        <bw-category.version>4.0.2</bw-category.version>
+        <bw-category.version>4.0.3</bw-category.version>
         <bw-cli.version>5.0.3</bw-cli.version>
         <bw-cliutil.version>5.0.1</bw-cliutil.version>
 
@@ -3177,7 +3186,7 @@
 
         <bw-logs.version>1.1.2</bw-logs.version>
 
-        <bw-notifier.version>5.0.2</bw-notifier.version>
+        <bw-notifier.version>5.0.3</bw-notifier.version>
 
         <bw-quickstart.version>4.0.2</bw-quickstart.version>
 
