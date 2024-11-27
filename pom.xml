@@ -3091,12 +3091,12 @@
 
         <bw-caldav.version>5.0.8</bw-caldav.version>
         <bw-calendar-client.version>4.1.2-SNAPSHOT</bw-calendar-client.version>
-        <bw-calendar-common.version>4.1.3-SNAPSHOT</bw-calendar-common.version>
+        <bw-calendar-common.version>4.1.3</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.1.1</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.1.3-SNAPSHOT</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.1.1-SNAPSHOT</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>5.1.1</bw-calws-soap-xml.version>
-        <bw-carddav.version>5.0.2</bw-carddav.version>
+        <bw-carddav.version>5.0.3</bw-carddav.version>
         <bw-category.version>4.0.3</bw-category.version>
         <bw-cli.version>5.0.3</bw-cli.version>
         <bw-cliutil.version>5.0.1</bw-cliutil.version>
@@ -3126,7 +3126,7 @@
         <bw-util.version>5.0.7</bw-util.version>
         <bw-util-annotations.version>1.0.0-SNAPSHOT</bw-util-annotations.version>
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
-        <bw-util-deploy.version>5.0.6-SNAPSHOT</bw-util-deploy.version>
+        <bw-util-deploy.version>5.0.6</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.4</bw-util-hibernate.version>
         <bw-util-index.version>5.0.2</bw-util-index.version>
         <bw-util-network.version>5.1.5</bw-util-network.version>
@@ -3166,12 +3166,12 @@
 
         <bw-caldav.version>5.0.8</bw-caldav.version>
         <bw-calendar-client.version>4.1.2-SNAPSHOT</bw-calendar-client.version>
-        <bw-calendar-common.version>4.1.3-SNAPSHOT</bw-calendar-common.version>
+        <bw-calendar-common.version>4.1.3</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.1.1</bw-calendar-deploy.version>
         <bw-calendar-engine.version>4.1.3-SNAPSHOT</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.1.1-SNAPSHOT</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>5.1.1</bw-calws-soap-xml.version>
-        <bw-carddav.version>5.0.2</bw-carddav.version>
+        <bw-carddav.version>5.0.3</bw-carddav.version>
         <bw-category.version>4.0.3</bw-category.version>
         <bw-cli.version>5.0.3</bw-cli.version>
         <bw-cliutil.version>5.0.1</bw-cliutil.version>
@@ -3201,7 +3201,7 @@
         <bw-util.version>5.0.6</bw-util.version>
         <bw-util-annotations.version>1.0.0-SNAPSHOT</bw-util-annotations.version>
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
-        <bw-util-deploy.version>5.0.5</bw-util-deploy.version>
+        <bw-util-deploy.version>5.0.6</bw-util-deploy.version>
         <bw-util-hibernate.version>5.0.4</bw-util-hibernate.version>
         <bw-util-index.version>5.0.2</bw-util-index.version>
         <bw-util-network.version>5.1.5</bw-util-network.version>
