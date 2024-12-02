@@ -3141,7 +3141,7 @@
         <bw-webdav.version>5.0.5</bw-webdav.version>
         <bw-webtest.version>1.0.0</bw-webtest.version>
         <bw-wf-extensions.version>1.0.0</bw-wf-extensions.version>
-        <bw-wfmodules.version>1.0.6-SNAPSHOT</bw-wfmodules.version>
+        <bw-wfmodules.version>1.0.7</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.1.1-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
 
         <!-- iCal4j versions
@@ -3217,7 +3217,7 @@
         <bw-webdav.version>5.0.5</bw-webdav.version>
         <bw-webtest.version>1.0.0</bw-webtest.version>
         <bw-wf-extensions.version>1.0.0</bw-wf-extensions.version>
-        <bw-wfmodules.version>1.0.6-SNAPSHOT</bw-wfmodules.version>
+        <bw-wfmodules.version>1.0.7</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.1.1-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
 
         <!-- iCal4j versions
