@@ -22,7 +22,7 @@
 
   <groupId>org.bedework</groupId>
   <artifactId>bedework-parent</artifactId>
-  <version>84-SNAPSHOT</version>
+  <version>84</version>
 
   <packaging>pom</packaging>
 
@@ -1995,6 +1995,12 @@
         <groupId>org.opensearch.plugin</groupId>
         <artifactId>lang-mustache-client</artifactId>
         <version>${opensearch.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.carrotsearch</groupId>
+        <artifactId>hppc</artifactId>
+        <version>${carrotsearch-hppc.version}</version>
       </dependency>
 
       <!--
