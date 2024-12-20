@@ -799,19 +799,31 @@
 
       <dependency>
         <groupId>org.bedework.evreg</groupId>
-        <artifactId>bw-event-registration-service</artifactId>
-        <version>${bw-eventreg.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework.evreg</groupId>
         <artifactId>bw-event-registration-web</artifactId>
         <version>${bw-eventreg.version}</version>
       </dependency>
 
       <dependency>
         <groupId>org.bedework.evreg</groupId>
+        <artifactId>bw-event-registration-webadmin</artifactId>
+        <version>${bw-eventreg.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.evreg</groupId>
+        <artifactId>bw-event-registration-webcommon</artifactId>
+        <version>${bw-eventreg.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.evreg</groupId>
         <artifactId>bw-event-registration-wsimpl</artifactId>
+        <version>${bw-eventreg.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.evreg</groupId>
+        <artifactId>bw-event-registration-service</artifactId>
         <version>${bw-eventreg.version}</version>
       </dependency>
 
@@ -3140,7 +3152,7 @@
         <bw-util-network.version>5.1.6-SNAPSHOT</bw-util-network.version>
         <bw-util-tz.version>5.0.1</bw-util-tz.version>
         <bw-util-security.version>5.0.2</bw-util-security.version>
-        <bw-util2.version>5.0.8</bw-util2.version>
+        <bw-util2.version>5.0.9</bw-util2.version>
 
         <bw-webcache.version>1.0.0</bw-webcache.version>
         <bw-webdav.version>5.0.5</bw-webdav.version>
