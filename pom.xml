@@ -3109,8 +3109,8 @@
         <bw-bedework.version>4.1.0</bw-bedework.version>
 
         <bw-caldav.version>5.0.8</bw-caldav.version>
-        <bw-calendar-client.version>4.1.2</bw-calendar-client.version>
-        <bw-calendar-common.version>4.1.3</bw-calendar-common.version>
+        <bw-calendar-client.version>4.1.3-SNAPSHOT</bw-calendar-client.version>
+        <bw-calendar-common.version>4.1.4-SNAPSHOT</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.1.2</bw-calendar-deploy.version>
         <bw-calendar-dumprestore.version>4.2.0</bw-calendar-dumprestore.version>
         <bw-calendar-engine.version>4.1.4</bw-calendar-engine.version>
