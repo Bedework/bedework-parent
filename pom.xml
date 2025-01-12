@@ -95,7 +95,7 @@
     <version.buildnumber.plugin>1.4</version.buildnumber.plugin>
     <version.clean.plugin>3.1.0</version.clean.plugin>
     <version.compiler.plugin>3.8.1</version.compiler.plugin>
-    <version.dependency.plugin>3.1.1</version.dependency.plugin>
+    <version.dependency.plugin>3.8.1</version.dependency.plugin>
     <version.dependency.check.plugin>8.2.1</version.dependency.check.plugin>
     <version.deploy.plugin>2.8.2</version.deploy.plugin>
     <version.ear.plugin>3.0.1</version.ear.plugin>
@@ -787,6 +787,12 @@
         <groupId>org.bedework</groupId>
         <artifactId>bw-util-jolokia</artifactId>
         <version>${bw-cliutil.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-dependency-checker</artifactId>
+        <version>${bw-dependency-checker.version}</version>
       </dependency>
 
       <!-- ============ bw-event-registration ============ -->
@@ -2424,6 +2430,23 @@
         </plugin>
 
         <plugin>
+          <groupId>org.bedework</groupId>
+          <artifactId>bw-dependency-checker</artifactId>
+          <version>${bw-dependency-checker.version}</version>
+
+          <executions>
+            <execution>
+              <phase>validate</phase>
+              <goals>
+                <goal>check</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+          </configuration>
+        </plugin>
+
+        <plugin>
           <groupId>org.wildfly.galleon-plugins</groupId>
           <artifactId>wildfly-galleon-maven-plugin</artifactId>
           <version>${version.org.wildfly.galleon-plugins}</version>
@@ -3143,7 +3166,7 @@
         <bw-timezone-server.version>5.0.6</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.2</bw-util-logging.version>
-        <bw-util.version>5.0.9-SNAPSHOT</bw-util.version>
+        <bw-util.version>5.0.9</bw-util.version>
         <bw-util-annotations.version>1.0.0-SNAPSHOT</bw-util-annotations.version>
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
         <bw-util-deploy.version>5.1.0</bw-util-deploy.version>
@@ -3219,7 +3242,7 @@
         <bw-timezone-server.version>5.0.6</bw-timezone-server.version>
 
         <bw-util-logging.version>5.2.2</bw-util-logging.version>
-        <bw-util.version>5.0.8</bw-util.version>
+        <bw-util.version>5.0.9</bw-util.version>
         <bw-util-annotations.version>1.0.0-SNAPSHOT</bw-util-annotations.version>
         <bw-util-conf.version>5.0.5</bw-util-conf.version>
         <bw-util-deploy.version>5.1.0</bw-util-deploy.version>
