@@ -191,6 +191,8 @@
     <diff-utils.version>4.5</diff-utils.version>
     <dom4j-version>2.1.3</dom4j-version>
 
+    <ehcache.version>3.9.2</ehcache.version>
+
     <flywaydb.version>3.1</flywaydb.version>
     <freemarker.version>2.3.31</freemarker.version>
 
@@ -1589,6 +1591,12 @@
       </dependency>
 
       <dependency>
+        <groupId>org.ehcache</groupId>
+        <artifactId>ehcache</artifactId>
+        <version>${ehcache.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>org.flywaydb</groupId>
         <artifactId>flyway-core</artifactId>
         <version>${flywaydb.version}</version>
@@ -1627,7 +1635,7 @@
 
       <dependency>
         <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-ehcache</artifactId>
+        <artifactId>hibernate-jcache</artifactId>
         <version>${hibernate.version}</version>
         <exclusions>
           <exclusion>
@@ -2430,23 +2438,6 @@
         </plugin>
 
         <plugin>
-          <groupId>org.bedework</groupId>
-          <artifactId>bw-dependency-checker</artifactId>
-          <version>${bw-dependency-checker.version}</version>
-
-          <executions>
-            <execution>
-              <phase>validate</phase>
-              <goals>
-                <goal>check</goal>
-              </goals>
-            </execution>
-          </executions>
-          <configuration>
-          </configuration>
-        </plugin>
-
-        <plugin>
           <groupId>org.wildfly.galleon-plugins</groupId>
           <artifactId>wildfly-galleon-maven-plugin</artifactId>
           <version>${version.org.wildfly.galleon-plugins}</version>
@@ -3143,6 +3134,8 @@
         <bw-category.version>4.0.4-SNAPSHOT</bw-category.version>
         <bw-cli.version>5.0.3</bw-cli.version>
         <bw-cliutil.version>5.0.1</bw-cliutil.version>
+
+        <bw-dependency-checker.version>1.0.0-SNAPSHOT</bw-dependency-checker.version>
 
         <bw-eventreg.version>5.0.6-SNAPSHOT</bw-eventreg.version>
         <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
