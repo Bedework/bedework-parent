@@ -3191,7 +3191,7 @@
 
         <bw-logs.version>1.1.2</bw-logs.version>
 
-        <bw-notifier.version>5.0.4</bw-notifier.version>
+        <bw-notifier.version>5.0.5-SNAPSHOT</bw-notifier.version>
 
         <bw-quickstart.version>4.0.3</bw-quickstart.version>
 
