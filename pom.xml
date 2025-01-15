@@ -273,6 +273,7 @@
     <slf4j.version>1.7.36</slf4j.version>
     <!-- Snakeyaml for jackson -->
     <snakeyaml.version>2.0</snakeyaml.version>
+    <!--
     <spring-framework.version>5.2.19.RELEASE</spring-framework.version>
     <spring-ldap.version>2.3.3.RELEASE</spring-ldap.version>
     <spring-security.version>5.3.9.RELEASE</spring-security.version>
@@ -280,6 +281,7 @@
     <spring-webmvc-portlet.version>4.3.28.RELEASE</spring-webmvc-portlet.version>
     <spring-ws.version>3.1.2</spring-ws.version>
     <spring-ws-soap.version>2.0.0.RELEASE</spring-ws-soap.version>
+    -->
     <apache.struts2.version>2.5.33</apache.struts2.version>
 
     <taglibs-standard-impl.version>1.2.5</taglibs-standard-impl.version>
@@ -676,7 +678,7 @@
         <type>war</type>
       </dependency>
 
-      <!-- ================= bw-carddav ================= -->
+      <!-- ================= bw-calws ================= -->
 
       <dependency>
         <groupId>org.bedework</groupId>
@@ -707,9 +709,23 @@
 
       <dependency>
         <groupId>org.bedework</groupId>
-        <artifactId>bw-carddav-ear</artifactId>
+        <artifactId>bw-carddav-public-war</artifactId>
         <version>${bw-carddav.version}</version>
-        <type>ear</type>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-carddav-user-war</artifactId>
+        <version>${bw-carddav.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-carddav-userweb-war</artifactId>
+        <version>${bw-carddav.version}</version>
+        <type>war</type>
       </dependency>
 
       <!-- ================= bw-category ================= -->
@@ -746,9 +762,9 @@
 
       <dependency>
         <groupId>org.bedework.bw-cat</groupId>
-        <artifactId>bw-category-ear</artifactId>
+        <artifactId>bw-category-war</artifactId>
         <version>${bw-category.version}</version>
-        <type>ear</type>
+        <type>war</type>
       </dependency>
 
       <!-- ============ bw-cli ============ -->
@@ -833,6 +849,34 @@
         <groupId>org.bedework.evreg</groupId>
         <artifactId>bw-event-registration-service</artifactId>
         <version>${bw-eventreg.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.evreg</groupId>
+        <artifactId>bw-event-registration-admin-war</artifactId>
+        <version>${bw-eventreg.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.evreg</groupId>
+        <artifactId>bw-event-registration-common-war</artifactId>
+        <version>${bw-eventreg.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.evreg</groupId>
+        <artifactId>bw-event-registration-war</artifactId>
+        <version>${bw-eventreg.version}</version>
+        <type>war</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.evreg</groupId>
+        <artifactId>bw-event-registration-ws</artifactId>
+        <version>${bw-eventreg.version}</version>
+        <type>war</type>
       </dependency>
 
       <!-- ============== bw-exchangews-xml ============= -->
@@ -2108,7 +2152,7 @@
         <artifactId>snakeyaml</artifactId>
         <version>${snakeyaml.version}</version>
       </dependency>
-
+<!--
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-aop</artifactId>
@@ -2263,7 +2307,7 @@
         <groupId>org.springframework.ws</groupId>
         <artifactId>spring-xml</artifactId>
         <version>${spring-ws.version}</version>
-      </dependency>
+      </dependency>-->
 
       <dependency>
         <groupId>org.apache.struts</groupId>
@@ -3127,7 +3171,7 @@
         <bw-calendar-common.version>4.1.4-SNAPSHOT</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.1.2</bw-calendar-deploy.version>
         <bw-calendar-dumprestore.version>4.2.0</bw-calendar-dumprestore.version>
-        <bw-calendar-engine.version>4.1.4</bw-calendar-engine.version>
+        <bw-calendar-engine.version>4.1.5-SNAPSHOT</bw-calendar-engine.version>
         <bw-calendar-xsl.version>4.1.2</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>5.1.1</bw-calws-soap-xml.version>
         <bw-carddav.version>5.0.6</bw-carddav.version>
@@ -3154,7 +3198,7 @@
         <bw-schemaorg.version>1.0.0</bw-schemaorg.version>
         <bw-selfreg.version>5.0.3</bw-selfreg.version>
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
-        <bw-synch.version>5.0.12</bw-synch.version>
+        <bw-synch.version>5.0.13-SNAPSHOT</bw-synch.version>
 
         <bw-timezone-server.version>5.0.6</bw-timezone-server.version>
 
@@ -3175,7 +3219,7 @@
         <bw-webtest.version>1.0.0</bw-webtest.version>
         <bw-wf-extensions.version>1.0.0</bw-wf-extensions.version>
         <bw-wfmodules.version>1.0.8</bw-wfmodules.version>
-        <bw-wildfly-galleon-feature-pack.version>4.1.1-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
+        <bw-wildfly-galleon-feature-pack.version>4.2.1-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
 
         <!-- iCal4j versions
              We have our own version of ical4j which is
@@ -3312,7 +3356,7 @@
       <url>${bedework.snapshots.repo.url}</url>
       <layout>default</layout>
     </repository>
-
+<!--
     <repository>
       <id>spring-snapshots</id>
       <url>https://repo.spring.io/snapshot</url>
@@ -3324,7 +3368,7 @@
     <repository>
       <id>spring-milestones</id>
       <url>https://repo.spring.io/milestone</url>
-    </repository>
+    </repository>-->
   </repositories>
 
   <!-- Some plugins are available in the jboss repository only -->
