@@ -316,6 +316,14 @@
         <version>${bw-access.version}</version>
       </dependency>
 
+      <!-- ================= bw-base ================= -->
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-base</artifactId>
+        <version>${bw-base.version}</version>
+      </dependency>
+
       <!-- ================= bw-caldav ================= -->
 
       <dependency>
@@ -3164,6 +3172,8 @@
       <properties>
         <bw-access.version>5.0.3</bw-access.version>
 
+
+        <bw-base.version>1.0.0-SNAPSHOT</bw-base.version>
         <bw-bedework.version>4.1.0</bw-bedework.version>
 
         <bw-caldav.version>5.0.8</bw-caldav.version>
