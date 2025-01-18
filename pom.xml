@@ -167,6 +167,7 @@
     -->
     <javax.activation-api.version>1.2.0</javax.activation-api.version>
     <ant.contrib.version>1.0b3</ant.contrib.version>
+    <antlr.version>2.7.7</antlr.version>
     <apacheds-service.version>2.0.0.AM26</apacheds-service.version>
     <auto-service.version>1.1.1</auto-service.version>
 
@@ -1492,6 +1493,12 @@
         <groupId>javax.activation</groupId>
         <artifactId>javax.activation-api</artifactId>
         <version>${javax.activation-api.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>antlr</groupId>
+        <artifactId>antlr</artifactId>
+        <version>${antlr.version}</version>
       </dependency>
 
       <dependency>
