@@ -242,8 +242,10 @@
     <mockito.version>1.10.19</mockito.version>
     <mysql-driver.version>8.2.0</mysql-driver.version>
 
+    <openjpa.version>3.2.2</openjpa.version>
     <opensaml.version>2.5.1-1</opensaml.version>
     <opensearch.version>2.18.0</opensearch.version>
+
     <!-- For opensearch dependencies -->
     <carrotsearch-hppc.version>0.8.1</carrotsearch-hppc.version>
     <HdrHistogram.version>2.1.12</HdrHistogram.version>
@@ -1963,6 +1965,12 @@
         <artifactId>mockito-all</artifactId>
         <version>${mockito.version}</version>
         <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.openjpa</groupId>
+        <artifactId>openjpa</artifactId>
+        <version>${openjpa.version}</version>
       </dependency>
 
       <dependency>
