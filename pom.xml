@@ -497,13 +497,19 @@
 
       <dependency>
         <groupId>org.bedework.caleng</groupId>
-        <artifactId>bw-calendar-engine-core</artifactId>
+        <artifactId>bw-calendar-engine-core-ro</artifactId>
         <version>${bw-calendar-engine.version}</version>
       </dependency>
 
       <dependency>
         <groupId>org.bedework.caleng</groupId>
-        <artifactId>bw-calendar-engine-core-common</artifactId>
+        <artifactId>bw-calendar-engine-core-rw-hibernate</artifactId>
+        <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.caleng</groupId>
+        <artifactId>bw-calendar-engine-core-rw-openjpa</artifactId>
         <version>${bw-calendar-engine.version}</version>
       </dependency>
 
@@ -516,6 +522,12 @@
       <dependency>
         <groupId>org.bedework.caleng</groupId>
         <artifactId>bw-calendar-engine-indexer</artifactId>
+        <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.caleng</groupId>
+        <artifactId>bw-calendar-engine-indexing</artifactId>
         <version>${bw-calendar-engine.version}</version>
       </dependency>
 
