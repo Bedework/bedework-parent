@@ -503,6 +503,12 @@
 
       <dependency>
         <groupId>org.bedework.caleng</groupId>
+        <artifactId>bw-calendar-engine-core-rw-common</artifactId>
+        <version>${bw-calendar-engine.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.caleng</groupId>
         <artifactId>bw-calendar-engine-core-rw-hibernate</artifactId>
         <version>${bw-calendar-engine.version}</version>
       </dependency>
@@ -841,6 +847,12 @@
       <dependency>
         <groupId>org.bedework.database</groupId>
         <artifactId>bw-hibernate</artifactId>
+        <version>${bw-database.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.database</groupId>
+        <artifactId>bw-jpa</artifactId>
         <version>${bw-database.version}</version>
       </dependency>
 
