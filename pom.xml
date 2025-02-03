@@ -90,11 +90,12 @@
     <!-- Maven Plugin Versions -->
     <version.antrun.plugin>1.8</version.antrun.plugin>
     <version.appassembler.plugin>1.10</version.appassembler.plugin>
-    <version.assembly.plugin>3.3.0</version.assembly.plugin>
+    <version.assembly.plugin>3.7.1</version.assembly.plugin>
     <version.buildhelper.plugin>3.0.0</version.buildhelper.plugin>
     <version.buildnumber.plugin>1.4</version.buildnumber.plugin>
     <version.clean.plugin>3.1.0</version.clean.plugin>
     <version.compiler.plugin>3.8.1</version.compiler.plugin>
+    <version.copy-rename.plugin>1.0</version.copy-rename.plugin>
     <version.dependency.plugin>3.8.1</version.dependency.plugin>
     <version.dependency.check.plugin>8.2.1</version.dependency.check.plugin>
     <version.deploy.plugin>2.8.2</version.deploy.plugin>
@@ -2723,6 +2724,12 @@
               -->
             </compilerArgs>
           </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>com.coderplus.maven.plugins</groupId>
+          <artifactId>copy-rename-maven-plugin</artifactId>
+          <version>${version.copy-rename.plugin}</version>
         </plugin>
 
         <plugin>
