@@ -286,7 +286,7 @@
     <spring-ws.version>3.1.2</spring-ws.version>
     <spring-ws-soap.version>2.0.0.RELEASE</spring-ws-soap.version>
     -->
-    <apache.struts2.version>2.5.33</apache.struts2.version>
+    <apache.struts2.version>6.7.0</apache.struts2.version>
 
     <taglibs-standard-impl.version>1.2.5</taglibs-standard-impl.version>
 
@@ -2410,13 +2410,6 @@
         <groupId>org.apache.struts</groupId>
         <artifactId>struts2-core</artifactId>
         <version>${apache.struts2.version}</version>
-        <exclusions>
-          <exclusion>
-            <!-- Depends on version 1.4 - we load 1.5 -->
-            <groupId>commons-fileupload</groupId>
-            <artifactId>commons-fileupload</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
 
       <dependency>
