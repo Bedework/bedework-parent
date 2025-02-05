@@ -3303,7 +3303,7 @@
         <bw-util-logging.version>5.2.3</bw-util-logging.version>
         <bw-util.version>5.0.10</bw-util.version>
         <bw-util-annotations.version>1.0.0-SNAPSHOT</bw-util-annotations.version>
-        <bw-util-conf.version>5.0.6-SNAPSHOT</bw-util-conf.version>
+        <bw-util-conf.version>5.0.6</bw-util-conf.version>
         <bw-util-deploy.version>5.1.1</bw-util-deploy.version>
         <bw-util-index.version>5.0.4-SNAPSHOT</bw-util-index.version>
         <bw-util-network.version>5.1.6-SNAPSHOT</bw-util-network.version>
@@ -3325,7 +3325,7 @@
 
         <ical4j.groupId>org.bedework.ical4j</ical4j.groupId>
         <ical4j.artifactId>ical4j</ical4j.artifactId>
-        <ical4j.version>3.0.22</ical4j.version>
+        <ical4j.version>3.0.23</ical4j.version>
 
         <ical4j-vcard.version>1.0.10</ical4j-vcard.version>
       </properties>
@@ -3379,7 +3379,7 @@
         <bw-util-logging.version>5.2.3</bw-util-logging.version>
         <bw-util.version>5.0.10</bw-util.version>
         <bw-util-annotations.version>1.0.0-SNAPSHOT</bw-util-annotations.version>
-        <bw-util-conf.version>5.0.5</bw-util-conf.version>
+        <bw-util-conf.version>5.0.6</bw-util-conf.version>
         <bw-util-deploy.version>5.1.1</bw-util-deploy.version>
         <bw-util-index.version>5.0.3</bw-util-index.version>
         <bw-util-network.version>5.1.6-SNAPSHOT</bw-util-network.version>
@@ -3401,7 +3401,7 @@
 
         <ical4j.groupId>org.bedework.ical4j</ical4j.groupId>
         <ical4j.artifactId>ical4j</ical4j.artifactId>
-        <ical4j.version>3.0.22</ical4j.version>
+        <ical4j.version>3.0.23</ical4j.version>
 
         <ical4j-vcard.version>1.0.10</ical4j-vcard.version>
       </properties>
