@@ -3260,7 +3260,7 @@
       <properties>
         <bw-access.version>5.0.4-SNAPSHOT</bw-access.version>
 
-        <bw-base.version>1.0.0-SNAPSHOT</bw-base.version>
+        <bw-base.version>1.0.0</bw-base.version>
         <bw-bedework.version>4.1.1-SNAPSHOT</bw-bedework.version>
 
         <bw-caldav.version>5.0.9-SNAPSHOT</bw-caldav.version>
@@ -3339,6 +3339,7 @@
       <properties>
         <bw-access.version>5.0.3</bw-access.version>
 
+        <bw-base.version>1.0.0</bw-base.version>
         <bw-bedework.version>4.1.0</bw-bedework.version>
 
         <bw-caldav.version>5.0.8</bw-caldav.version>
