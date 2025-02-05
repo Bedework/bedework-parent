@@ -3327,7 +3327,7 @@
         <ical4j.artifactId>ical4j</ical4j.artifactId>
         <ical4j.version>3.0.23</ical4j.version>
 
-        <ical4j-vcard.version>1.0.10</ical4j-vcard.version>
+        <ical4j-vcard.version>1.0.11</ical4j-vcard.version>
       </properties>
     </profile>
 
@@ -3403,7 +3403,7 @@
         <ical4j.artifactId>ical4j</ical4j.artifactId>
         <ical4j.version>3.0.23</ical4j.version>
 
-        <ical4j-vcard.version>1.0.10</ical4j-vcard.version>
+        <ical4j-vcard.version>1.0.11</ical4j-vcard.version>
       </properties>
     </profile>
   </profiles>
