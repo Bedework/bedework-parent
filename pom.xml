@@ -3305,7 +3305,7 @@
         <bw-util-annotations.version>1.0.0-SNAPSHOT</bw-util-annotations.version>
         <bw-util-conf.version>5.0.6</bw-util-conf.version>
         <bw-util-deploy.version>5.1.1</bw-util-deploy.version>
-        <bw-util-index.version>5.0.4-SNAPSHOT</bw-util-index.version>
+        <bw-util-index.version>5.0.4</bw-util-index.version>
         <bw-util-network.version>5.1.6</bw-util-network.version>
         <bw-util-tz.version>5.0.2</bw-util-tz.version>
         <bw-util-security.version>5.0.3-SNAPSHOT</bw-util-security.version>
@@ -3381,7 +3381,7 @@
         <bw-util-annotations.version>1.0.0-SNAPSHOT</bw-util-annotations.version>
         <bw-util-conf.version>5.0.6</bw-util-conf.version>
         <bw-util-deploy.version>5.1.1</bw-util-deploy.version>
-        <bw-util-index.version>5.0.3</bw-util-index.version>
+        <bw-util-index.version>5.0.4</bw-util-index.version>
         <bw-util-network.version>5.1.6</bw-util-network.version>
         <bw-util-tz.version>5.0.2</bw-util-tz.version>
         <bw-util-security.version>5.0.2</bw-util-security.version>
