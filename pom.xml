@@ -3274,7 +3274,7 @@
         <bw-carddav.version>5.0.7-SNAPSHOT</bw-carddav.version>
         <bw-category.version>4.0.4-SNAPSHOT</bw-category.version>
         <bw-cli.version>5.0.4-SNAPSHOT</bw-cli.version>
-        <bw-cliutil.version>5.0.2-SNAPSHOT</bw-cliutil.version>
+        <bw-cliutil.version>5.0.2</bw-cliutil.version>
 
         <bw-database.version>5.0.5</bw-database.version>
         <bw-dependency-checker.version>1.0.0-SNAPSHOT</bw-dependency-checker.version>
@@ -3353,7 +3353,7 @@
         <bw-carddav.version>5.0.6</bw-carddav.version>
         <bw-category.version>4.0.4-SNAPSHOT</bw-category.version>
         <bw-cli.version>5.0.3</bw-cli.version>
-        <bw-cliutil.version>5.0.1</bw-cliutil.version>
+        <bw-cliutil.version>5.0.2</bw-cliutil.version>
 
         <bw-database.version>5.0.5</bw-database.version>
 
