@@ -3258,7 +3258,7 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <bw-access.version>5.0.4-SNAPSHOT</bw-access.version>
+        <bw-access.version>5.0.4</bw-access.version>
 
         <bw-base.version>1.0.0</bw-base.version>
         <bw-bedework.version>4.1.1-SNAPSHOT</bw-bedework.version>
@@ -3337,7 +3337,7 @@
         <activeByDefault>false</activeByDefault>
       </activation>
       <properties>
-        <bw-access.version>5.0.3</bw-access.version>
+        <bw-access.version>5.0.4</bw-access.version>
 
         <bw-base.version>1.0.0</bw-base.version>
         <bw-bedework.version>4.1.0</bw-bedework.version>
