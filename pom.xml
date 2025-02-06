@@ -3312,7 +3312,7 @@
         <bw-util2.version>5.0.10</bw-util2.version>
 
         <bw-webcache.version>1.0.2-SNAPSHOT</bw-webcache.version>
-        <bw-webdav.version>5.0.6-SNAPSHOT</bw-webdav.version>
+        <bw-webdav.version>5.0.6</bw-webdav.version>
         <bw-webtest.version>1.0.0</bw-webtest.version>
         <bw-wf-extensions.version>1.0.2-SNAPSHOT</bw-wf-extensions.version>
         <bw-wfmodules.version>1.0.8</bw-wfmodules.version>
@@ -3390,7 +3390,7 @@
         <bw-util2.version>5.0.10</bw-util2.version>
 
         <bw-webcache.version>1.0.0</bw-webcache.version>
-        <bw-webdav.version>5.0.5</bw-webdav.version>
+        <bw-webdav.version>5.0.6</bw-webdav.version>
         <bw-webtest.version>1.0.0</bw-webtest.version>
         <bw-wf-extensions.version>1.0.0</bw-wf-extensions.version>
         <bw-wfmodules.version>1.0.8</bw-wfmodules.version>
