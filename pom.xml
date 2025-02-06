@@ -3279,7 +3279,7 @@
         <bw-database.version>5.0.5</bw-database.version>
         <bw-dependency-checker.version>1.0.0-SNAPSHOT</bw-dependency-checker.version>
 
-        <bw-eventreg.version>5.0.6-SNAPSHOT</bw-eventreg.version>
+        <bw-eventreg.version>5.0.6</bw-eventreg.version>
         <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
 
         <bw-icalendar-xml.version>5.1.1</bw-icalendar-xml.version>
@@ -3357,7 +3357,7 @@
 
         <bw-database.version>5.0.5</bw-database.version>
 
-        <bw-eventreg.version>5.0.6-SNAPSHOT</bw-eventreg.version>
+        <bw-eventreg.version>5.0.6</bw-eventreg.version>
         <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
 
         <bw-icalendar-xml.version>5.1.1</bw-icalendar-xml.version>
