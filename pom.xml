@@ -3308,7 +3308,7 @@
         <bw-util-index.version>5.0.4</bw-util-index.version>
         <bw-util-network.version>5.1.6</bw-util-network.version>
         <bw-util-tz.version>5.0.2</bw-util-tz.version>
-        <bw-util-security.version>5.0.3-SNAPSHOT</bw-util-security.version>
+        <bw-util-security.version>5.0.3</bw-util-security.version>
         <bw-util2.version>5.0.10</bw-util2.version>
 
         <bw-webcache.version>1.0.2-SNAPSHOT</bw-webcache.version>
@@ -3386,7 +3386,7 @@
         <bw-util-index.version>5.0.4</bw-util-index.version>
         <bw-util-network.version>5.1.6</bw-util-network.version>
         <bw-util-tz.version>5.0.2</bw-util-tz.version>
-        <bw-util-security.version>5.0.2</bw-util-security.version>
+        <bw-util-security.version>5.0.3</bw-util-security.version>
         <bw-util2.version>5.0.10</bw-util2.version>
 
         <bw-webcache.version>1.0.0</bw-webcache.version>
