@@ -3276,7 +3276,7 @@
         <bw-cli.version>5.0.4-SNAPSHOT</bw-cli.version>
         <bw-cliutil.version>5.0.2-SNAPSHOT</bw-cliutil.version>
 
-        <bw-database.version>5.0.5-SNAPSHOT</bw-database.version>
+        <bw-database.version>5.0.5</bw-database.version>
         <bw-dependency-checker.version>1.0.0-SNAPSHOT</bw-dependency-checker.version>
 
         <bw-eventreg.version>5.0.6-SNAPSHOT</bw-eventreg.version>
@@ -3354,6 +3354,8 @@
         <bw-category.version>4.0.4-SNAPSHOT</bw-category.version>
         <bw-cli.version>5.0.3</bw-cli.version>
         <bw-cliutil.version>5.0.1</bw-cliutil.version>
+
+        <bw-database.version>5.0.5</bw-database.version>
 
         <bw-eventreg.version>5.0.6-SNAPSHOT</bw-eventreg.version>
         <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
