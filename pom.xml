@@ -3316,7 +3316,7 @@
         <bw-webtest.version>1.0.0</bw-webtest.version>
         <bw-wf-extensions.version>1.0.2</bw-wf-extensions.version>
         <bw-wfmodules.version>1.0.10</bw-wfmodules.version>
-        <bw-wildfly-galleon-feature-pack.version>4.2.1-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
+        <bw-wildfly-galleon-feature-pack.version>4.2.1</bw-wildfly-galleon-feature-pack.version>
 
         <!-- iCal4j versions
              We have our own version of ical4j which is
@@ -3394,7 +3394,7 @@
         <bw-webtest.version>1.0.0</bw-webtest.version>
         <bw-wf-extensions.version>1.0.2</bw-wf-extensions.version>
         <bw-wfmodules.version>1.0.10</bw-wfmodules.version>
-        <bw-wildfly-galleon-feature-pack.version>4.1.1-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
+        <bw-wildfly-galleon-feature-pack.version>4.2.1</bw-wildfly-galleon-feature-pack.version>
 
         <!-- iCal4j versions
              We have our own version of ical4j which is
