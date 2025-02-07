@@ -76,8 +76,8 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <!-- maven-compiler-plugin -->
-    <maven.compiler.target>17</maven.compiler.target>
-    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+    <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.testTarget>${maven.compiler.target}</maven.compiler.testTarget>
     <maven.compiler.testSource>${maven.compiler.source}</maven.compiler.testSource>
 
@@ -88,46 +88,44 @@
     <maven.redhat.repository.url>${maven.repository.protocol}://maven.repository.redhat.com/ga/</maven.redhat.repository.url>
 
     <!-- Maven Plugin Versions -->
-    <version.antrun.plugin>1.8</version.antrun.plugin>
-    <version.appassembler.plugin>1.10</version.appassembler.plugin>
+    <version.antrun.plugin>3.1.0</version.antrun.plugin>
+    <version.appassembler.plugin>2.1.0</version.appassembler.plugin>
     <version.assembly.plugin>3.7.1</version.assembly.plugin>
-    <version.buildhelper.plugin>3.0.0</version.buildhelper.plugin>
-    <version.buildnumber.plugin>1.4</version.buildnumber.plugin>
-    <version.clean.plugin>3.1.0</version.clean.plugin>
-    <version.compiler.plugin>3.8.1</version.compiler.plugin>
-    <version.copy-rename.plugin>1.0</version.copy-rename.plugin>
+    <version.buildhelper.plugin>3.6.0</version.buildhelper.plugin>
+    <version.buildnumber.plugin>3.2.1</version.buildnumber.plugin>
+    <version.clean.plugin>3.4.0</version.clean.plugin>
+    <version.compiler.plugin>3.13.0</version.compiler.plugin>
+    <version.copy-rename.plugin>1.0.1</version.copy-rename.plugin>
     <version.dependency.plugin>3.8.1</version.dependency.plugin>
-    <version.dependency.check.plugin>8.2.1</version.dependency.check.plugin>
-    <version.deploy.plugin>2.8.2</version.deploy.plugin>
-    <version.ear.plugin>3.0.1</version.ear.plugin>
-    <version.enforcer.plugin>3.0.0-M3</version.enforcer.plugin>
-    <version.exec.plugin>3.0.0</version.exec.plugin>
-    <version.failsafe.plugin>2.12</version.failsafe.plugin>
-    <version.flatten.plugin>1.2.7</version.flatten.plugin>
-    <version.gpg.plugin>1.5</version.gpg.plugin>
-    <version.help.plugin>3.2.0</version.help.plugin>
-    <version.install.plugin>2.5.2</version.install.plugin>
-    <version.jar.plugin>3.1.2</version.jar.plugin>
-    <version.javadoc.plugin>3.1.1</version.javadoc.plugin>
+    <version.dependency.check.plugin>12.0.2</version.dependency.check.plugin>
+    <version.deploy.plugin>3.1.3</version.deploy.plugin>
+    <version.ear.plugin>3.3.0</version.ear.plugin>
+    <version.enforcer.plugin>3.5.0</version.enforcer.plugin>
+    <version.exec.plugin>3.5.0</version.exec.plugin>
+    <version.flatten.plugin>1.6.0</version.flatten.plugin>
+    <version.gpg.plugin>3.2.7</version.gpg.plugin>
+    <version.help.plugin>3.5.1</version.help.plugin>
+    <version.install.plugin>3.1.3</version.install.plugin>
+    <version.jar.plugin>3.4.2</version.jar.plugin>
+    <version.javadoc.plugin>3.11.1</version.javadoc.plugin>
     <version.jaxb2.plugin>2.5.0</version.jaxb2.plugin>
-    <version.jaxws.plugin>2.3.7</version.jaxws.plugin>
-    <version.license.plugin>2.0</version.license.plugin>
-    <version.nexus.staging.plugin>1.6.13</version.nexus.staging.plugin>
-    <version.notice.plugin>1.0.4</version.notice.plugin>
-    <version.plugin.plugin>3.11.0</version.plugin.plugin>
-    <version.release.plugin>2.5.3</version.release.plugin>
+    <version.jaxws.plugin>4.0.3</version.jaxws.plugin>
+    <version.license.plugin>2.4.0</version.license.plugin>
+    <version.nexus.staging.plugin>1.7.0</version.nexus.staging.plugin>
+    <version.plugin.plugin>3.15.1</version.plugin.plugin>
+    <version.release.plugin>3.1.1</version.release.plugin>
     <version.resources.plugin>3.3.1</version.resources.plugin>
     <version.source.plugin>3.2.1</version.source.plugin>
     <version.surefire.plugin>3.5.2</version.surefire.plugin>
-    <version.versions.plugin>2.8.1</version.versions.plugin>
-    <version.war.plugin>3.3.2</version.war.plugin>
+    <version.versions.plugin>2.17.1</version.versions.plugin>
+    <version.war.plugin>3.4.0</version.war.plugin>
 
-    <version.org.wildfly.galleon-plugins>5.2.10.Final</version.org.wildfly.galleon-plugins>
+    <version.org.wildfly.galleon-plugins>7.3.1.Final</version.org.wildfly.galleon-plugins>
 
-    <wildfly.core.version>18.1.2.Final</wildfly.core.version>
-    <wildfly.common.version>1.6.0.Final</wildfly.common.version>
-    <wildfly.version>26.1.3.Final</wildfly.version>
-    <undertow.version>2.2.19.Final</undertow.version>
+    <wildfly.core.version>27.0.1.Final</wildfly.core.version>
+    <wildfly.common.version>1.7.0.Final</wildfly.common.version>
+    <wildfly.version>35.0.1.Final</wildfly.version>
+    <undertow.version>2.3.18.Final</undertow.version>
 
     <!-- Repository Deployment URLs -->
     <bedework.releases.repo.id>ossrh</bedework.releases.repo.id>
@@ -166,13 +164,12 @@
     <!-- Library versions
          Third party libraries we depend on.
     -->
-    <javax.activation-api.version>1.2.0</javax.activation-api.version>
+    <jakarta.activation-api.version>2.1.3</jakarta.activation-api.version>
     <ant.contrib.version>1.0b3</ant.contrib.version>
-    <antlr.version>2.7.7</antlr.version>
+    <antlr.version>4.13.0</antlr.version>
     <apacheds-service.version>2.0.0.AM26</apacheds-service.version>
     <auto-service.version>1.1.1</auto-service.version>
 
-    <javax.cache-api.version>1.0.0</javax.cache-api.version>
     <classmate.version>1.3.0</classmate.version>
     <commons.beanutils.version>1.9.4</commons.beanutils.version>
     <commons.codec.version>1.16.0</commons.codec.version>
@@ -181,51 +178,51 @@
     <commons.csv.version>1.2</commons.csv.version>
     <commons.digester-version>1.8</commons.digester-version>
     <commons-fileupload.version>1.5</commons-fileupload.version>
-    <commons.io.version>2.14.0</commons.io.version>
+    <commons.io.version>2.16.1</commons.io.version>
     <commons.lang.version>2.6</commons.lang.version>
     <commons.lang3.version>3.9</commons.lang3.version>
     <commons.logging.version>1.2</commons.logging.version>
     <commons.pool.version>1.5.6</commons.pool.version>
-    <commons.text.version>1.10.0</commons.text.version>
+    <commons.text.version>1.13.0</commons.text.version>
     <commons.validator.version>1.7</commons.validator.version>
 
     <derby.version>10.15.2.0</derby.version>
     <diff-utils.version>4.5</diff-utils.version>
-    <dom4j-version>2.1.3</dom4j-version>
+    <dom4j-version>2.1.4</dom4j-version>
 
-    <ehcache.version>3.9.2</ehcache.version>
+    <ehcache.version>3.10.8</ehcache.version>
 
     <flywaydb.version>3.1</flywaydb.version>
     <freemarker.version>2.3.31</freemarker.version>
 
     <!-- android for maven -->
-    <guava-android.version>32.0.0-android</guava-android.version>
+    <guava.version>33.0.0-jre</guava.version>
 
     <hamcrest.version>2.2</hamcrest.version>
     <hawtio.version>2.15.0</hawtio.version>
-    <hibernate.version>5.6.9.Final</hibernate.version>
+    <hibernate.version>6.6.3.Final</hibernate.version>
     <!--<hibernate.patched.version>5.2.5.1FinalBwPatched</hibernate.patched.version>-->
     <hsqldb.version>2.5.1</hsqldb.version>
-    <http-client.version>4.5.13</http-client.version>
-    <http-core.version>4.4.14</http-core.version>
+    <http-client.version>4.5.14</http-client.version>
+    <http-core.version>4.4.16</http-core.version>
     <h2.version>2.3.232</h2.version>
 
     <imgscalr.version>4.2</imgscalr.version>
 
-    <jackson.databind.version>2.18.0</jackson.databind.version>
-    <jackson.version>2.18.0</jackson.version>
+    <jackson.databind.version>2.18.2</jackson.databind.version>
+    <jackson.version>2.18.2</jackson.version>
     <jansi.version>2.4.0</jansi.version>
     <jasig.cas.version>3.6.4</jasig.cas.version>
     <jasypt.version>1.9.2</jasypt.version>
-    <javassist.version>3.20.0-GA</javassist.version>
-    <java.jaxb.api.version>2.3.1</java.jaxb.api.version>
+    <javassist.version>3.30.2-GA</javassist.version>
+    <jakarta.jaxb.api.version>2.3.1</jakarta.jaxb.api.version>
     <java.jaxws.api.version>2.3.1</java.jaxws.api.version>
     <jaxen.version>1.1.6</jaxen.version>
     <jline.version>3.26.0</jline.version>
-    <jms.version>2.0</jms.version>
+    <jms.version>3.1.0</jms.version>
     <jolokia.version>1.6.2</jolokia.version>
     <joor.version>0.9.15</joor.version>
-    <jsp-api.version>2.3.1</jsp-api.version>
+    <jsp-api.version>3.1.1</jsp-api.version>
     <java.jws.api.version>1.1</java.jws.api.version>
 
     <!-- test only -->
@@ -234,7 +231,7 @@
 
     <keycloak.version>17.0.0</keycloak.version>
 
-    <log4j.version>2.17.1</log4j.version>
+    <log4j.version>2.23.1</log4j.version>
 
     <javax.mail.version>1.6.2</javax.mail.version>
     <sun.mail.version>1.6.2</sun.mail.version>
@@ -255,7 +252,7 @@
     <lucene.version>9.2.0</lucene.version>
     <t-digest.version>3.2</t-digest.version>
 
-    <javax.persistence.version>2.2</javax.persistence.version>
+    <jakarta.persistence.version>3.1.0</jakarta.persistence.version>
     <picocli.version>4.7.6</picocli.version>
     <portlet-api.version>1.0</portlet-api.version>
     <postgresql-driver.version>42.7.2</postgresql-driver.version>
@@ -273,7 +270,7 @@
 
     <saaj.version>1.5.1</saaj.version>
     <selenium.version>4.23.0</selenium.version>
-    <servlet-api.version>4.0.0</servlet-api.version>
+    <servlet-api.version>6.0.0</servlet-api.version>
     <slf4j.version>1.7.36</slf4j.version>
     <!-- Snakeyaml for jackson -->
     <snakeyaml.version>2.0</snakeyaml.version>
@@ -289,9 +286,11 @@
     <apache.struts2.version>6.7.0</apache.struts2.version>
 
     <taglibs-standard-impl.version>1.2.5</taglibs-standard-impl.version>
+    <jakarta.transaction-api.version>2.0.1</jakarta.transaction-api.version>
 
     <javax.websockets.version>1.1</javax.websockets.version>
 
+    <jakarta.xml.bind-api.version>4.0.2</jakarta.xml.bind-api.version>
     <javax.xml.soap-api.version>1.4.0</javax.xml.soap-api.version>
 
     <!-- hawtio and dependencies -->
@@ -1529,15 +1528,21 @@
       </dependency>
 
       <dependency>
-        <groupId>javax.activation</groupId>
-        <artifactId>javax.activation-api</artifactId>
-        <version>${javax.activation-api.version}</version>
+        <groupId>jakarta.activation</groupId>
+        <artifactId>jakarta.activation-api</artifactId>
+        <version>${jakarta.activation-api.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>antlr</groupId>
-        <artifactId>antlr</artifactId>
+        <groupId>org.antlr</groupId>
+        <artifactId>antlr4</artifactId>
         <version>${antlr.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>*</groupId>
+            <artifactId>*</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -1709,11 +1714,11 @@
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>${guava-android.version}</version>
+        <version>${guava.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>org.hibernate</groupId>
+        <groupId>org.hibernate.orm</groupId>
         <artifactId>hibernate-core</artifactId>
         <version>${hibernate.version}</version>
       </dependency>
@@ -1732,12 +1737,12 @@
       </dependency>
 
       <dependency>
-        <groupId>org.hibernate</groupId>
+        <groupId>org.hibernate.orm</groupId>
         <artifactId>hibernate-jcache</artifactId>
         <version>${hibernate.version}</version>
         <exclusions>
           <exclusion>
-            <groupId>org.hibernate</groupId>
+            <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
           </exclusion>
         </exclusions>
@@ -1816,9 +1821,9 @@
       </dependency>
 
       <dependency>
-        <groupId>javax.xml.bind</groupId>
-        <artifactId>jaxb-api</artifactId>
-        <version>${java.jaxb.api.version}</version>
+        <groupId>jakarta.xml.bind</groupId>
+        <artifactId>jakarta.xml.bind-api</artifactId>
+        <version>${jakarta.xml.bind-api.version}</version>
       </dependency>
 
       <dependency>
@@ -1834,8 +1839,8 @@
       </dependency>
 
       <dependency>
-        <groupId>javax.jms</groupId>
-        <artifactId>javax.jms-api</artifactId>
+        <groupId>jakarta.jms</groupId>
+        <artifactId>jakarta.jms-api</artifactId>
         <version>${jms.version}</version>
       </dependency>
 
@@ -1883,8 +1888,8 @@
       </dependency>
 
       <dependency>
-        <groupId>javax.servlet.jsp</groupId>
-        <artifactId>javax.servlet.jsp-api</artifactId>
+        <groupId>jakarta.servlet.jsp</groupId>
+        <artifactId>jakarta.servlet.jsp-api</artifactId>
         <version>${jsp-api.version}</version>
         <scope>provided</scope>
       </dependency>
@@ -1908,12 +1913,6 @@
         <groupId>org.junit.platform</groupId>
         <artifactId>junit-platform-console-standalone</artifactId>
         <version>${junit-console.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>javax.cache</groupId>
-        <artifactId>cache-api</artifactId>
-        <version>${javax.cache-api.version}</version>
       </dependency>
 
       <dependency>
@@ -2048,8 +2047,8 @@
       </dependency>
 
       <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>javax.servlet-api</artifactId>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
         <version>${servlet-api.version}</version>
         <scope>provided</scope>
       </dependency>
@@ -2184,9 +2183,9 @@
       -->
 
       <dependency>
-        <groupId>javax.persistence</groupId>
-        <artifactId>javax.persistence-api</artifactId>
-        <version>${javax.persistence.version}</version>
+        <groupId>jakarta.persistence</groupId>
+        <artifactId>jakarta.persistence-api</artifactId>
+        <version>${jakarta.persistence.version}</version>
         <scope>compile</scope>
       </dependency>
 
@@ -2249,162 +2248,6 @@
         <artifactId>snakeyaml</artifactId>
         <version>${snakeyaml.version}</version>
       </dependency>
-<!--
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-aop</artifactId>
-        <version>${spring-framework.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-asm</artifactId>
-        <version>${spring-framework.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-beans</artifactId>
-        <version>${spring-framework.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-core</artifactId>
-        <version>${spring-framework.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-context</artifactId>
-        <version>${spring-framework.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-context-support</artifactId>
-        <version>${spring-framework.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-expression</artifactId>
-        <version>${spring-framework.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-jcl</artifactId>
-        <version>${spring-framework.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-jdbc</artifactId>
-        <version>${spring-framework.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.ldap</groupId>
-        <artifactId>spring-ldap-core</artifactId>
-        <version>${spring-ldap.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-oxm</artifactId>
-        <version>${spring-framework.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-tx</artifactId>
-        <version>${spring-framework.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-web</artifactId>
-        <version>${spring-framework.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-webmvc</artifactId>
-        <version>${spring-framework.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-webmvc-portlet</artifactId>
-        <version>${spring-webmvc-portlet.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-acl</artifactId>
-        <version>${spring-security.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-core</artifactId>
-        <version>${spring-security.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-config</artifactId>
-        <version>${spring-security.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-web</artifactId>
-        <version>${spring-security.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-ldap</artifactId>
-        <version>${spring-security.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-taglibs</artifactId>
-        <version>${spring-security.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.webflow</groupId>
-        <artifactId>spring-binding</artifactId>
-        <version>${spring-webflow.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.webflow</groupId>
-        <artifactId>spring-webflow</artifactId>
-        <version>${spring-webflow.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.ws</groupId>
-        <artifactId>spring-ws-core</artifactId>
-        <version>${spring-ws.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.ws</groupId>
-        <artifactId>spring-ws-security</artifactId>
-        <version>${spring-ws.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.springframework.ws</groupId>
-        <artifactId>spring-xml</artifactId>
-        <version>${spring-ws.version}</version>
-      </dependency>-->
 
       <dependency>
         <groupId>org.apache.struts</groupId>
@@ -2417,6 +2260,12 @@
         <artifactId>taglibs-standard-impl</artifactId>
         <version>${taglibs-standard-impl.version}</version>
         <scope>runtime</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>jakarta.transaction</groupId>
+        <artifactId>jakarta.transaction-api</artifactId>
+        <version>${jakarta.transaction-api.version}</version>
       </dependency>
 
       <dependency>
@@ -2785,21 +2634,6 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
           <version>${version.exec.plugin}</version>
-        </plugin>
-
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-failsafe-plugin</artifactId>
-          <version>2.12</version>
-          <executions>
-            <execution>
-              <id>integration-test</id>
-              <goals>
-                <goal>integration-test</goal>
-                <goal>verify</goal>
-              </goals>
-            </execution>
-          </executions>
         </plugin>
 
         <plugin>
@@ -3249,74 +3083,74 @@
         </plugins>
       </build>
     </profile>
-    <!-- The bedework-dev profile sets all the bw
-         versions to SNAPSHOT versions
-         -->
+<!--
+bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
+-->
     <profile>
       <id>bedework-dev</id>
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <bw-access.version>5.0.4</bw-access.version>
+        <bw-access.version>6.0.0-SNAPSHOT</bw-access.version>
 
-        <bw-base.version>1.0.0</bw-base.version>
-        <bw-bedework.version>4.1.1-SNAPSHOT</bw-bedework.version>
+        <bw-base.version>2.0.0-SNAPSHOT</bw-base.version>
+        <bw-bedework.version>5.0.0-SNAPSHOT</bw-bedework.version>
 
-        <bw-caldav.version>5.0.9</bw-caldav.version>
-        <bw-calendar-client.version>4.1.3</bw-calendar-client.version>
-        <bw-calendar-common.version>4.1.4</bw-calendar-common.version>
-        <bw-calendar-deploy.version>4.1.3</bw-calendar-deploy.version>
-        <bw-calendar-dumprestore.version>4.2.1</bw-calendar-dumprestore.version>
-        <bw-calendar-engine.version>4.1.5</bw-calendar-engine.version>
-        <bw-calendar-xsl.version>4.1.3</bw-calendar-xsl.version>
-        <bw-calws-soap-xml.version>5.1.2</bw-calws-soap-xml.version>
-        <bw-carddav.version>5.0.7</bw-carddav.version>
-        <bw-category.version>4.0.4</bw-category.version>
-        <bw-cli.version>5.0.4</bw-cli.version>
-        <bw-cliutil.version>5.0.2</bw-cliutil.version>
+        <bw-caldav.version>6.0.0-SNAPSHOT</bw-caldav.version>
+        <bw-calendar-client.version>5.0.0-SNAPSHOT</bw-calendar-client.version>
+        <bw-calendar-common.version>5.0.0-SNAPSHOT</bw-calendar-common.version>
+        <bw-calendar-deploy.version>5.0.0-SNAPSHOT</bw-calendar-deploy.version>
+        <bw-calendar-dumprestore.version>5.0.0-SNAPSHOT</bw-calendar-dumprestore.version>
+        <bw-calendar-engine.version>5.0.0-SNAPSHOT</bw-calendar-engine.version>
+        <bw-calendar-xsl.version>5.0.0-SNAPSHOT</bw-calendar-xsl.version>
+        <bw-calws-soap-xml.version>6.0.0-SNAPSHOT</bw-calws-soap-xml.version>
+        <bw-carddav.version>6.0.0-SNAPSHOT</bw-carddav.version>
+        <bw-category.version>5.0.0-SNAPSHOT</bw-category.version>
+        <bw-cli.version>6.0.0-SNAPSHOT</bw-cli.version>
+        <bw-cliutil.version>6.0.0-SNAPSHOT</bw-cliutil.version>
 
-        <bw-database.version>5.0.5</bw-database.version>
+        <bw-database.version>6.0.0-SNAPSHOT</bw-database.version>
         <bw-dependency-checker.version>1.0.0-SNAPSHOT</bw-dependency-checker.version>
 
-        <bw-eventreg.version>5.0.6</bw-eventreg.version>
+        <bw-eventreg.version>6.0.0-SNAPSHOT</bw-eventreg.version>
         <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
 
-        <bw-icalendar-xml.version>5.1.1</bw-icalendar-xml.version>
+        <bw-icalendar-xml.version>6.0.0-SNAPSHOT</bw-icalendar-xml.version>
 
-        <bw-jsforj.version>1.1.2</bw-jsforj.version>
-        <bw-json.version>1.0.1</bw-json.version>
+        <bw-jsforj.version>2.0.0-SNAPSHOT</bw-jsforj.version>
+        <bw-json.version>2.0.0-SNAPSHOT</bw-json.version>
 
-        <bw-logs.version>1.1.3</bw-logs.version>
+        <bw-logs.version>1.1.4-SNAPSHOT</bw-logs.version>
 
-        <bw-notifier.version>5.0.5</bw-notifier.version>
+        <bw-notifier.version>6.0.0-SNAPSHOT</bw-notifier.version>
 
-        <bw-quickstart.version>4.0.4</bw-quickstart.version>
+        <bw-quickstart.version>5.0.0-SNAPSHOT</bw-quickstart.version>
 
-        <bw-schemaorg.version>1.0.1</bw-schemaorg.version>
-        <bw-selfreg.version>5.0.4</bw-selfreg.version>
+        <bw-schemaorg.version>2.0.0-SNAPSHOT</bw-schemaorg.version>
+        <bw-selfreg.version>6.0.0-SNAPSHOT</bw-selfreg.version>
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
-        <bw-synch.version>5.0.13</bw-synch.version>
+        <bw-synch.version>6.0.0-SNAPSHOT</bw-synch.version>
 
-        <bw-timezone-server.version>5.0.8</bw-timezone-server.version>
+        <bw-timezone-server.version>6.0.0-SNAPSHOT</bw-timezone-server.version>
 
-        <bw-util-logging.version>5.2.3</bw-util-logging.version>
-        <bw-util.version>5.0.10</bw-util.version>
+        <bw-util-logging.version>6.0.0-SNAPSHOT</bw-util-logging.version>
+        <bw-util.version>6.0.0-SNAPSHOT</bw-util.version>
         <bw-util-annotations.version>1.0.0-SNAPSHOT</bw-util-annotations.version>
-        <bw-util-conf.version>5.0.6</bw-util-conf.version>
-        <bw-util-deploy.version>5.1.1</bw-util-deploy.version>
-        <bw-util-index.version>5.0.4</bw-util-index.version>
-        <bw-util-network.version>5.1.6</bw-util-network.version>
-        <bw-util-tz.version>5.0.2</bw-util-tz.version>
-        <bw-util-security.version>5.0.3</bw-util-security.version>
-        <bw-util2.version>5.0.10</bw-util2.version>
+        <bw-util-conf.version>6.0.0-SNAPSHOT</bw-util-conf.version>
+        <bw-util-deploy.version>6.0.0-SNAPSHOT</bw-util-deploy.version>
+        <bw-util-index.version>6.0.0-SNAPSHOT</bw-util-index.version>
+        <bw-util-network.version>6.0.0-SNAPSHOT</bw-util-network.version>
+        <bw-util-tz.version>6.0.0-SNAPSHOT</bw-util-tz.version>
+        <bw-util-security.version>6.0.0-SNAPSHOT</bw-util-security.version>
+        <bw-util2.version>6.0.0-SNAPSHOT</bw-util2.version>
 
-        <bw-webcache.version>1.0.2</bw-webcache.version>
-        <bw-webdav.version>5.0.6</bw-webdav.version>
+        <bw-webcache.version>2.0.0-SNAPSHOT</bw-webcache.version>
+        <bw-webdav.version>6.0.0-SNAPSHOT</bw-webdav.version>
         <bw-webtest.version>1.0.0</bw-webtest.version>
-        <bw-wf-extensions.version>1.0.2</bw-wf-extensions.version>
-        <bw-wfmodules.version>1.0.10</bw-wfmodules.version>
-        <bw-wildfly-galleon-feature-pack.version>4.2.1</bw-wildfly-galleon-feature-pack.version>
+        <bw-wf-extensions.version>2.0.0-SNAPSHOT</bw-wf-extensions.version>
+        <bw-wfmodules.version>2.0.0-SNAPSHOT</bw-wfmodules.version>
+        <bw-wildfly-galleon-feature-pack.version>5.0.0-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
 
         <!-- iCal4j versions
              We have our own version of ical4j which is
