@@ -27,7 +27,7 @@
   <packaging>pom</packaging>
 
   <name>Bedework Parent POM</name>
-  <description>Provides a base configuration for Bedework project builds</description>
+  <description>Provides a base configuration for Bedework project builds - pre-jakarta. For jakarta version versions will be 200 onwards</description>
   <url>https://www.bedework.org</url>
 
   <issueManagement>
