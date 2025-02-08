@@ -177,7 +177,7 @@
     <commons.collections.version>3.2.2</commons.collections.version>
     <commons.collections4.version>4.1</commons.collections4.version>
     <commons.csv.version>1.13.0</commons.csv.version>
-    <commons.digester-version>1.8</commons.digester-version>
+    <commons.digester-version>3.2</commons.digester-version>
     <commons-fileupload.version>1.5</commons-fileupload.version>
     <commons.io.version>2.16.1</commons.io.version>
     <commons.lang.version>2.6</commons.lang.version>
@@ -285,7 +285,7 @@
     <spring-ws.version>3.1.2</spring-ws.version>
     <spring-ws-soap.version>2.0.0.RELEASE</spring-ws-soap.version>
     -->
-    <apache.struts2.version>6.7.0</apache.struts2.version>
+    <apache.struts2.version>7.0.0</apache.struts2.version>
 
     <taglibs-standard-impl.version>1.2.5</taglibs-standard-impl.version>
     <jakarta.transaction-api.version>2.0.1</jakarta.transaction-api.version>
@@ -1631,8 +1631,8 @@
       </dependency>
 
       <dependency>
-        <groupId>commons-digester</groupId>
-        <artifactId>commons-digester</artifactId>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-digester3</artifactId>
         <version>${commons.digester-version}</version>
       </dependency>
 
