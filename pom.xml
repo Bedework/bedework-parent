@@ -3115,7 +3115,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-dependency-checker.version>1.0.0-SNAPSHOT</bw-dependency-checker.version>
 
         <bw-eventreg.version>6.0.0-SNAPSHOT</bw-eventreg.version>
-        <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
+        <bw-exchangews-xml.version>6.0.0-SNAPSHOT</bw-exchangews-xml.version>
 
         <bw-icalendar-xml.version>6.0.0-SNAPSHOT</bw-icalendar-xml.version>
 
