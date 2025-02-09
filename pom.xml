@@ -199,7 +199,7 @@
     <!-- android for maven -->
     <guava.version>33.0.0-jre</guava.version>
 
-    <hamcrest.version>2.2</hamcrest.version>
+    <hamcrest.version>3.0</hamcrest.version>
     <hawtio.version>2.15.0</hawtio.version>
     <hibernate.version>6.6.3.Final</hibernate.version>
     <!--<hibernate.patched.version>5.2.5.1FinalBwPatched</hibernate.patched.version>-->
@@ -1874,6 +1874,12 @@
       <dependency>
         <groupId>org.jolokia</groupId>
         <artifactId>jolokia-client-java</artifactId>
+        <version>${jolokia.client.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jolokia</groupId>
+        <artifactId>jolokia-json</artifactId>
         <version>${jolokia.client.version}</version>
       </dependency>
 
