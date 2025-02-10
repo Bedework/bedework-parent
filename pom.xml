@@ -222,8 +222,7 @@
     <jaxen.version>1.1.6</jaxen.version>
     <jline.version>3.26.0</jline.version>
     <jms.version>3.1.0</jms.version>
-    <jolokia.client.version>2.2.2</jolokia.client.version>
-    <jolokia.version>1.7.2</jolokia.version>
+    <jolokia.version>2.2.2</jolokia.version>
     <joor.version>0.9.15</joor.version>
     <jsp-api.version>3.1.1</jsp-api.version>
     <jakarta.jws.api.version>3.0.0</jakarta.jws.api.version>
@@ -1881,13 +1880,67 @@
       <dependency>
         <groupId>org.jolokia</groupId>
         <artifactId>jolokia-client-java</artifactId>
-        <version>${jolokia.client.version}</version>
+        <version>${jolokia.version}</version>
       </dependency>
 
       <dependency>
         <groupId>org.jolokia</groupId>
         <artifactId>jolokia-json</artifactId>
-        <version>${jolokia.client.version}</version>
+        <version>${jolokia.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jolokia</groupId>
+        <artifactId>jolokia-server-core</artifactId>
+        <version>${jolokia.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jolokia</groupId>
+        <artifactId>jolokia-server-detector</artifactId>
+        <version>${jolokia.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jolokia</groupId>
+        <artifactId>jolokia-service-serializer</artifactId>
+        <version>${jolokia.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jolokia</groupId>
+        <artifactId>jolokia-service-jmx</artifactId>
+        <version>${jolokia.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jolokia</groupId>
+        <artifactId>jolokia-service-discovery</artifactId>
+        <version>${jolokia.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jolokia</groupId>
+        <artifactId>jolokia-service-history</artifactId>
+        <version>${jolokia.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jolokia</groupId>
+        <artifactId>jolokia-service-jsr160</artifactId>
+        <version>${jolokia.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jolokia</groupId>
+        <artifactId>jolokia-service-notif-pull</artifactId>
+        <version>${jolokia.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jolokia</groupId>
+        <artifactId>jolokia-service-notif-sse</artifactId>
+        <version>${jolokia.version}</version>
       </dependency>
 
       <dependency>
@@ -1895,18 +1948,6 @@
         <artifactId>joor</artifactId>
         <version>${joor.version}</version>
         <scope>test</scope>
-      </dependency>
-
-      <dependency>
-        <groupId>org.jolokia</groupId>
-        <artifactId>jolokia-core</artifactId>
-        <version>${jolokia.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.jolokia</groupId>
-        <artifactId>jolokia-jsr160</artifactId>
-        <version>${jolokia.version}</version>
       </dependency>
 
       <dependency>
