@@ -212,6 +212,7 @@
 
     <jackson.databind.version>2.18.2</jackson.databind.version>
     <jackson.version>2.18.2</jackson.version>
+    <jandex.version>3.2.0</jandex.version>
     <jansi.version>2.4.1</jansi.version>
     <jasig.cas.version>3.6.4</jasig.cas.version>
     <jasypt.version>1.9.3</jasypt.version>
@@ -1812,6 +1813,12 @@
       </dependency>
 
       <dependency>
+        <groupId>io.smallrye</groupId>
+        <artifactId>jandex</artifactId>
+        <version>${jandex.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>org.fusesource.jansi</groupId>
         <artifactId>jansi</artifactId>
         <version>${jansi.version}</version>
@@ -2332,12 +2339,14 @@
         <groupId>org.wildfly.galleon-plugins</groupId>
         <artifactId>wildfly-galleon-plugins</artifactId>
         <version>${version.org.wildfly.galleon-plugins}</version>
+        <!--
         <exclusions>
           <exclusion>
             <groupId>org.jboss.galleon</groupId>
             <artifactId>*</artifactId>
           </exclusion>
         </exclusions>
+        -->
       </dependency>
 
       <dependency>
