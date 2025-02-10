@@ -171,6 +171,7 @@
     <apacheds-service.version>2.0.0.AM26</apacheds-service.version>
     <auto-service.version>1.1.1</auto-service.version>
 
+    <javax.cache-api.version>1.1.1</javax.cache-api.version>
     <classmate.version>1.3.0</classmate.version>
     <commons.beanutils.version>1.9.4</commons.beanutils.version>
     <commons.codec.version>1.17.1</commons.codec.version>
@@ -200,7 +201,7 @@
     <guava.version>33.0.0-jre</guava.version>
 
     <hamcrest.version>3.0</hamcrest.version>
-    <hawtio.version>2.15.0</hawtio.version>
+    <hawtio.version>4.3.0</hawtio.version>
     <hibernate.version>6.6.3.Final</hibernate.version>
     <!--<hibernate.patched.version>5.2.5.1FinalBwPatched</hibernate.patched.version>-->
     <hsqldb.version>2.5.1</hsqldb.version>
@@ -297,12 +298,10 @@
     <xml-ws.api.version>4.0.2</xml-ws.api.version>
 
     <!-- hawtio and dependencies -->
-    <checker-qual.version>3.5.0</checker-qual.version>
-    <error_prone_annotations.version>2.3.4</error_prone_annotations.version>
-    <json.version>20240303</json.version>
-    <json-simple.version>1.1.1</json-simple.version>
-    <jsr305.version>3.0.2</jsr305.version>
-    <j2objc-annotations.version>1.3</j2objc-annotations.version>
+    <caffeine.version>3.2.0</caffeine.version>
+    <error_prone_annotations.version>2.36.0</error_prone_annotations.version>
+    <jspecify.version>1.0.0</jspecify.version>
+    <nimbus-jose-jwt.version>10.0.1</nimbus-jose-jwt.version>
   </properties>
 
   <dependencyManagement>
@@ -1054,7 +1053,7 @@
 
       <dependency>
         <groupId>org.bedework.deploy</groupId>
-        <artifactId>bw-hawtio</artifactId>
+        <artifactId>bw-hawtio4</artifactId>
         <version>${bw-quickstart.version}</version>
         <type>war</type>
       </dependency>
@@ -2398,9 +2397,9 @@
 
       <!-- hawtio -->
       <dependency>
-        <groupId>org.checkerframework</groupId>
-        <artifactId>checker-qual</artifactId>
-        <version>${checker-qual.version}</version>
+        <groupId>com.github.ben-manes.caffeine</groupId>
+        <artifactId>caffeine</artifactId>
+        <version>${caffeine.version}</version>
       </dependency>
 
       <dependency>
@@ -2410,32 +2409,26 @@
       </dependency>
 
       <dependency>
-        <groupId>org.json</groupId>
-        <artifactId>json</artifactId>
-        <version>${json.version}</version>
+        <groupId>org.jspecify</groupId>
+        <artifactId>jspecify</artifactId>
+        <version>${jspecify.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>com.googlecode.json-simple</groupId>
-        <artifactId>json-simple</artifactId>
-        <version>${json-simple.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>com.google.code.findbugs</groupId>
-        <artifactId>jsr305</artifactId>
-        <version>${jsr305.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>com.google.j2objc</groupId>
-        <artifactId>j2objc-annotations</artifactId>
-        <version>${j2objc-annotations.version}</version>
+        <groupId>com.nimbusds</groupId>
+        <artifactId>nimbus-jose-jwt</artifactId>
+        <version>${nimbus-jose-jwt.version}</version>
       </dependency>
 
       <dependency>
         <groupId>io.hawt</groupId>
-        <artifactId>hawtio-core</artifactId>
+        <artifactId>hawtio-connect</artifactId>
+        <version>${hawtio.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>io.hawt</groupId>
+        <artifactId>hawtio-log</artifactId>
         <version>${hawtio.version}</version>
       </dependency>
 
@@ -2447,7 +2440,7 @@
 
       <dependency>
         <groupId>io.hawt</groupId>
-        <artifactId>hawtio-util</artifactId>
+        <artifactId>hawtio-local-jvm-mbean</artifactId>
         <version>${hawtio.version}</version>
       </dependency>
     </dependencies>
