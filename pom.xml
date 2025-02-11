@@ -179,7 +179,7 @@
     <commons.collections4.version>4.1</commons.collections4.version>
     <commons.csv.version>1.13.0</commons.csv.version>
     <commons.digester-version>3.2</commons.digester-version>
-    <commons-fileupload.version>1.5</commons-fileupload.version>
+    <commons-fileupload.version>2.0.0-M2</commons-fileupload.version>
     <commons.io.version>2.16.1</commons.io.version>
     <commons.lang.version>2.6</commons.lang.version>
     <commons.lang3.version>3.17.0</commons.lang3.version>
@@ -1648,8 +1648,14 @@
       </dependency>
 
       <dependency>
-        <groupId>commons-fileupload</groupId>
-        <artifactId>commons-fileupload</artifactId>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-fileupload2-jakarta-servlet6</artifactId>
+        <version>${commons-fileupload.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-fileupload2-core</artifactId>
         <version>${commons-fileupload.version}</version>
       </dependency>
 
