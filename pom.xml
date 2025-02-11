@@ -1554,6 +1554,18 @@
       </dependency>
 
       <dependency>
+        <groupId>org.antlr</groupId>
+        <artifactId>antlr4-runtime</artifactId>
+        <version>${antlr.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>*</groupId>
+            <artifactId>*</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+      <dependency>
         <groupId>ant-contrib</groupId>
         <artifactId>ant-contrib</artifactId>
         <version>${ant.contrib.version}</version>
@@ -1705,6 +1717,7 @@
         <groupId>org.ehcache</groupId>
         <artifactId>ehcache</artifactId>
         <version>${ehcache.version}</version>
+        <classifier>jakarta</classifier>
       </dependency>
 
       <dependency>
