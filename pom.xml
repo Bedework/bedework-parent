@@ -258,7 +258,7 @@
     <jakarta.persistence.version>3.1.0</jakarta.persistence.version>
     <picocli.version>4.7.6</picocli.version>
     <portlet-api.version>1.0</portlet-api.version>
-    <postgresql-driver.version>42.7.2</postgresql-driver.version>
+    <postgresql-driver.version>42.7.5</postgresql-driver.version>
 
     <!-- Saxon-HE and dependencies -->
     <saxon-he.version>11.4</saxon-he.version>
