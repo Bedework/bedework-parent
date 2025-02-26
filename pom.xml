@@ -405,6 +405,52 @@
         <version>${bw-calendar-client.version}</version>
       </dependency>
 
+      <!-- ============= bw-calendar-llc ============= -->
+
+      <dependency>
+        <groupId>org.bedework.bwllc</groupId>
+        <artifactId>bw-calendar-llc-common</artifactId>
+        <version>${bw-calendar-llc.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwllc</groupId>
+        <artifactId>bw-calendar-llc-ro</artifactId>
+        <version>${bw-calendar-llc.version}</version>
+      </dependency>
+
+      <!-- ============= bw-calendar-hlc ============= -->
+
+      <dependency>
+        <groupId>org.bedework.bwhlc</groupId>
+        <artifactId>bw-calendar-hlc-common</artifactId>
+        <version>${bw-calendar-hlc.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwhlc</groupId>
+        <artifactId>bw-calendar-hlc-ro-api</artifactId>
+        <version>${bw-calendar-hlc.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwhlc</groupId>
+        <artifactId>bw-calendar-hlc-ro</artifactId>
+        <version>${bw-calendar-hlc.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwhlc</groupId>
+        <artifactId>bw-calendar-hlc-rw-api</artifactId>
+        <version>${bw-calendar-hlc.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwhlc</groupId>
+        <artifactId>bw-calendar-hlc-rw</artifactId>
+        <version>${bw-calendar-hlc.version}</version>
+      </dependency>
+
       <!-- ============= bw-calendar-x.ear ============= -->
 
       <dependency>
@@ -3180,6 +3226,8 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-calendar-deploy.version>5.0.0-SNAPSHOT</bw-calendar-deploy.version>
         <bw-calendar-dumprestore.version>5.0.0-SNAPSHOT</bw-calendar-dumprestore.version>
         <bw-calendar-engine.version>5.0.0-SNAPSHOT</bw-calendar-engine.version>
+        <bw-calendar-llc.version>5.0.0-SNAPSHOT</bw-calendar-llc.version>
+        <bw-calendar-hlc.version>5.0.0-SNAPSHOT</bw-calendar-hlc.version>
         <bw-calendar-xsl.version>5.0.0-SNAPSHOT</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>6.0.0-SNAPSHOT</bw-calws-soap-xml.version>
         <bw-carddav.version>6.0.0-SNAPSHOT</bw-carddav.version>
