@@ -423,6 +423,18 @@
 
       <dependency>
         <groupId>org.bedework.bwhlc</groupId>
+        <artifactId>bw-calendar-hlc-admin-api</artifactId>
+        <version>${bw-calendar-hlc.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwhlc</groupId>
+        <artifactId>bw-calendar-hlc-admin</artifactId>
+        <version>${bw-calendar-hlc.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.bwhlc</groupId>
         <artifactId>bw-calendar-hlc-common</artifactId>
         <version>${bw-calendar-hlc.version}</version>
       </dependency>
