@@ -209,6 +209,7 @@
     <http-core.version>4.4.16</http-core.version>
     <h2.version>2.3.232</h2.version>
 
+    <icu4j.version>77.1</icu4j.version>
     <imgscalr.version>4.2</imgscalr.version>
 
     <jackson.databind.version>2.18.2</jackson.databind.version>
@@ -1855,6 +1856,12 @@
         <groupId>com.h2database</groupId>
         <artifactId>h2</artifactId>
         <version>${h2.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.ibm.icu</groupId>
+        <artifactId>icu4j</artifactId>
+        <version>${icu4j.version}</version>
       </dependency>
 
       <dependency>
