@@ -122,9 +122,9 @@
 
     <version.org.wildfly.galleon-plugins>7.3.1.Final</version.org.wildfly.galleon-plugins>
 
-    <wildfly.core.version>27.0.1.Final</wildfly.core.version>
+    <wildfly.core.version>28.0.0.Final</wildfly.core.version>
     <wildfly.common.version>1.7.0.Final</wildfly.common.version>
-    <wildfly.version>35.0.1.Final</wildfly.version>
+    <wildfly.version>36.0.0.Final</wildfly.version>
     <undertow.version>2.3.18.Final</undertow.version>
 
     <!-- Repository Deployment URLs -->
@@ -1500,6 +1500,13 @@
       <dependency>
         <groupId>org.bedework.deploy</groupId>
         <artifactId>bw-wf-event-registration-feature-pack</artifactId>
+        <version>${bw-wildfly-galleon-feature-pack.version}</version>
+        <type>zip</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework.deploy</groupId>
+        <artifactId>bw-wf-jquery-feature-pack</artifactId>
         <version>${bw-wildfly-galleon-feature-pack.version}</version>
         <type>zip</type>
       </dependency>
