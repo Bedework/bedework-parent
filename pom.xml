@@ -202,7 +202,7 @@
 
     <hamcrest.version>3.0</hamcrest.version>
     <hawtio.version>4.3.0</hawtio.version>
-    <hibernate.version>6.6.3.Final</hibernate.version>
+    <hibernate.version>6.6.13.Final</hibernate.version>
     <!--<hibernate.patched.version>5.2.5.1FinalBwPatched</hibernate.patched.version>-->
     <hsqldb.version>2.5.1</hsqldb.version>
     <http-client.version>4.5.14</http-client.version>
