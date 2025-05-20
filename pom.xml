@@ -83,7 +83,8 @@
 
     <maven.repository.protocol>https</maven.repository.protocol>
     <!-- The full remote maven repo URL; can be overridden via -D for special use cases -->
-    <maven.repository.url>${maven.repository.protocol}://repository.jboss.org/nexus/content/groups/public/</maven.repository.url>
+    <jboss.maven.repository.url>${maven.repository.protocol}://repository.jboss.org/nexus/content/groups/public/</jboss.maven.repository.url>
+    <maven.repository.url>https://repo1.maven.org/maven2/</maven.repository.url>
     <!-- https://access.redhat.com/maven-repository -->
     <maven.redhat.repository.url>${maven.repository.protocol}://maven.repository.redhat.com/ga/</maven.redhat.repository.url>
 
@@ -93,6 +94,7 @@
     <version.assembly.plugin>3.7.1</version.assembly.plugin>
     <version.buildhelper.plugin>3.6.0</version.buildhelper.plugin>
     <version.buildnumber.plugin>3.2.1</version.buildnumber.plugin>
+    <version.central-publishing.plugin>0.7.0</version.central-publishing.plugin>
     <version.clean.plugin>3.4.0</version.clean.plugin>
     <version.compiler.plugin>3.13.0</version.compiler.plugin>
     <version.copy-rename.plugin>1.0.1</version.copy-rename.plugin>
@@ -128,10 +130,10 @@
     <undertow.version>2.3.18.Final</undertow.version>
 
     <!-- Repository Deployment URLs -->
-    <bedework.releases.repo.id>ossrh</bedework.releases.repo.id>
-    <bedework.releases.repo.url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</bedework.releases.repo.url>
-    <bedework.snapshots.repo.id>ossrh</bedework.snapshots.repo.id>
-    <bedework.snapshots.repo.url>https://oss.sonatype.org/content/repositories/snapshots/</bedework.snapshots.repo.url>
+    <bedework.releases.repo.id>central</bedework.releases.repo.id>
+    <bedework.releases.repo.url>https://central.sonatype.com/repository/</bedework.releases.repo.url>
+    <bedework.snapshots.repo.id>central</bedework.snapshots.repo.id>
+    <bedework.snapshots.repo.url>https://central.sonatype.com/repository/maven-snapshots/</bedework.snapshots.repo.url>
 
     <!--
         Options to override the compiler arguments directly on the compiler argument line to separate between what
@@ -3047,10 +3049,23 @@
             <failOnMissingWebXml>false</failOnMissingWebXml>
           </configuration>
         </plugin>
+
+        <plugin>
+          <groupId>org.sonatype.central</groupId>
+          <artifactId>central-publishing-maven-plugin</artifactId>
+          <version>${version.central-publishing.plugin}</version>
+          <extensions>true</extensions>
+          <configuration>
+            <publishingServerId>central</publishingServerId>
+            <autoPublish>true</autoPublish>
+            <waitUntil>published</waitUntil>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
 
     <plugins>
+      <!--
       <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -3063,6 +3078,7 @@
           <autoReleaseAfterClose>true</autoReleaseAfterClose>
         </configuration>
       </plugin>
+      -->
 
       <plugin>
         <groupId>org.owasp</groupId>
@@ -3407,6 +3423,21 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
       </snapshots>
       <id>jboss-public-repository-group</id>
       <name>JBoss Public Repository Group</name>
+      <url>${jboss.maven.repository.url}</url>
+      <layout>default</layout>
+    </repository>
+
+    <repository>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+        <updatePolicy>never</updatePolicy>
+      </snapshots>
+      <id>maven-central</id>
+      <name>Maven Central Repository</name>
       <url>${maven.repository.url}</url>
       <layout>default</layout>
     </repository>
