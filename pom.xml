@@ -109,11 +109,11 @@
     <version.help.plugin>3.5.1</version.help.plugin>
     <version.install.plugin>3.1.3</version.install.plugin>
     <version.jar.plugin>3.4.2</version.jar.plugin>
-    <version.javadoc.plugin>3.11.1</version.javadoc.plugin>
+    <version.javadoc.plugin>3.11.2</version.javadoc.plugin>
     <version.jaxb2.plugin>3.2.0</version.jaxb2.plugin>
     <version.jaxws.plugin>4.0.3</version.jaxws.plugin>
     <version.license.plugin>2.4.0</version.license.plugin>
-    <version.nexus.staging.plugin>1.7.0</version.nexus.staging.plugin>
+    <!-- <version.nexus.staging.plugin>1.7.0</version.nexus.staging.plugin> -->
     <version.plugin.plugin>3.15.1</version.plugin.plugin>
     <version.release.plugin>3.1.1</version.release.plugin>
     <version.resources.plugin>3.3.1</version.resources.plugin>
@@ -3288,7 +3288,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-jsforj.version>2.0.0-SNAPSHOT</bw-jsforj.version>
         <bw-json.version>2.0.0-SNAPSHOT</bw-json.version>
 
-        <bw-logs.version>1.1.4-SNAPSHOT</bw-logs.version>
+        <bw-logs.version>2.0.0-SNAPSHOT</bw-logs.version>
 
         <bw-notifier.version>6.0.0-SNAPSHOT</bw-notifier.version>
 
@@ -3314,7 +3314,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
 
         <bw-webcache.version>2.0.0-SNAPSHOT</bw-webcache.version>
         <bw-webdav.version>6.0.0-SNAPSHOT</bw-webdav.version>
-        <bw-webtest.version>1.0.0</bw-webtest.version>
+        <bw-webtest.version>2.0.0</bw-webtest.version>
         <bw-wf-extensions.version>2.0.0-SNAPSHOT</bw-wf-extensions.version>
         <bw-wfmodules.version>2.0.0-SNAPSHOT</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>5.0.0-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
@@ -3463,7 +3463,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <updatePolicy>never</updatePolicy>
       </releases>
       <snapshots>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
         <updatePolicy>never</updatePolicy>
       </snapshots>
       <id>${bedework.snapshots.repo.id}</id>
