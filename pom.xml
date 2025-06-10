@@ -22,7 +22,7 @@
 
   <groupId>org.bedework</groupId>
   <artifactId>bedework-parent</artifactId>
-  <version>200</version>
+  <version>201-SNAPSHOT</version>
 
   <packaging>pom</packaging>
 
@@ -3058,7 +3058,6 @@
           <configuration>
             <publishingServerId>central</publishingServerId>
             <autoPublish>true</autoPublish>
-            <waitUntil>published</waitUntil>
           </configuration>
         </plugin>
       </plugins>
