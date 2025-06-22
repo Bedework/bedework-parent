@@ -2612,6 +2612,7 @@
           <version>${version.dependency.check.plugin}</version>
           <configuration>
             <skipProvidedScope>true</skipProvidedScope>
+            <outputDirectory>${project.build.directory}/reports</outputDirectory>
           </configuration>
           <executions>
             <execution>
