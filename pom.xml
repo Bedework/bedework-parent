@@ -91,6 +91,7 @@
     <!-- Maven Plugin Versions -->
     <version.antrun.plugin>3.1.0</version.antrun.plugin>
     <version.appassembler.plugin>2.1.0</version.appassembler.plugin>
+    <version.asciidoctor.plugin>3.2.0</version.asciidoctor.plugin>
     <version.assembly.plugin>3.7.1</version.assembly.plugin>
     <version.buildhelper.plugin>3.6.0</version.buildhelper.plugin>
     <version.buildnumber.plugin>3.2.1</version.buildnumber.plugin>
@@ -2708,6 +2709,44 @@
               <platform>windows</platform>
               <platform>unix</platform>
             </platforms>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.asciidoctor</groupId>
+          <artifactId>asciidoctor-maven-plugin</artifactId>
+          <version>${version.asciidoctor.plugin}</version>
+          <executions>
+            <execution>
+              <id>output-html</id>
+              <phase>generate-resources</phase>
+              <goals>
+                <goal>process-asciidoc</goal>
+              </goals>
+              <configuration>
+                <backend>html5</backend>
+                <attributes>
+                  <linkcss>true</linkcss>
+                  <!--<safe>true</safe>-->
+                </attributes>
+              </configuration>
+            </execution>
+            <execution>
+              <id>output-docbook</id>
+              <phase>generate-resources</phase>
+              <goals>
+                <goal>process-asciidoc</goal>
+              </goals>
+              <configuration>
+                <outputDirectory>${project.build.directory}/generated-docbook</outputDirectory>
+                <backend>docbook</backend>
+                <doctype>book</doctype>
+              </configuration>
+            </execution>
+          </executions>
+          <configuration>
+            <sourceDirectory>src/main/asciidoc</sourceDirectory>
+            <preserveDirectories>true</preserveDirectories>
           </configuration>
         </plugin>
 
