@@ -3389,7 +3389,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-cli.version>6.0.0-SNAPSHOT</bw-cli.version>
         <bw-cliutil.version>6.0.0-SNAPSHOT</bw-cliutil.version>
 
-        <bw-database.version>6.0.0-SNAPSHOT</bw-database.version>
+        <bw-database.version>6.0.0</bw-database.version>
         <bw-dependency-checker.version>1.0.0-SNAPSHOT</bw-dependency-checker.version>
 
         <bw-eventreg.version>6.0.0-SNAPSHOT</bw-eventreg.version>
@@ -3398,7 +3398,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-icalendar-xml.version>6.0.0-SNAPSHOT</bw-icalendar-xml.version>
 
         <bw-jsforj.version>2.0.0-SNAPSHOT</bw-jsforj.version>
-        <bw-json.version>2.0.0-SNAPSHOT</bw-json.version>
+        <bw-json.version>2.0.0</bw-json.version>
 
         <bw-logs.version>2.0.0-SNAPSHOT</bw-logs.version>
 
@@ -3468,7 +3468,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-cli.version>5.0.4</bw-cli.version>
         <bw-cliutil.version>5.0.2</bw-cliutil.version>
 
-        <bw-database.version>5.0.5</bw-database.version>
+        <bw-database.version>6.0.0</bw-database.version>
 
         <bw-eventreg.version>5.0.6</bw-eventreg.version>
         <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
@@ -3476,7 +3476,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-icalendar-xml.version>5.1.1</bw-icalendar-xml.version>
 
         <bw-jsforj.version>1.1.2</bw-jsforj.version>
-        <bw-json.version>1.0.1</bw-json.version>
+        <bw-json.version>2.0.0</bw-json.version>
 
         <bw-logs.version>1.1.3</bw-logs.version>
 
