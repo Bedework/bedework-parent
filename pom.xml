@@ -3180,23 +3180,15 @@
         <version>${version.central-publishing.plugin}</version>
       </plugin>
 
-      <!--
       <plugin>
         <groupId>org.owasp</groupId>
         <artifactId>dependency-check-maven</artifactId>
-        <version>${version.dependency.check.plugin}</version>
-        <configuration>
-          <skipProvidedScope>true</skipProvidedScope>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>check</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
-      -->
+
+      <plugin>
+        <groupId>org.asciidoctor</groupId>
+        <artifactId>asciidoctor-maven-plugin</artifactId>
+      </plugin>
 
       <!-- Check for the minimum version of Java and Maven.  Runs during the validate phase. -->
       <plugin>
@@ -3406,7 +3398,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
 
         <bw-quickstart.version>5.0.0-SNAPSHOT</bw-quickstart.version>
 
-        <bw-schemaorg.version>2.0.0-SNAPSHOT</bw-schemaorg.version>
+        <bw-schemaorg.version>2.0.0</bw-schemaorg.version>
         <bw-selfreg.version>6.0.0-SNAPSHOT</bw-selfreg.version>
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
         <bw-synch.version>6.0.0-SNAPSHOT</bw-synch.version>
@@ -3484,7 +3476,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
 
         <bw-quickstart.version>4.0.4</bw-quickstart.version>
 
-        <bw-schemaorg.version>1.0.1</bw-schemaorg.version>
+        <bw-schemaorg.version>2.0.0</bw-schemaorg.version>
         <bw-selfreg.version>5.0.4</bw-selfreg.version>
         <bw-sometime.version>2.0.0</bw-sometime.version>
         <bw-synch.version>5.0.13</bw-synch.version>
