@@ -999,21 +999,6 @@
         <type>war</type>
       </dependency>
 
-      <!-- ============== bw-exchangews-xml ============= -->
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-exchangews-xml</artifactId>
-        <version>${bw-exchangews-xml.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-exchangews-xml</artifactId>
-        <version>${bw-exchangews-xml.version}</version>
-        <type>zip</type>
-      </dependency>
-
       <!-- ============== bw-icalendar-xml ============= -->
 
       <dependency>
@@ -3385,7 +3370,6 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-dependency-checker.version>1.0.0-SNAPSHOT</bw-dependency-checker.version>
 
         <bw-eventreg.version>6.0.0-SNAPSHOT</bw-eventreg.version>
-        <bw-exchangews-xml.version>6.0.0-SNAPSHOT</bw-exchangews-xml.version>
 
         <bw-icalendar-xml.version>6.0.0</bw-icalendar-xml.version>
 
@@ -3401,7 +3385,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-schemaorg.version>2.0.0</bw-schemaorg.version>
         <bw-selfreg.version>6.0.0-SNAPSHOT</bw-selfreg.version>
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
-        <bw-synch.version>6.0.0-SNAPSHOT</bw-synch.version>
+        <bw-synch.version>6.0.0</bw-synch.version>
 
         <bw-timezone-server.version>6.0.0-SNAPSHOT</bw-timezone-server.version>
 
@@ -3417,7 +3401,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-util2.version>6.0.0</bw-util2.version>
 
         <bw-webcache.version>2.0.0-SNAPSHOT</bw-webcache.version>
-        <bw-webdav.version>6.0.0-SNAPSHOT</bw-webdav.version>
+        <bw-webdav.version>6.0.0</bw-webdav.version>
         <bw-webtest.version>2.0.0</bw-webtest.version>
         <bw-wf-extensions.version>2.0.0-SNAPSHOT</bw-wf-extensions.version>
         <bw-wfmodules.version>2.0.0-SNAPSHOT</bw-wfmodules.version>
@@ -3463,7 +3447,6 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-database.version>6.0.0</bw-database.version>
 
         <bw-eventreg.version>5.0.6</bw-eventreg.version>
-        <bw-exchangews-xml.version>5.1.0</bw-exchangews-xml.version>
 
         <bw-icalendar-xml.version>6.0.0</bw-icalendar-xml.version>
 
@@ -3479,7 +3462,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-schemaorg.version>2.0.0</bw-schemaorg.version>
         <bw-selfreg.version>5.0.4</bw-selfreg.version>
         <bw-sometime.version>2.0.0</bw-sometime.version>
-        <bw-synch.version>5.0.13</bw-synch.version>
+        <bw-synch.version>6.0.0</bw-synch.version>
 
         <bw-timezone-server.version>5.0.8</bw-timezone-server.version>
 
@@ -3495,7 +3478,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-util2.version>6.0.0</bw-util2.version>
 
         <bw-webcache.version>1.0.2</bw-webcache.version>
-        <bw-webdav.version>5.0.6</bw-webdav.version>
+        <bw-webdav.version>6.0.0</bw-webdav.version>
         <bw-webtest.version>1.0.0</bw-webtest.version>
         <bw-wf-extensions.version>1.0.2</bw-wf-extensions.version>
         <bw-wfmodules.version>1.0.10</bw-wfmodules.version>
