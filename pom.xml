@@ -3369,7 +3369,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-database.version>6.0.0</bw-database.version>
         <bw-dependency-checker.version>1.0.0-SNAPSHOT</bw-dependency-checker.version>
 
-        <bw-eventreg.version>6.0.0-SNAPSHOT</bw-eventreg.version>
+        <bw-eventreg.version>6.0.0</bw-eventreg.version>
 
         <bw-icalendar-xml.version>6.0.0</bw-icalendar-xml.version>
 
@@ -3385,9 +3385,9 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-schemaorg.version>2.0.0</bw-schemaorg.version>
         <bw-selfreg.version>6.0.0-SNAPSHOT</bw-selfreg.version>
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
-        <bw-synch.version>6.0.0</bw-synch.version>
+        <bw-synch.version>6.0.1</bw-synch.version>
 
-        <bw-timezone-server.version>6.0.0</bw-timezone-server.version>
+        <bw-timezone-server.version>6.0.1</bw-timezone-server.version>
 
         <bw-util-logging.version>6.0.0</bw-util-logging.version>
         <bw-util.version>6.0.0</bw-util.version>
@@ -3446,7 +3446,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
 
         <bw-database.version>6.0.0</bw-database.version>
 
-        <bw-eventreg.version>5.0.6</bw-eventreg.version>
+        <bw-eventreg.version>6.0.0</bw-eventreg.version>
 
         <bw-icalendar-xml.version>6.0.0</bw-icalendar-xml.version>
 
@@ -3462,9 +3462,9 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-schemaorg.version>2.0.0</bw-schemaorg.version>
         <bw-selfreg.version>5.0.4</bw-selfreg.version>
         <bw-sometime.version>2.0.0</bw-sometime.version>
-        <bw-synch.version>6.0.0</bw-synch.version>
+        <bw-synch.version>6.0.1</bw-synch.version>
 
-        <bw-timezone-server.version>6.0.0</bw-timezone-server.version>
+        <bw-timezone-server.version>6.0.1</bw-timezone-server.version>
 
         <bw-util-logging.version>6.0.0</bw-util-logging.version>
         <bw-util.version>6.0.0</bw-util.version>
