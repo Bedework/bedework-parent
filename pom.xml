@@ -877,6 +877,12 @@
 
       <dependency>
         <groupId>org.bedework</groupId>
+        <artifactId>bw-cli-jolokia</artifactId>
+        <version>${bw-cli.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
         <artifactId>bw-cli-shell</artifactId>
         <version>${bw-cli.version}</version>
       </dependency>
@@ -885,20 +891,6 @@
         <groupId>org.bedework</groupId>
         <artifactId>bw-cli-toolcmd</artifactId>
         <version>${bw-cli.version}</version>
-      </dependency>
-
-      <!-- ============ bw-cliutil ============ -->
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-util-cli</artifactId>
-        <version>${bw-cliutil.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.bedework</groupId>
-        <artifactId>bw-util-jolokia</artifactId>
-        <version>${bw-cliutil.version}</version>
       </dependency>
 
       <!-- ================ bw-database ================ -->
@@ -3364,7 +3356,6 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-carddav.version>6.0.0-SNAPSHOT</bw-carddav.version>
         <bw-category.version>5.0.0-SNAPSHOT</bw-category.version>
         <bw-cli.version>6.0.0-SNAPSHOT</bw-cli.version>
-        <bw-cliutil.version>6.0.0-SNAPSHOT</bw-cliutil.version>
 
         <bw-database.version>6.0.0</bw-database.version>
         <bw-dependency-checker.version>1.0.0-SNAPSHOT</bw-dependency-checker.version>
@@ -3442,7 +3433,6 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-carddav.version>5.0.7</bw-carddav.version>
         <bw-category.version>4.0.4</bw-category.version>
         <bw-cli.version>5.0.4</bw-cli.version>
-        <bw-cliutil.version>5.0.2</bw-cliutil.version>
 
         <bw-database.version>6.0.0</bw-database.version>
 
