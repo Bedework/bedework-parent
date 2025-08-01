@@ -184,7 +184,7 @@
     <commons.csv.version>1.13.0</commons.csv.version>
     <commons.digester-version>3.2</commons.digester-version>
     <commons-fileupload.version>2.0.0-M4</commons-fileupload.version>
-    <commons.io.version>2.16.1</commons.io.version>
+    <commons.io.version>2.20.0</commons.io.version>
     <commons.lang.version>2.6</commons.lang.version>
     <commons.lang3.version>3.18.0</commons.lang3.version>
     <commons.logging.version>1.2</commons.logging.version>
@@ -1487,7 +1487,7 @@
 
       <dependency>
         <groupId>org.bedework.deploy</groupId>
-        <artifactId>bw-wf-jquery-feature-pack</artifactId>
+        <artifactId>bw-wf-javascript-feature-pack</artifactId>
         <version>${bw-wildfly-galleon-feature-pack.version}</version>
         <type>zip</type>
       </dependency>
@@ -3344,7 +3344,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-bedework.version>5.0.0-SNAPSHOT</bw-bedework.version>
 
         <bw-caldav.version>6.0.1</bw-caldav.version>
-        <bw-calendar-client.version>5.0.0-SNAPSHOT</bw-calendar-client.version>
+        <bw-calendar-client.version>5.0.0</bw-calendar-client.version>
         <bw-calendar-common.version>5.0.0</bw-calendar-common.version>
         <bw-calendar-deploy.version>5.0.0-SNAPSHOT</bw-calendar-deploy.version>
         <bw-calendar-dumprestore.version>5.0.0</bw-calendar-dumprestore.version>
@@ -3353,7 +3353,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-calendar-hlc.version>5.0.0-SNAPSHOT</bw-calendar-hlc.version>
         <bw-calendar-xsl.version>5.0.0-SNAPSHOT</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>6.0.0</bw-calws-soap-xml.version>
-        <bw-carddav.version>6.0.0</bw-carddav.version>
+        <bw-carddav.version>6.1.0-SNAPSHOT</bw-carddav.version>
         <bw-category.version>5.0.0-SNAPSHOT</bw-category.version>
         <bw-cli.version>6.0.0</bw-cli.version>
 
@@ -3423,7 +3423,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-bedework.version>4.1.0</bw-bedework.version>
 
         <bw-caldav.version>6.0.1</bw-caldav.version>
-        <bw-calendar-client.version>4.1.3</bw-calendar-client.version>
+        <bw-calendar-client.version>5.0.0</bw-calendar-client.version>
         <bw-calendar-common.version>5.0.0</bw-calendar-common.version>
         <bw-calendar-deploy.version>4.1.3</bw-calendar-deploy.version>
         <bw-calendar-dumprestore.version>5.0.0</bw-calendar-dumprestore.version>
