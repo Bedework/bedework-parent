@@ -638,7 +638,7 @@
 
       <dependency>
         <groupId>org.bedework.deploy</groupId>
-        <artifactId>bw-calendar-publicws</artifactId>
+        <artifactId>bw-calendar-pubcalws</artifactId>
         <version>${bw-calendar-deploy.version}</version>
         <type>war</type>
       </dependency>
@@ -659,7 +659,7 @@
 
       <dependency>
         <groupId>org.bedework.deploy</groupId>
-        <artifactId>bw-calendar-userws</artifactId>
+        <artifactId>bw-calendar-ucalws</artifactId>
         <version>${bw-calendar-deploy.version}</version>
         <type>war</type>
       </dependency>
