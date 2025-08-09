@@ -246,7 +246,7 @@
     <maven.version>3.8.4</maven.version>
     <maven-plugin-annotations.version>3.6.4</maven-plugin-annotations.version>
     <mockito.version>1.10.19</mockito.version>
-    <mysql-driver.version>8.2.0</mysql-driver.version>
+    <mysql-driver.version>9.4.0</mysql-driver.version>
 
     <openjpa.version>4.1.1</openjpa.version>
     <opensaml.version>2.5.1-1</opensaml.version>
