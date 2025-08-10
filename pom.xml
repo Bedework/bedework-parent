@@ -3351,7 +3351,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-calendar-engine.version>5.0.0</bw-calendar-engine.version>
         <bw-calendar-llc.version>5.0.0-SNAPSHOT</bw-calendar-llc.version>
         <bw-calendar-hlc.version>5.0.0-SNAPSHOT</bw-calendar-hlc.version>
-        <bw-calendar-xsl.version>5.0.1-SNAPSHOT</bw-calendar-xsl.version>
+        <bw-calendar-xsl.version>5.0.1</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>6.0.0</bw-calws-soap-xml.version>
         <bw-carddav.version>6.0.1</bw-carddav.version>
         <bw-category.version>5.0.0</bw-category.version>
@@ -3395,7 +3395,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-webdav.version>6.0.0</bw-webdav.version>
         <bw-webtest.version>2.0.0</bw-webtest.version>
         <bw-wf-extensions.version>2.0.0</bw-wf-extensions.version>
-        <bw-wfmodules.version>2.0.1</bw-wfmodules.version>
+        <bw-wfmodules.version>2.0.2</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>5.0.0-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
 
         <!-- iCal4j versions
@@ -3471,7 +3471,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-webdav.version>6.0.0</bw-webdav.version>
         <bw-webtest.version>1.0.0</bw-webtest.version>
         <bw-wf-extensions.version>2.0.0</bw-wf-extensions.version>
-        <bw-wfmodules.version>2.0.1</bw-wfmodules.version>
+        <bw-wfmodules.version>2.0.2</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.2.1</bw-wildfly-galleon-feature-pack.version>
 
         <!-- iCal4j versions
