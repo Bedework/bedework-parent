@@ -3371,7 +3371,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
 
         <bw-notifier.version>6.0.0</bw-notifier.version>
 
-        <bw-quickstart.version>5.0.0-SNAPSHOT</bw-quickstart.version>
+        <bw-quickstart.version>5.0.0</bw-quickstart.version>
 
         <bw-schemaorg.version>2.0.0</bw-schemaorg.version>
         <bw-selfreg.version>6.0.0</bw-selfreg.version>
@@ -3395,7 +3395,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-webdav.version>6.0.0</bw-webdav.version>
         <bw-webtest.version>2.0.0</bw-webtest.version>
         <bw-wf-extensions.version>2.0.0</bw-wf-extensions.version>
-        <bw-wfmodules.version>2.0.0-SNAPSHOT</bw-wfmodules.version>
+        <bw-wfmodules.version>2.0.1</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>5.0.0-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
 
         <!-- iCal4j versions
@@ -3447,7 +3447,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
 
         <bw-notifier.version>6.0.0</bw-notifier.version>
 
-        <bw-quickstart.version>4.0.4</bw-quickstart.version>
+        <bw-quickstart.version>5.0.0</bw-quickstart.version>
 
         <bw-schemaorg.version>2.0.0</bw-schemaorg.version>
         <bw-selfreg.version>6.0.0</bw-selfreg.version>
@@ -3471,7 +3471,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-webdav.version>6.0.0</bw-webdav.version>
         <bw-webtest.version>1.0.0</bw-webtest.version>
         <bw-wf-extensions.version>2.0.0</bw-wf-extensions.version>
-        <bw-wfmodules.version>1.0.10</bw-wfmodules.version>
+        <bw-wfmodules.version>2.0.1</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>4.2.1</bw-wildfly-galleon-feature-pack.version>
 
         <!-- iCal4j versions
