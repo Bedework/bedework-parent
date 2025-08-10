@@ -3354,7 +3354,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-calendar-xsl.version>5.0.1-SNAPSHOT</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>6.0.0</bw-calws-soap-xml.version>
         <bw-carddav.version>6.0.1</bw-carddav.version>
-        <bw-category.version>5.0.0-SNAPSHOT</bw-category.version>
+        <bw-category.version>5.0.0</bw-category.version>
         <bw-cli.version>6.0.0</bw-cli.version>
 
         <bw-database.version>6.0.0</bw-database.version>
@@ -3369,12 +3369,12 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
 
         <bw-logs.version>6.0.0</bw-logs.version>
 
-        <bw-notifier.version>6.0.0-SNAPSHOT</bw-notifier.version>
+        <bw-notifier.version>6.0.0</bw-notifier.version>
 
         <bw-quickstart.version>5.0.0-SNAPSHOT</bw-quickstart.version>
 
         <bw-schemaorg.version>2.0.0</bw-schemaorg.version>
-        <bw-selfreg.version>6.0.0-SNAPSHOT</bw-selfreg.version>
+        <bw-selfreg.version>6.0.0</bw-selfreg.version>
         <bw-sometime.version>2.0.1-SNAPSHOT</bw-sometime.version>
         <bw-synch.version>6.0.1</bw-synch.version>
 
@@ -3391,7 +3391,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-util-security.version>6.0.0</bw-util-security.version>
         <bw-util2.version>6.0.1</bw-util2.version>
 
-        <bw-webcache.version>2.0.0-SNAPSHOT</bw-webcache.version>
+        <bw-webcache.version>2.0.0</bw-webcache.version>
         <bw-webdav.version>6.0.0</bw-webdav.version>
         <bw-webtest.version>2.0.0</bw-webtest.version>
         <bw-wf-extensions.version>2.0.0</bw-wf-extensions.version>
@@ -3431,7 +3431,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-calendar-xsl.version>5.0.1</bw-calendar-xsl.version>
         <bw-calws-soap-xml.version>6.0.0</bw-calws-soap-xml.version>
         <bw-carddav.version>6.0.1</bw-carddav.version>
-        <bw-category.version>4.0.4</bw-category.version>
+        <bw-category.version>5.0.0</bw-category.version>
         <bw-cli.version>6.0.0</bw-cli.version>
 
         <bw-database.version>6.0.0</bw-database.version>
@@ -3445,12 +3445,12 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
 
         <bw-logs.version>6.0.0</bw-logs.version>
 
-        <bw-notifier.version>5.0.5</bw-notifier.version>
+        <bw-notifier.version>6.0.0</bw-notifier.version>
 
         <bw-quickstart.version>4.0.4</bw-quickstart.version>
 
         <bw-schemaorg.version>2.0.0</bw-schemaorg.version>
-        <bw-selfreg.version>5.0.4</bw-selfreg.version>
+        <bw-selfreg.version>6.0.0</bw-selfreg.version>
         <bw-sometime.version>2.0.0</bw-sometime.version>
         <bw-synch.version>6.0.1</bw-synch.version>
 
@@ -3467,7 +3467,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-util-security.version>6.0.0</bw-util-security.version>
         <bw-util2.version>6.0.1</bw-util2.version>
 
-        <bw-webcache.version>1.0.2</bw-webcache.version>
+        <bw-webcache.version>2.0.0</bw-webcache.version>
         <bw-webdav.version>6.0.0</bw-webdav.version>
         <bw-webtest.version>1.0.0</bw-webtest.version>
         <bw-wf-extensions.version>2.0.0</bw-wf-extensions.version>
