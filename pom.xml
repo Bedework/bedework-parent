@@ -3155,11 +3155,6 @@
       </plugin>
 
       <plugin>
-        <groupId>org.owasp</groupId>
-        <artifactId>dependency-check-maven</artifactId>
-      </plugin>
-
-      <plugin>
         <groupId>org.asciidoctor</groupId>
         <artifactId>asciidoctor-maven-plugin</artifactId>
       </plugin>
@@ -3281,6 +3276,19 @@
   </build>
 
   <profiles>
+    <profile>
+      <id>depcheck</id>
+
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.owasp</groupId>
+            <artifactId>dependency-check-maven</artifactId>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+
     <profile>
       <id>release</id>
       <!--
