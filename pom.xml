@@ -321,7 +321,7 @@
 
       <dependency>
         <groupId>org.bedework</groupId>
-        <artifactId>bw-access</artifactId>
+        <artifactId>bw-dav-access</artifactId>
         <version>${bw-access.version}</version>
       </dependency>
 
@@ -3343,7 +3343,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <activeByDefault>false</activeByDefault>
       </activation>
       <properties>
-        <bw-access.version>6.0.0</bw-access.version>
+        <bw-access.version>6.1.0</bw-access.version>
 
         <bw-base.version>2.0.0</bw-base.version>
         <bw-bedework.version>5.0.0-SNAPSHOT</bw-bedework.version>
@@ -3422,7 +3422,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <bw-access.version>6.0.0</bw-access.version>
+        <bw-access.version>6.1.0</bw-access.version>
 
         <bw-base.version>2.0.0</bw-base.version>
         <bw-bedework.version>4.1.0</bw-bedework.version>
