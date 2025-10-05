@@ -721,6 +721,24 @@
         <version>${bw-calendar-dumprestore.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calendar-dumprestore-common</artifactId>
+        <version>${bw-calendar-dumprestore.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calendar-dumprestore-sar</artifactId>
+        <version>${bw-calendar-dumprestore.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-calendar-dumprestore-service</artifactId>
+        <version>${bw-calendar-dumprestore.version}</version>
+      </dependency>
+
       <!-- ============ bw-calendar-xsl ============= -->
 
       <dependency>
@@ -3365,7 +3383,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-calendar-client.version>5.1.0-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>5.1.0-SNAPSHOT</bw-calendar-common.version>
         <bw-calendar-deploy.version>5.0.0</bw-calendar-deploy.version>
-        <bw-calendar-dumprestore.version>5.0.0</bw-calendar-dumprestore.version>
+        <bw-calendar-dumprestore.version>5.1.0-SNAPSHOT</bw-calendar-dumprestore.version>
         <bw-calendar-engine.version>5.1.0-SNAPSHOT</bw-calendar-engine.version>
         <bw-calendar-llc.version>5.0.0-SNAPSHOT</bw-calendar-llc.version>
         <bw-calendar-hlc.version>5.0.0-SNAPSHOT</bw-calendar-hlc.version>
@@ -3373,7 +3391,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-calws-soap-xml.version>6.0.0</bw-calws-soap-xml.version>
         <bw-carddav.version>6.0.1</bw-carddav.version>
         <bw-category.version>5.0.0</bw-category.version>
-        <bw-cli.version>6.0.0</bw-cli.version>
+        <bw-cli.version>6.1.0-SNAPSHOT</bw-cli.version>
 
         <bw-database.version>6.0.0</bw-database.version>
         <bw-dependency-checker.version>1.0.0-SNAPSHOT</bw-dependency-checker.version>
