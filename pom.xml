@@ -3391,7 +3391,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-calws-soap-xml.version>6.0.0</bw-calws-soap-xml.version>
         <bw-carddav.version>6.0.1</bw-carddav.version>
         <bw-category.version>5.0.0</bw-category.version>
-        <bw-cli.version>6.1.0-SNAPSHOT</bw-cli.version>
+        <bw-cli.version>6.1.0</bw-cli.version>
 
         <bw-database.version>6.1.0-SNAPSHOT</bw-database.version>
         <bw-dependency-checker.version>1.0.0-SNAPSHOT</bw-dependency-checker.version>
@@ -3469,7 +3469,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-calws-soap-xml.version>6.0.0</bw-calws-soap-xml.version>
         <bw-carddav.version>6.0.1</bw-carddav.version>
         <bw-category.version>5.0.0</bw-category.version>
-        <bw-cli.version>6.0.0</bw-cli.version>
+        <bw-cli.version>6.1.0</bw-cli.version>
 
         <bw-database.version>6.0.0</bw-database.version>
 
