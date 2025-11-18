@@ -198,7 +198,7 @@
 
     <ehcache.version>3.10.8</ehcache.version>
 
-    <flywaydb.version>3.1</flywaydb.version>
+    <flywaydb.version>11.15.0</flywaydb.version>
     <freemarker.version>2.3.34</freemarker.version>
 
     <!-- android for maven -->
@@ -213,6 +213,7 @@
     <http-core.version>4.4.16</http-core.version>
     <h2.version>2.3.232</h2.version>
 
+    <jakarta.inject-api.version>2.0.1</jakarta.inject-api.version>
     <icu4j.version>77.1</icu4j.version>
     <imgscalr.version>4.2</imgscalr.version>
 
@@ -1883,6 +1884,12 @@
       </dependency>
 
       <dependency>
+        <groupId>jakarta.inject</groupId>
+        <artifactId>jakarta.inject-api</artifactId>
+        <version>${jakarta.inject-api.version}</version>
+      </dependency>
+
+      <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-annotations</artifactId>
         <version>${jackson.version}</version>
@@ -3380,9 +3387,9 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-bedework.version>5.0.1-SNAPSHOT</bw-bedework.version>
 
         <bw-caldav.version>6.0.1</bw-caldav.version>
-        <bw-calendar-client.version>5.1.0</bw-calendar-client.version>
+        <bw-calendar-client.version>5.2.0-SNAPSHOT</bw-calendar-client.version>
         <bw-calendar-common.version>5.1.0</bw-calendar-common.version>
-        <bw-calendar-deploy.version>5.0.0</bw-calendar-deploy.version>
+        <bw-calendar-deploy.version>5.1.0-SNAPSHOT</bw-calendar-deploy.version>
         <bw-calendar-dumprestore.version>5.1.0</bw-calendar-dumprestore.version>
         <bw-calendar-engine.version>5.1.0</bw-calendar-engine.version>
         <bw-calendar-llc.version>5.0.0-SNAPSHOT</bw-calendar-llc.version>
@@ -3432,7 +3439,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-webdav.version>6.0.0</bw-webdav.version>
         <bw-webtest.version>2.0.0</bw-webtest.version>
         <bw-wf-extensions.version>2.0.0</bw-wf-extensions.version>
-        <bw-wfmodules.version>2.1.0</bw-wfmodules.version>
+        <bw-wfmodules.version>2.2.0-SNAPSHOT</bw-wfmodules.version>
         <bw-wildfly-galleon-feature-pack.version>5.0.0-SNAPSHOT</bw-wildfly-galleon-feature-pack.version>
 
         <!-- iCal4j versions
