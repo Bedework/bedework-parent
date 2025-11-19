@@ -1576,7 +1576,7 @@
         <artifactId>apache-jdkim-api</artifactId>
         <version>${bedework.jdkim.version}</version>
       </dependency>
-
+<!--
       <dependency>
         <groupId>org.bedework</groupId>
         <artifactId>apache-jdkim-library</artifactId>
@@ -1588,6 +1588,7 @@
           </exclusion>
         </exclusions>
       </dependency>
+  -->
 
       <dependency>
         <groupId>org.bedework</groupId>
