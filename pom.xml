@@ -3415,7 +3415,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
 
         <bw-notifier.version>6.0.0</bw-notifier.version>
 
-        <bw-quickstart.version>5.0.0</bw-quickstart.version>
+        <bw-quickstart.version>5.1.0-SNAPSHOT</bw-quickstart.version>
 
         <bw-schemaorg.version>2.0.0</bw-schemaorg.version>
         <bw-selfreg.version>6.0.0</bw-selfreg.version>
