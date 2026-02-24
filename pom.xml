@@ -3382,7 +3382,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <activeByDefault>false</activeByDefault>
       </activation>
       <properties>
-        <bw-access.version>6.1.1-SNAPSHOT</bw-access.version>
+        <bw-access.version>6.1.1</bw-access.version>
 
         <bw-base.version>2.0.0</bw-base.version>
         <bw-bedework.version>5.0.1-SNAPSHOT</bw-bedework.version>
@@ -3430,10 +3430,10 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-util-conf.version>6.0.0</bw-util-conf.version>
         <bw-util-deploy.version>6.0.0</bw-util-deploy.version>
         <bw-util-index.version>6.0.1</bw-util-index.version>
-        <bw-util-network.version>6.2.0-SNAPSHOT</bw-util-network.version>
+        <bw-util-network.version>6.2.0</bw-util-network.version>
         <bw-util-tz.version>6.0.2</bw-util-tz.version>
         <bw-util-security.version>6.0.0</bw-util-security.version>
-        <bw-util2.version>6.1.0-SNAPSHOT</bw-util2.version>
+        <bw-util2.version>6.0.2</bw-util2.version>
 
         <bw-web.version>1.0.0-SNAPSHOT</bw-web.version>
         <bw-webcache.version>2.0.0</bw-webcache.version>
@@ -3462,7 +3462,7 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <bw-access.version>6.1.0</bw-access.version>
+        <bw-access.version>6.1.1</bw-access.version>
 
         <bw-base.version>2.0.0</bw-base.version>
         <bw-bedework.version>5.0.0</bw-bedework.version>
@@ -3507,10 +3507,10 @@ bw-util-annotations/pom.xml:11:  <version>1.0.0-SNAPSHOT</version>
         <bw-util-conf.version>6.0.0</bw-util-conf.version>
         <bw-util-deploy.version>6.0.0</bw-util-deploy.version>
         <bw-util-index.version>6.0.1</bw-util-index.version>
-        <bw-util-network.version>6.1.0</bw-util-network.version>
+        <bw-util-network.version>6.2.0</bw-util-network.version>
         <bw-util-tz.version>6.0.2</bw-util-tz.version>
         <bw-util-security.version>6.0.0</bw-util-security.version>
-        <bw-util2.version>6.0.1</bw-util2.version>
+        <bw-util2.version>6.0.2</bw-util2.version>
 
         <bw-webcache.version>2.0.0</bw-webcache.version>
         <bw-webdav.version>6.0.0</bw-webdav.version>
