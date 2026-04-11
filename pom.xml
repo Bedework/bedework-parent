@@ -1386,6 +1386,12 @@
         <version>${bw-util-network.version}</version>
       </dependency>
 
+      <dependency>
+        <groupId>org.bedework</groupId>
+        <artifactId>bw-util-struts2</artifactId>
+        <version>${bw-util-network.version}</version>
+      </dependency>
+
       <!-- ================ bw-util-security ================ -->
 
       <dependency>
